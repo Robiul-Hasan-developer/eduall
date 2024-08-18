@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title> Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+    <!-- Slick -->
+    <!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
+    <!-- line awesome -->
+    <!-- <link rel="stylesheet" href="assets/css/line-awesome.min.css"> -->
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head> 
+<body>
+    
+<!--==================== Preloader Start ====================-->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+<!--==================== Preloader End ====================-->
+
+<!--==================== Overlay Start ====================-->
+<div class="overlay"></div>
+<!--==================== Overlay End ====================-->
+
+<!--==================== Sidebar Overlay End ====================-->
+<div class="side-overlay"></div>
+<!--==================== Sidebar Overlay End ====================-->
+
+<!-- ==================== Scroll to Top End Here ==================== -->
+<div class="progress-wrap">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</div>
+<!-- ==================== Scroll to Top End Here ==================== -->
+
+<!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu scroll-sm d-lg-none d-block">
+    <button type="button" class="close-button"> <i class="las la-times"></i> </button>
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            
+<ul class="nav-menu flex-align nav-menu--mobile">
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Home</a>
+        <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="index.html" class="nav-submenu__link hover-bg-neutral-100"> Home One</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Home Two</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Home Three</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Pages</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Property</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> About Us</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> FAQ</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Project</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Project </a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100">Project Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Blog</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Blog Classic</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-100"> Blog Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Contact</a>
+    </li>
+</ul>
+            <a href="login.html" class="btn btn-outline-main d-lg-none d-block mt-4">
+                Login
+                <span class="icon-right icon"> 
+                    <i class="las la-user"></i>
+                </span> 
+            </a>
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+
+
+    <!-- ==================== Header Start Here ==================== -->
+<header class="header">
+    <div class="container container--xl">
+        <nav class="header-inner flex-between gap-8">
+
+            <div class="header-content-wrapper flex-align flex-grow-1">
+                <!-- Logo Start -->
+                <div class="logo">
+                    <a href="index.html" class="link">
+                        <img src="assets/images/logo/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <!-- Logo End  -->
+    
+                <!-- Select Start -->
+                 <div class="header-select border border-neutral-30 bg-main-25 rounded-pill position-relative">
+                    <span class="select-icon position-absolute top-50 translate-middle-y inset-inline-start-0 z-1 ms-lg-4 ms-12 text-xl pointer-event-none">
+                        <!-- <i class="ph-bold ph-squares-four"></i> -->
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                     <select class="js-example-basic-single border-0" name="state">
+                         <option value="1" selected disabled>Categories</option>
+                         <option value="1">Grocery</option>
+                         <option value="1">Breakfast & Dairy</option>
+                         <option value="1">Vegetables</option>
+                         <option value="1">Milks and Dairies</option>
+                         <option value="1">Pet Foods & Toy</option>
+                         <option value="1">Breads & Bakery</option>
+                         <option value="1">Fresh Seafood</option>
+                         <option value="1">Fronzen Foods</option>
+                         <option value="1">Noodles & Rice</option>
+                         <option value="1">Ice Cream</option>
+                     </select>
+                 </div>
+                <!-- Select End -->
+    
+                <!-- Menu Start  -->
+                <div class="header-menu d-lg-block d-none">
+                    
+<ul class="nav-menu flex-align ">
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Home</a>
+        <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="index.html" class="nav-submenu__link hover-bg-neutral-100"> Home One</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Home Two</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Home Three</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Pages</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Property</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> About Us</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> FAQ</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Project</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Project </a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100">Project Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu">
+        <a href="javascript:void(0)" class="nav-menu__link">Blog</a>
+         <ul class="nav-submenu scroll-sm">
+            <li class="nav-submenu__item">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-100"> Blog Classic</a>
+            </li>
+            <li class="nav-submenu__item">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-100"> Blog Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item">
+        <a href="#" class="nav-menu__link">Contact</a>
+    </li>
+</ul>
+                </div>
+                <!-- Menu End  -->
+            </div>
+
+            <!-- Header Right start -->
+            <div class="header-right flex-align">
+                <form action="#" class="search-form position-relative d-xl-block d-none">
+                    <input type="text" class="common-input rounded-pill bg-main-25 pe-44 border-neutral-30" placeholder="Search...">
+                    <button type="submit" class="w-36 h-36 bg-main-600 hover-bg-main-700 rounded-circle flex-center text-md text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
+                        <i class="ph-bold ph-magnifying-glass"></i>
+                    </button>
+                </form>
+                <a href="cart.html" class="info-action w-52 h-52 bg-main-25 hover-bg-main-600 border border-neutral-30 rounded-circle flex-center text-2xl text-neutral-500 hover-text-white hover-border-main-600">
+                    <i class="ph ph-shopping-cart"></i>
+                </a>
+                <a href="cart.html" class="info-action w-52 h-52 bg-main-25 hover-bg-main-600 border border-neutral-30 rounded-circle flex-center text-2xl text-neutral-500 hover-text-white hover-border-main-600">
+                    <i class="ph ph-user-circle"></i>
+                </a>
+                <button type="button" class="toggle-mobileMenu d-lg-none text-neutral-200 flex-center">
+                    <i class="ph ph-list"></i> 
+                </button>
+            </div>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header End Here ==================== -->
+    
+    
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer py-120 bg-neutral-900">
+    <div class="container container-two">
+        <div class="row gy-5">
+            <div class="col-xl-4 col-lg-6">
+                <div class="footer-item">
+                    <div class="footer-item__logo">
+                        <a href="index.html"> <img src="assets/images/logo/white-logo.png" alt=""></a>
+                    </div>
+                    <p class="text-white mb-24">It is a long established fact that a reader will be distracted</p>
+                    
+                    <h6 class="footer-item__title text-white mt-4 mt-lg-5">Lets Work Together</h6>
+                    <div class="row gy-4">
+                        <div class="col-6">
+                            <div class="contact-info  d-flex align-items-start gap-24">
+                                <span class="contact-info__icon text-main"><i class="fas fa-map-marker-alt"></i></span>
+                                <div class="contact-info__content">
+                                    <span class="contact-info__text text-white">Address</span>
+                                    <span class="contact-info__address text-white">66 Broklyant, New York India</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-6">
+                             <div class="contact-inf d-flex align-items-start gap-24">
+                                <span class="contact-info__icon text-main"><i class="fas fa-phone"></i></span>
+                                <div class="contact-info__content">
+                                    <span class="contact-info__text text-white">Phone Number</span>
+                                    <span class="contact-info__address text-white">012 345 678 9101</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-xl-1 d-xl-block d-none"></div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                    <h6 class="footer-item__title text-white">Services</h6>
+                    <ul class="footer-menu">
+                        <li class="mb-16">
+                            <a href="#" class="text-white hover-text-decoration-underline">Reliable Rentals </a>
+                        </li>
+                        <li class="mb-16">
+                            <a href="#" class="text-white hover-text-decoration-underline">Golden Key Properties </a>
+                        </li>
+                        <li class="mb-16">
+                            <a href="#" class="text-white hover-text-decoration-underline">Swift Home Sales </a>
+                        </li>
+                        <li class="mb-16">
+                            <a href="#" class="text-white hover-text-decoration-underline">Elite Realty Services </a>
+                        </li>
+                        <li class="mb-16">
+                            <a href="#" class="text-white hover-text-decoration-underline">Dream Property Solutions </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-1 d-xl-block d-none"></div>
+            <div class="col-xl-3 col-sm-6">
+                <div class="footer-item">
+                    <h6 class="text-white">Subscribe</h6>
+                    <p class="text-white mb-16">It is a long established fact that  reader will be Elite Property </p>
+
+                    <form action="#" class="subscribe-box mb-24">
+                        <div class="input-group">
+                            <input type="text" class="form-control common-input common-input--md border border-neutral-600 text-white" placeholder="Your mail address">
+                            <button type="submit" class="px-4 input-group-text px-12 bg-main-600 text-white border-0"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+
+                    <ul class="social-list">
+    <li class="social-list__item">
+        <a href="https://www.facebook.com" class="social-list__link flex-center"><i class="fab fa-facebook-f"></i></a>
+    </li>
+    <li class="social-list__item">
+        <a href="https://www.twitter.com" class="social-list__link flex-center"> <i class="fab fa-twitter"></i></a>
+    </li>
+    <li class="social-list__item">
+        <a href="https://www.linkedin.com" class="social-list__link flex-center"> <i class="fab fa-linkedin-in"></i></a>
+    </li>
+    <li class="social-list__item">
+        <a href="https://www.pinterest.com" class="social-list__link flex-center"> <i class="fab fa-instagram"></i></a>
+    </li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- bottom Footer -->
+<div class="bottom-footer bg-neutral-900 border-top border-neutral-600 py-32">
+    <div class="container container-two">
+        <div class="bottom-footer__inner flex-between gap-3 py-16">
+            <p class="bottom-footer__text text-white"> &copy; CityScape 2024 | All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="text-white hover-text-decoration-underline">Terms & Condition</a>
+                <a href="#" class="text-white hover-text-decoration-underline">Privacy Policy</a>
+                <a href="#" class="text-white hover-text-decoration-underline">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==================== Footer End Here ==================== -->
+  
+
+        <!-- Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- select2 Js -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- Phosphor Icon Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Slick js -->
+    <!-- <script src="assets/js/slick.min.js"></script> -->
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+
+    </body>
+</html>
