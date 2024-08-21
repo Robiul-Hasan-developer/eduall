@@ -17,3 +17,13 @@
       }
     }
   }
+
+  .bg-dark-yellow {
+    background-color: #F3B439;
+  }
+
+  .hover-bg-white {
+    &:hover {
+      background-color: #fff !important;
+    }
+  }

@@ -1,9 +1,8 @@
 
 /* ====================== Section Heading ==================== */
 .section-heading {
-  text-align: center;
-  margin-block-end: clampCal(32, 56);
-  max-width: 630px;
+  margin-bottom: clampCal(32, 60);
+  max-width: 640px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   &__subtitle {
@@ -39,16 +38,17 @@
   // Style Flex
   &.style-flex {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     max-width: unset;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     .section-heading {
       &__inner {
         max-width: 630px;
       }
       &__desc {
-        max-width: 410px;
+        max-width: 432px;
+        margin-left: 0;
         @media (min-width: 1199px) {
           margin-inline-start: auto !important;
         }

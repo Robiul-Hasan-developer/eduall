@@ -3,7 +3,7 @@
 
 $colors: (
   "main": (
-    "25": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.95)),
+    "25": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.96)),
     "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
     "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
     "200": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7)),
@@ -16,6 +16,7 @@ $colors: (
     "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))
   ),
   "main-two": (
+    "25": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.94)),
     "50": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)),
     "100": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8)),
     "200": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7)),
@@ -31,7 +32,7 @@ $colors: (
   "neutral": (
     "10": #FFFFFF,
     "20": #F5F6F7,
-    "30": #DFE0E4,
+    "30": #EBECEF,
     "40": #DFE0E4,
     "50": #C1C4CC,
     "60": #B2B6BF,
@@ -129,11 +130,24 @@ $colors: (
     "200": #BFDBFE,
     "300": #93C5FD,
     "400": #60A5FA,
-    "500": #3B82F6,
-    "600": #2563EB,
+    "500": #9570f4,
+    "600": #875BF7,
     "700": #1D4ED8,
     "800": #1E40AF,
     "900": #1E3A8A
+  ),
+
+  "purple": (
+    "50": #ede7fe,
+    "100": #cab6fb,
+    "200": #a685f9,
+    "300": #8255f7,
+    "400": #5f24f4,
+    "500": #5314f2,
+    "600": #450bdb,
+    "700": #3608aa,
+    "800": #27067a,
+    "900": #170449
   ),
 );
 
@@ -160,6 +174,7 @@ $spaces: (
   "26": #{rem(26px)},
   "28": #{rem(28px)},
   "30": #{rem(30px)},
+  "32": #{rem(32px)},
   "36": #{rem(32px)},
   "40": #{rem(40px)}, 
   "44": #{rem(44px)}, 
@@ -206,6 +221,13 @@ $font-sizes: (
   --heading-four: clamp(1.25rem, 0.8045rem + 0.9281vw, 1.5rem); // Min: 20px - Max: 24px
   --heading-five: clamp(1.125rem, 0.9023rem + 0.464vw, 1.25rem); // Min: 18px - Max-20px
   --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1rem); // Min: 16px - Max-16px
+  /* Font Size End */
+  
+  /* Font Size Variable Start */
+  --display-one: clamp(2.5rem, -6.4095rem + 18.5615vw, 7.5rem); // Min:40px - Max: 120px
+  --display-two: clamp(2.25rem, -2.6502rem + 10.2088vw, 5rem);// Min: 36px - Max: 80px
+  --display-three: clamp(2rem, -1.5638rem + 7.4246vw, 4rem); // Min: 32px - Max: 64px
+  --display-four: clamp(1.75rem, -1.3683rem + 6.4965vw, 3.5rem); // Min: 28px - Max: 56px
   /* Font Size End */
 
   /* template main color */

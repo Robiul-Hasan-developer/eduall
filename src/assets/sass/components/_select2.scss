@@ -78,6 +78,9 @@
         padding-inline-start: 40px !important;
         padding-inline-end: 30px !important;
     }
+    @include msm-screen {
+        padding-inline-start: 14px !important;
+    }
 }
 
 .select-border-end-0 {
@@ -199,12 +202,7 @@
 
 
 .select2-container--open .select2-dropdown {
-    @include md-screen {
-        left: -74px;
-    }
-    @include xsm-screen {
-        left:   -40px;
-    }
+    
 }
 
 

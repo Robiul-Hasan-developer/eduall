@@ -108,6 +108,161 @@
   });
   // ========================== Select2 Js End =================================
   
+  // ========================= Brand Slider Js Start ==============
+  $('.brand-slider').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: false,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#brand-next',
+    prevArrow: '#brand-prev',
+    responsive: [
+      {
+        breakpoint: 1399,
+        settings: {
+          slidesToShow: 6,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 4,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 424,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 359,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Brand Slider Js End ===================
+  
+  // ========================= Brand Slider Js Start ==============
+  $('.features-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#features-next',
+    prevArrow: '#features-prev',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Brand Slider Js End ===================
+
+  // ========================= Wishlist Button Js Start ===================
+  $('.wishlist-btn').on('click', function () {
+    $(this).removeClass('text-main-two-600'); 
+    $(this).toggleClass('text-white bg-main-two-600'); 
+  })
+  // ========================= Wishlist Button Js End ===================
+  
+  // ========================= Instructor Button Js Start ===================
+  $('.social-infos .social-infos__button').on('click', function () {
+    $('.social-list').not($(this).siblings('.social-list')).removeClass('d-flex'); 
+    $('.social-infos .social-infos__button').not($(this)).removeClass('active'); 
+    $(this).siblings('.social-list').toggleClass('d-flex'); 
+    $(this).toggleClass('active'); 
+  });
+  // ========================= Instructor Button Js End ===================
+
+  // ========================= Brand Slider Js Start ==============
+  $('.instructor-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#instructor-next',
+    prevArrow: '#instructor-prev',
+    responsive: [
+      {
+        breakpoint: 1299,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Brand Slider Js End ===================
 
   
   // ========================= Testimonial Four Slider Js Start ==============

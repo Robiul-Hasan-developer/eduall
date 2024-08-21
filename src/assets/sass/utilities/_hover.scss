@@ -1,0 +1,9 @@
+/* Item Hover Css Start */
+.item-hover {
+    &:hover {
+        .item-hover__text {
+            color: #fff !important;
+        }
+    }
+}
+/* Item Hover Css End */

@@ -7,19 +7,6 @@
       }
     }
   }
-
-  
-.text {
-    &-heading {
-        color: hsl(var(--heading-color)) !important;
-    }
-    &-body {
-        color: hsl(var(--body-color)) !important;
-    }
-    &-main {
-        color: hsl(var(--main)) !important;
-    }
-}
   
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
@@ -30,6 +17,18 @@
       }
     }
   }
+  
+.text {
+  &-heading {
+      color: hsl(var(--heading-color)) !important;
+  }
+  &-body {
+      color: hsl(var(--body-color)) !important;
+  }
+  &-main {
+      color: hsl(var(--main)) !important;
+  }
+}
 
 /* Text Color */
 .hover-text {

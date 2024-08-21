@@ -1,0 +1,25 @@
+/* ===================== Course Item Css Start ============================ */
+.course-item {
+    &:hover {
+        .course-item__img {
+            transform: scale(1.1);
+        }
+    }
+    &__thumb {
+        overflow: hidden;
+        max-height: 306px;
+    }
+    &__content {
+        padding: 32px 16px;
+        @include md-screen {
+            padding: 24px 8px;
+        }
+    }
+}
+
+.wishlist-btn {
+    &:active {
+        transform: scale(1.2);
+    }
+}
+/* ===================== Course Item Css End ============================ */

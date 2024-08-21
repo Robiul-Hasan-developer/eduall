@@ -53,6 +53,12 @@
     --heading-five: clamp(1.125rem, 0.9023rem + 0.464vw, 1.25rem);
     --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1rem);
   /* Font Size End */
+  /* Font Size Variable Start */
+    --display-one: clamp(2.5rem, -6.4095rem + 18.5615vw, 7.5rem);
+    --display-two: clamp(2.25rem, -2.6502rem + 10.2088vw, 5rem);
+    --display-three: clamp(2rem, -1.5638rem + 7.4246vw, 4rem);
+    --display-four: clamp(1.75rem, -1.3683rem + 6.4965vw, 3.5rem);
+  /* Font Size End */
   /* template main color */
     --main-h: 209;
     --main-s: 94%;
@@ -95,6 +101,7 @@
     --size-26: 1.625rem;
     --size-28: 1.75rem;
     --size-30: 1.875rem;
+    --size-32: 2rem;
     --size-36: 2rem;
     --size-40: 2.5rem;
     --size-44: 2.75rem;
@@ -112,7 +119,7 @@
     --size-120: 7.5rem;
     --size-144: 9rem;
     --size-160: 10rem;
-    --main-25: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.95));
+    --main-25: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.96));
     --main-50: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9));
     --main-100: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8));
     --main-200: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7));
@@ -123,6 +130,7 @@
     --main-700: hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.1));
     --main-800: hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.2));
     --main-900: hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3));
+    --main-two-25: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.94));
     --main-two-50: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9));
     --main-two-100: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8));
     --main-two-200: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7));
@@ -135,7 +143,7 @@
     --main-two-900: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3));
     --neutral-10: #FFFFFF;
     --neutral-20: #F5F6F7;
-    --neutral-30: #DFE0E4;
+    --neutral-30: #EBECEF;
     --neutral-40: #DFE0E4;
     --neutral-50: #C1C4CC;
     --neutral-60: #B2B6BF;
@@ -201,11 +209,21 @@
     --info-200: #BFDBFE;
     --info-300: #93C5FD;
     --info-400: #60A5FA;
-    --info-500: #3B82F6;
-    --info-600: #2563EB;
+    --info-500: #9570f4;
+    --info-600: #875BF7;
     --info-700: #1D4ED8;
     --info-800: #1E40AF;
     --info-900: #1E3A8A;
+    --purple-50: #ede7fe;
+    --purple-100: #cab6fb;
+    --purple-200: #a685f9;
+    --purple-300: #8255f7;
+    --purple-400: #5f24f4;
+    --purple-500: #5314f2;
+    --purple-600: #450bdb;
+    --purple-700: #3608aa;
+    --purple-800: #27067a;
+    --purple-900: #170449;
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
     --font-md: 1rem;
@@ -239,20 +257,8 @@
     color: hsl(var(--white)) !important;
     z-index: 1;
     line-height: 1;
-    text-transform: uppercase;
-    padding: 22px 30px;
-}
-
-@media screen and (max-width: 991px) {
-    .btn {
-        padding: 17px 20px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .btn {
-        padding: 14px 20px;
-    }
+    text-transform: capitalize;
+    padding: 17px 32px;
 }
 
 .btn:hover, .btn:focus, .btn:focus-visible {
@@ -284,8 +290,8 @@
 }
 
 .btn-outline-main:hover {
-    background-color: hsl(var(--main)/0.15) !important;
-    border-color: hsl(var(--main)/0.4) !important;
+    background-color: hsl(var(--main)/0.25) !important;
+    border-color: hsl(var(--main)) !important;
 }
 
 /* ================================= Button Css End =========================== */
@@ -416,11 +422,11 @@ textarea + .input-icon {
 
 .select-has-icon::before {
     position: absolute;
-    content: "\f107";
+    content: "\e136";
+    font-family: "Phosphor";
     inset-inline-end: 20px;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: hsl(var(--main));
     transition: 0.2s linear;
@@ -763,6 +769,12 @@ input[type=number] {
     }
 }
 
+@media screen and (max-width: 575px) {
+    .select2-container .select2-selection--single .select2-selection__rendered {
+        padding-inline-start: 14px !important;
+    }
+}
+
 .select-border-end-0 .select2-selection.select2-selection--single {
     border-inline-end: 0 !important;
 }
@@ -890,18 +902,6 @@ input[type=number] {
 }
 
 @media screen and (max-width: 991px) {
-    .select2-container--open .select2-dropdown {
-        left: -74px;
-    }
-}
-
-@media screen and (max-width: 424px) {
-    .select2-container--open .select2-dropdown {
-        left: -40px;
-    }
-}
-
-@media screen and (max-width: 991px) {
     .location-box, .search-category.h-48 {
         height: 40px !important;
     }
@@ -911,6 +911,58 @@ input[type=number] {
     }
 }
 /* ======================= Select 2 Css End =========================== */
+/* ================================= Tab Css Start =========================== */
+.nav-tab-wrapper {
+    border-radius: 24px;
+}
+
+@media (min-width: 992px) {
+    .nav-tab-wrapper {
+        border-radius: 50rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .common-tab {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
+    }
+}
+
+.common-tab .nav-item .nav-link {
+    padding: 16px 24px !important;
+}
+
+@media screen and (max-width: 1399px) {
+    .common-tab .nav-item .nav-link {
+        padding: 12px 16px !important;
+        font-size: 0.875rem !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .common-tab .nav-item .nav-link {
+        font-size: 0.8125rem !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .common-tab .nav-item .nav-link i {
+        display: none !important;
+    }
+}
+
+.common-tab .nav-item .nav-link.active {
+    color: hsl(var(--white)) !important;
+    border-color: hsl(var(--main)) !important;
+    background-color: hsl(var(--main)) !important;
+}
+
+.common-tab .nav-item .nav-link:hover {
+    color: hsl(var(--main));
+}
+
+/* ================================= Tab Css End =========================== */
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;
@@ -977,6 +1029,22 @@ h5, .h5 {
 
 h6, .h6 {
     font-size: var(--heading-six);
+}
+
+.display1 {
+    font-size: var(--display-one);
+}
+
+.display2 {
+    font-size: var(--display-two);
+}
+
+.display3 {
+    font-size: var(--display-three);
+}
+
+.display4 {
+    font-size: var(--display-four);
 }
 
 h1 > a,
@@ -1127,6 +1195,10 @@ button:focus {
 
 .m-30 {
     margin: var(--size-30) !important;
+}
+
+.m-32 {
+    margin: var(--size-32) !important;
 }
 
 .m-36 {
@@ -1281,6 +1353,10 @@ button:focus {
     margin-inline: var(--size-30) !important;
 }
 
+.mx-32 {
+    margin-inline: var(--size-32) !important;
+}
+
 .mx-36 {
     margin-inline: var(--size-36) !important;
 }
@@ -1431,6 +1507,10 @@ button:focus {
 
 .my-30 {
     margin-block: var(--size-30) !important;
+}
+
+.my-32 {
+    margin-block: var(--size-32) !important;
 }
 
 .my-36 {
@@ -1585,6 +1665,10 @@ button:focus {
     margin-inline-start: var(--size-30) !important;
 }
 
+.ms-32 {
+    margin-inline-start: var(--size-32) !important;
+}
+
 .ms-36 {
     margin-inline-start: var(--size-36) !important;
 }
@@ -1735,6 +1819,10 @@ button:focus {
 
 .me-30 {
     margin-inline-end: var(--size-30) !important;
+}
+
+.me-32 {
+    margin-inline-end: var(--size-32) !important;
 }
 
 .me-36 {
@@ -1889,6 +1977,10 @@ button:focus {
     margin-block-start: var(--size-30) !important;
 }
 
+.mt-32 {
+    margin-block-start: var(--size-32) !important;
+}
+
 .mt-36 {
     margin-block-start: var(--size-36) !important;
 }
@@ -2041,6 +2133,10 @@ button:focus {
     margin-block-end: var(--size-30) !important;
 }
 
+.mb-32 {
+    margin-block-end: var(--size-32) !important;
+}
+
 .mb-36 {
     margin-block-end: var(--size-36) !important;
 }
@@ -2107,6 +2203,10 @@ button:focus {
 
 .mb-160 {
     margin-block-end: var(--size-160) !important;
+}
+
+.ms--40 {
+    margin-inline-start: -40px;
 }
 
 @media (min-width: 992px) {
@@ -2318,6 +2418,10 @@ button:focus {
     padding: var(--size-30) !important;
 }
 
+.p-32 {
+    padding: var(--size-32) !important;
+}
+
 .p-36 {
     padding: var(--size-36) !important;
 }
@@ -2468,6 +2572,10 @@ button:focus {
 
 .px-30 {
     padding-inline: var(--size-30) !important;
+}
+
+.px-32 {
+    padding-inline: var(--size-32) !important;
 }
 
 .px-36 {
@@ -2622,6 +2730,10 @@ button:focus {
     padding-block: var(--size-30) !important;
 }
 
+.py-32 {
+    padding-block: var(--size-32) !important;
+}
+
 .py-36 {
     padding-block: var(--size-36) !important;
 }
@@ -2772,6 +2884,10 @@ button:focus {
 
 .ps-30 {
     padding-inline-start: var(--size-30) !important;
+}
+
+.ps-32 {
+    padding-inline-start: var(--size-32) !important;
 }
 
 .ps-36 {
@@ -2926,6 +3042,10 @@ button:focus {
     padding-inline-end: var(--size-30) !important;
 }
 
+.pe-32 {
+    padding-inline-end: var(--size-32) !important;
+}
+
 .pe-36 {
     padding-inline-end: var(--size-36) !important;
 }
@@ -3078,6 +3198,10 @@ button:focus {
     padding-block-start: var(--size-30) !important;
 }
 
+.pt-32 {
+    padding-block-start: var(--size-32) !important;
+}
+
 .pt-36 {
     padding-block-start: var(--size-36) !important;
 }
@@ -3228,6 +3352,10 @@ button:focus {
 
 .pb-30 {
     padding-block-end: var(--size-30) !important;
+}
+
+.pb-32 {
+    padding-block-end: var(--size-32) !important;
 }
 
 .pb-36 {
@@ -3507,6 +3635,10 @@ button:focus {
     height: 100%;
 }
 
+.scale-hover-item:hover .scale-hover-item__img {
+    transform: scale(1.2);
+}
+
 /* ================================= Classes Css End =========================== */
 /* ============================ Extend Css Start ======================== */
 /* Cover image Css */
@@ -3618,6 +3750,10 @@ button:focus {
 
 .w-30 {
     width: 1.875rem !important;
+}
+
+.w-32 {
+    width: 2rem !important;
 }
 
 .w-36 {
@@ -3772,6 +3908,10 @@ button:focus {
     height: 1.875rem !important;
 }
 
+.h-32 {
+    height: 2rem !important;
+}
+
 .h-36 {
     height: 2rem !important;
 }
@@ -3848,6 +3988,10 @@ button:focus {
     max-width: unset !important;
 }
 
+.w-50-percent {
+    width: 50% !important;
+}
+
 .text-main-25 {
     color: var(--main-25) !important;
 }
@@ -3890,6 +4034,10 @@ button:focus {
 
 .text-main-900 {
     color: var(--main-900) !important;
+}
+
+.text-main-two-25 {
+    color: var(--main-two-25) !important;
 }
 
 .text-main-two-50 {
@@ -4224,16 +4372,44 @@ button:focus {
     color: var(--info-900) !important;
 }
 
-.text-heading {
-    color: hsl(var(--heading-color)) !important;
+.text-purple-50 {
+    color: var(--purple-50) !important;
 }
 
-.text-body {
-    color: hsl(var(--body-color)) !important;
+.text-purple-100 {
+    color: var(--purple-100) !important;
 }
 
-.text-main {
-    color: hsl(var(--main)) !important;
+.text-purple-200 {
+    color: var(--purple-200) !important;
+}
+
+.text-purple-300 {
+    color: var(--purple-300) !important;
+}
+
+.text-purple-400 {
+    color: var(--purple-400) !important;
+}
+
+.text-purple-500 {
+    color: var(--purple-500) !important;
+}
+
+.text-purple-600 {
+    color: var(--purple-600) !important;
+}
+
+.text-purple-700 {
+    color: var(--purple-700) !important;
+}
+
+.text-purple-800 {
+    color: var(--purple-800) !important;
+}
+
+.text-purple-900 {
+    color: var(--purple-900) !important;
 }
 
 .hover-text-main-25:hover {
@@ -4278,6 +4454,10 @@ button:focus {
 
 .hover-text-main-900:hover {
     color: var(--main-900) !important;
+}
+
+.hover-text-main-two-25:hover {
+    color: var(--main-two-25) !important;
 }
 
 .hover-text-main-two-50:hover {
@@ -4612,6 +4792,58 @@ button:focus {
     color: var(--info-900) !important;
 }
 
+.hover-text-purple-50:hover {
+    color: var(--purple-50) !important;
+}
+
+.hover-text-purple-100:hover {
+    color: var(--purple-100) !important;
+}
+
+.hover-text-purple-200:hover {
+    color: var(--purple-200) !important;
+}
+
+.hover-text-purple-300:hover {
+    color: var(--purple-300) !important;
+}
+
+.hover-text-purple-400:hover {
+    color: var(--purple-400) !important;
+}
+
+.hover-text-purple-500:hover {
+    color: var(--purple-500) !important;
+}
+
+.hover-text-purple-600:hover {
+    color: var(--purple-600) !important;
+}
+
+.hover-text-purple-700:hover {
+    color: var(--purple-700) !important;
+}
+
+.hover-text-purple-800:hover {
+    color: var(--purple-800) !important;
+}
+
+.hover-text-purple-900:hover {
+    color: var(--purple-900) !important;
+}
+
+.text-heading {
+    color: hsl(var(--heading-color)) !important;
+}
+
+.text-body {
+    color: hsl(var(--body-color)) !important;
+}
+
+.text-main {
+    color: hsl(var(--main)) !important;
+}
+
 /* Text Color */
 .hover-text-white:hover {
     color: #fff !important;
@@ -4671,6 +4903,10 @@ button:focus {
 
 .border-main-900 {
     border-color: var(--main-900) !important;
+}
+
+.border-main-two-25 {
+    border-color: var(--main-two-25) !important;
 }
 
 .border-main-two-50 {
@@ -5005,6 +5241,46 @@ button:focus {
     border-color: var(--info-900) !important;
 }
 
+.border-purple-50 {
+    border-color: var(--purple-50) !important;
+}
+
+.border-purple-100 {
+    border-color: var(--purple-100) !important;
+}
+
+.border-purple-200 {
+    border-color: var(--purple-200) !important;
+}
+
+.border-purple-300 {
+    border-color: var(--purple-300) !important;
+}
+
+.border-purple-400 {
+    border-color: var(--purple-400) !important;
+}
+
+.border-purple-500 {
+    border-color: var(--purple-500) !important;
+}
+
+.border-purple-600 {
+    border-color: var(--purple-600) !important;
+}
+
+.border-purple-700 {
+    border-color: var(--purple-700) !important;
+}
+
+.border-purple-800 {
+    border-color: var(--purple-800) !important;
+}
+
+.border-purple-900 {
+    border-color: var(--purple-900) !important;
+}
+
 .hover-border-main-25:hover {
     border-color: var(--main-25) !important;
 }
@@ -5047,6 +5323,10 @@ button:focus {
 
 .hover-border-main-900:hover {
     border-color: var(--main-900) !important;
+}
+
+.hover-border-main-two-25:hover {
+    border-color: var(--main-two-25) !important;
 }
 
 .hover-border-main-two-50:hover {
@@ -5381,6 +5661,50 @@ button:focus {
     border-color: var(--info-900) !important;
 }
 
+.hover-border-purple-50:hover {
+    border-color: var(--purple-50) !important;
+}
+
+.hover-border-purple-100:hover {
+    border-color: var(--purple-100) !important;
+}
+
+.hover-border-purple-200:hover {
+    border-color: var(--purple-200) !important;
+}
+
+.hover-border-purple-300:hover {
+    border-color: var(--purple-300) !important;
+}
+
+.hover-border-purple-400:hover {
+    border-color: var(--purple-400) !important;
+}
+
+.hover-border-purple-500:hover {
+    border-color: var(--purple-500) !important;
+}
+
+.hover-border-purple-600:hover {
+    border-color: var(--purple-600) !important;
+}
+
+.hover-border-purple-700:hover {
+    border-color: var(--purple-700) !important;
+}
+
+.hover-border-purple-800:hover {
+    border-color: var(--purple-800) !important;
+}
+
+.hover-border-purple-900:hover {
+    border-color: var(--purple-900) !important;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
 .bg-main-25 {
     background-color: var(--main-25) !important;
 }
@@ -5423,6 +5747,10 @@ button:focus {
 
 .bg-main-900 {
     background-color: var(--main-900) !important;
+}
+
+.bg-main-two-25 {
+    background-color: var(--main-two-25) !important;
 }
 
 .bg-main-two-50 {
@@ -5757,6 +6085,46 @@ button:focus {
     background-color: var(--info-900) !important;
 }
 
+.bg-purple-50 {
+    background-color: var(--purple-50) !important;
+}
+
+.bg-purple-100 {
+    background-color: var(--purple-100) !important;
+}
+
+.bg-purple-200 {
+    background-color: var(--purple-200) !important;
+}
+
+.bg-purple-300 {
+    background-color: var(--purple-300) !important;
+}
+
+.bg-purple-400 {
+    background-color: var(--purple-400) !important;
+}
+
+.bg-purple-500 {
+    background-color: var(--purple-500) !important;
+}
+
+.bg-purple-600 {
+    background-color: var(--purple-600) !important;
+}
+
+.bg-purple-700 {
+    background-color: var(--purple-700) !important;
+}
+
+.bg-purple-800 {
+    background-color: var(--purple-800) !important;
+}
+
+.bg-purple-900 {
+    background-color: var(--purple-900) !important;
+}
+
 .hover-bg-main-25:hover {
     background-color: var(--main-25) !important;
 }
@@ -5799,6 +6167,10 @@ button:focus {
 
 .hover-bg-main-900:hover {
     background-color: var(--main-900) !important;
+}
+
+.hover-bg-main-two-25:hover {
+    background-color: var(--main-two-25) !important;
 }
 
 .hover-bg-main-two-50:hover {
@@ -6133,6 +6505,54 @@ button:focus {
     background-color: var(--info-900) !important;
 }
 
+.hover-bg-purple-50:hover {
+    background-color: var(--purple-50) !important;
+}
+
+.hover-bg-purple-100:hover {
+    background-color: var(--purple-100) !important;
+}
+
+.hover-bg-purple-200:hover {
+    background-color: var(--purple-200) !important;
+}
+
+.hover-bg-purple-300:hover {
+    background-color: var(--purple-300) !important;
+}
+
+.hover-bg-purple-400:hover {
+    background-color: var(--purple-400) !important;
+}
+
+.hover-bg-purple-500:hover {
+    background-color: var(--purple-500) !important;
+}
+
+.hover-bg-purple-600:hover {
+    background-color: var(--purple-600) !important;
+}
+
+.hover-bg-purple-700:hover {
+    background-color: var(--purple-700) !important;
+}
+
+.hover-bg-purple-800:hover {
+    background-color: var(--purple-800) !important;
+}
+
+.hover-bg-purple-900:hover {
+    background-color: var(--purple-900) !important;
+}
+
+.bg-dark-yellow {
+    background-color: #F3B439;
+}
+
+.hover-bg-white:hover {
+    background-color: #fff !important;
+}
+
 /* Font Size Class Start */
 .text-inherit {
     font-size: inherit;
@@ -6262,6 +6682,10 @@ button:focus {
     font-size: 1.875rem !important;
 }
 
+.text-32 {
+    font-size: 2rem !important;
+}
+
 .text-36 {
     font-size: 2rem !important;
 }
@@ -6337,7 +6761,7 @@ button:focus {
 }
 
 .box-shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.04);
 }
 
 .box-shadow-lg, .nav-submenu {
@@ -6354,6 +6778,10 @@ button:focus {
 
 .box-shadow-inner {
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-main-two {
+    box-shadow: 0 6px 30px 0 hsl(var(--main-two)/0.5);
 }
 
 /* Box shadow End */
@@ -6440,6 +6868,10 @@ button:focus {
 
 .rounded-30 {
     border-radius: 1.875rem !important;
+}
+
+.rounded-32 {
+    border-radius: 2rem !important;
 }
 
 .rounded-36 {
@@ -6709,6 +7141,10 @@ button:focus {
     gap: var(--size-30) !important;
 }
 
+.gap-32 {
+    gap: var(--size-32) !important;
+}
+
 .gap-36 {
     gap: var(--size-36) !important;
 }
@@ -6777,6 +7213,50 @@ button:focus {
     gap: var(--size-160) !important;
 }
 
+/* Item Hover Css Start */
+.item-hover:hover .item-hover__text {
+    color: #fff !important;
+}
+
+/* Item Hover Css End */
+/* ======================= Mash Bg Css Start ============================== */
+.mash-bg-main {
+    position: relative;
+}
+
+.mash-bg-main::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-600);
+    border-radius: 50%;
+    filter: blur(400px);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -1;
+}
+
+.mash-bg-main-two {
+    position: relative;
+}
+
+.mash-bg-main-two::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-two-600);
+    border-radius: 50%;
+    filter: blur(400px);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+}
+
+/* ======================= Mash Bg Css End ============================== */
 /* ================================= preload Css Start =========================== */
 .preloader {
     background-color: hsl(var(--white));
@@ -6822,9 +7302,8 @@ button:focus {
 /* ================================= preload Css End ===========================  */
 /* ====================== Section Heading ==================== */
 .section-heading {
-    text-align: center;
-    margin-block-end: clamp(2rem, 0.174rem + 3.803vw, 3.5rem);
-    max-width: 630px;
+    margin-bottom: clamp(2rem, -0.13rem + 4.437vw, 3.75rem);
+    max-width: 640px;
     margin-inline-start: auto;
     margin-inline-end: auto;
 }
@@ -6862,10 +7341,10 @@ button:focus {
 
 .section-heading.style-flex {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     max-width: unset;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .section-heading.style-flex .section-heading__inner {
@@ -6873,7 +7352,8 @@ button:focus {
 }
 
 .section-heading.style-flex .section-heading__desc {
-    max-width: 410px;
+    max-width: 432px;
+    margin-left: 0;
 }
 
 @media (min-width: 1199px) {
@@ -6885,6 +7365,7 @@ button:focus {
 /* ============= Header Start Here ======================= */
 .header {
     transition: 0.2s linear;
+    border-bottom: 1px solid hsl(var(--main)/0.08);
 }
 
 @media screen and (max-width: 991px) {
@@ -6903,6 +7384,7 @@ button:focus {
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    background-color: hsl(var(--white)/0.9);
 }
 
 @media screen and (max-width: 991px) {
@@ -7013,11 +7495,11 @@ button:focus {
 
 .has-submenu > a::before {
     position: absolute;
-    content: "\f107";
+    content: "\e136";
+    font-family: "Phosphor";
     inset-inline-end: 0;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: hsl(var(--heading-color)/0.4);
     transition: 0.2s linear;
@@ -7072,6 +7554,7 @@ button:focus {
     display: block;
     padding: 8px 14px;
     border-radius: inherit;
+    font-size: 0.875rem;
 }
 
 .nav-submenu__link::before {
@@ -7084,9 +7567,22 @@ button:focus {
     gap: clamp(0.5rem, -2.498rem + 4vw, 1.5rem);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
     .header-select {
         margin-inline-start: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-select {
+        width: auto;
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .select-icon {
+        display: none !important;
     }
 }
 
@@ -7094,6 +7590,14 @@ button:focus {
     .info-action {
         width: 40px !important;
         height: 40px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .info-action {
+        width: 34px !important;
+        height: 34px !important;
+        font-size: 18px !important;
     }
 }
 /* ================================= Header Css End =========================== */
@@ -7121,7 +7625,7 @@ button:focus {
     inset-block-start: 8px;
     width: 28px;
     height: 28px;
-    background-color: var(--gray-200);
+    background-color: var(--neutral-30);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -7144,7 +7648,7 @@ button:focus {
 }
 
 .nav-menu--mobile .nav-menu__link {
-    border-bottom: 1px solid var(--neutral-200) !important;
+    border-bottom: 1px solid var(--neutral-40) !important;
     position: relative;
     padding: 12px 0;
     padding-inline-end: 16px;
@@ -7166,7 +7670,8 @@ button:focus {
 .nav-menu--mobile .nav-submenu__link {
     width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid var(--neutral-200) !important;
+    border-radius: 0;
+    border-bottom: 1px solid var(--neutral-40) !important;
 }
 
 .nav-menu--mobile .nav-submenu__item:hover {
@@ -7370,28 +7875,485 @@ button:focus {
 
 /* ===================== Scroll to Top End ================================= */
 /* ================================= Social Icon Css Start =========================== */
-.social-list {
-    display: inline-flex;
-    gap: 12px;
-    align-items: center;
-}
-
-.social-list__link {
-    width: 36px;
-    height: 36px;
-    border: 1px solid hsl(var(--white)/0.2);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: hsl(var(--white));
-}
-
-.social-list__link:hover {
-    background-color: hsl(var(--main));
-    border-color: hsl(var(--main));
-    color: hsl(var(--white));
-}
-
 /* ================================= Social Icon Css End ===========================  */
+/* ================= Slick Arrow & Dots css Start ================ */
+.slick-initialized.slick-slider .slick-track {
+    display: flex;
+}
+
+.slick-initialized.slick-slider .slick-slide {
+    cursor: grab;
+    height: auto;
+    margin: 0 10px;
+}
+
+.slick-initialized.slick-slider .slick-slide > div {
+    height: 100%;
+}
+
+/* Dots Css Start */
+.slick-dots {
+    text-align: center;
+    padding-block-start: 20px;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots li button {
+    border: none;
+    background-color: hsl(var(--black)/0.2);
+    color: hsl(var(--white));
+    margin: 0 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 1px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    transition: 0.3s linear;
+}
+
+.slick-dots li.slick-active button {
+    background-color: hsl(var(--main));
+    width: 25px;
+    border-radius: 5px;
+}
+
+/* Dots Css End */
+/* ================= Slick Arrow & Dots css Start ================ */
+/* ===================================== Banner Css Start =========================== */
+body {
+    position: relative;
+}
+
+body::before, body::after {
+    position: absolute;
+    content: "";
+    width: 216px;
+    height: 216px;
+    background-color: var(--main-600);
+    border-radius: 50%;
+    filter: blur(450px);
+    top: 264px;
+    left: 0;
+}
+
+body::after {
+    background-color: var(--main-two-600);
+    left: auto;
+    right: 0;
+    top: 0%;
+    width: 216px;
+    height: 216px;
+}
+
+.banner::before, .banner::after {
+    position: absolute;
+    content: "";
+    width: 216px;
+    height: 216px;
+    background-color: #FEC533;
+    border-radius: 50%;
+    filter: blur(450px);
+    top: 48px;
+    left: 50%;
+}
+
+@media screen and (max-width: 1199px) {
+    .banner-thumb {
+        max-width: 606px;
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-thumb {
+        max-width: 606px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .banner-thumb__img {
+        transform: translateX(126px);
+    }
+}
+
+.banner-box {
+    position: absolute;
+}
+
+@media screen and (max-width: 575px) {
+    .banner-box {
+        padding: 8px !important;
+    }
+}
+
+.banner-box.one {
+    inset-inline-start: 0;
+    inset-block-start: 50px;
+    animation: upDown 4s linear infinite;
+    animation-delay: 4.5s;
+}
+
+.banner-box.one.style-two {
+    z-index: 1;
+    inset-block-start: auto;
+    inset-block-end: 60px;
+    inset-inline-start: auto;
+    inset-inline-end: 24px;
+}
+
+@media (min-width: 1599px) {
+    .banner-box.one.style-two {
+        inset-inline-end: -142px;
+    }
+}
+
+.banner-box.two {
+    inset-inline-start: 0;
+    inset-block-end: 100px;
+    animation: upDown 5s linear infinite;
+    animation-delay: 3s;
+}
+
+@media (max-width: 1499px) {
+    .banner-box.one, .banner-box.two {
+        inset-inline-start: -24px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner-box.one, .banner-box.two {
+        inset-inline-start: 8px;
+    }
+}
+
+.banner-box.three {
+    inset-block-start: 50%;
+    animation: upDown 6s linear infinite;
+    animation-delay: 1.5s;
+    min-width: max-content;
+}
+
+@media (min-width: 1700px) {
+    .banner-box.three {
+        inset-inline-start: calc(100% + 14px);
+    }
+}
+
+@media (max-width: 1699px) {
+    .banner-box.three {
+        inset-inline-end: -126px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-box.three {
+        inset-inline-end: -24px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner-box.three {
+        inset-inline-end: 8px;
+    }
+}
+
+@media (max-width: 424px) {
+    .enrolled-students {
+        display: none;
+    }
+}
+
+@media (max-width: 424px) {
+    .banner-box__icon {
+        display: none;
+    }
+}
+
+.curve-arrow {
+    inset-block-start: 40%;
+    inset-inline-start: -36px;
+    animation: upDown 3.5s linear infinite;
+}
+
+.enrolled-students img:not(:first-child) {
+    margin-inline-start: -24px;
+}
+
+/* Shapes Css Start */
+.shape {
+    position: absolute;
+    z-index: -1;
+}
+
+.shape.one {
+    inset-inline-start: 9%;
+    inset-block-start: 14%;
+}
+
+.shape.two {
+    inset-block-end: 75px;
+    inset-inline-start: 70px;
+}
+
+.shape.three {
+    inset-block-end: 16px;
+    inset-inline-start: 50%;
+}
+
+.shape.four {
+    inset-inline-end: 8%;
+    inset-block-start: 13%;
+    animation-delay: 1s;
+}
+
+.shape.five {
+    inset-inline-end: 4%;
+    inset-block-start: 34%;
+}
+
+.shape.six {
+    inset-inline-end: 6%;
+    inset-block-end: 14%;
+}
+
+.shape.seven {
+    bottom: 0;
+    left: 26%;
+}
+
+.animation-rotation {
+    animation: roatation 8s linear infinite;
+}
+
+.animation-scalation {
+    animation: scalation 8s linear infinite;
+}
+
+.animation-walking {
+    animation: walking 10s linear infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes scalation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes roatation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes walking {
+    0% {
+        transform: translate(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(100px) rotate(180deg);
+    }
+
+    100% {
+        transform: translate(0px) rotate(360deg);
+    }
+}
+/* ===================================== Banner Css End =========================== */
+/* ============================== Features Section Css Start ============================== */
+.features-item {
+    padding: clamp(1.5rem, -1.498rem + 4vw, 2.5rem);
+}
+
+/* ============================== Features Section Css End ============================== */
+/* ===================== Course Item Css Start ============================ */
+.course-item:hover .course-item__img {
+    transform: scale(1.1);
+}
+
+.course-item__thumb {
+    overflow: hidden;
+    max-height: 306px;
+}
+
+.course-item__content {
+    padding: 32px 16px;
+}
+
+@media screen and (max-width: 991px) {
+    .course-item__content {
+        padding: 24px 8px;
+    }
+}
+
+.wishlist-btn:active {
+    transform: scale(1.2);
+}
+
+/* ===================== Course Item Css End ============================ */
+/* =========================== ABout Css Start ============================ */
+@media (min-width: 1600px) {
+    .about-thumbs {
+        position: absolute !important;
+        inset-inline-end: 54%;
+        width: 716px;
+        inset-block-start: 0;
+    }
+}
+
+.offer-message {
+    position: absolute;
+    inset-inline-start: -100px;
+    inset-block-end: 200px;
+}
+
+@media screen and (max-width: 1199px) {
+    .offer-message {
+        inset-inline-start: 24px;
+    }
+}
+
+.offer-message.style-two {
+    inset-inline-start: auto;
+    inset-inline-end: 24px;
+    z-index: 1;
+    inset-block-end: auto;
+    inset-block-start: 60px;
+}
+
+@media (min-width: 1599px) {
+    .offer-message.style-two {
+        inset-inline-end: -110px;
+    }
+}
+/* =========================== ABout Css End ============================ */
+/* ======================== Instructor Css Start ========================= */
+.social-infos {
+    position: absolute;
+    inset-block-end: calc(100% - 24px);
+    inset-inline-end: 24px;
+    background-color: var(--main-600);
+    padding: 8px;
+    border-radius: 50rem;
+    z-index: 1;
+}
+
+.social-infos__button:hover {
+    transform: scale(1.1);
+}
+
+.social-infos__button.active i::before {
+    content: "\e32a";
+}
+
+.social-infos .social-list {
+    display: none;
+}
+
+/* ======================== Instructor Css End ========================= */
+/* ============================== Choose Us Section Start ================================== */
+.animation-video {
+    position: relative;
+}
+
+@media (max-width: 464px) {
+    .animation-video {
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 464px) {
+    .animation-video {
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+    }
+}
+
+.choose-us__thumbs {
+    margin-block-end: 80px;
+    max-width: 640px;
+}
+
+@media (min-width: 464px) {
+    .choose-us__thumbs {
+        padding-inline-start: 110px;
+    }
+}
+
+@media (max-width: 464px) {
+    .choose-us__img {
+        width: 100%;
+    }
+}
+
+.play-button::before {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-animation: animate 2.3s ease-out infinite;
+    animation: animate 2.3s ease-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    30% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+    }
+
+    60% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0.9;
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+/* ============================== Choose Us Section End ================================== */
 /*# sourceMappingURL=main.css.map */

@@ -14,14 +14,8 @@
     color: hsl(var(--white)) !important;
     z-index: 1;
     line-height: 1;
-    text-transform: uppercase;
-    padding: 22px 30px;
-    @include md-screen {
-        padding: 17px 20px; 
-    }
-    @include sm-screen {
-        padding: 14px 20px; 
-    }
+    text-transform: capitalize;
+    padding: 17px 32px;
     &:hover, &:focus, &:focus-visible {
         box-shadow: none !important;
     }
@@ -45,8 +39,8 @@
         border-color: hsl(var(--main)) !important;
         color: hsl(var(--main)) !important;
         &:hover {
-            background-color: hsl(var(--main)/.15) !important;
-            border-color: hsl(var(--main)/.4) !important;
+            background-color: hsl(var(--main)/.25) !important;
+            border-color: hsl(var(--main)) !important;
         }
     }
 }
