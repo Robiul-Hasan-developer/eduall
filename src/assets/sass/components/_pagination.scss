@@ -24,7 +24,7 @@
             background-color: transparent ;
             font-weight: 600;
             padding: 0;
-            color: hsl(var(--heading-color));
+            color: var(--neutral-700);
             border: 1px solid hsl(var(--black)/.3); 
              
             @include md-screen {

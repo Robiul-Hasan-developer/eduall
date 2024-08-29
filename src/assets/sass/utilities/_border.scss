@@ -17,6 +17,16 @@
       }
     }
   }
+// hover border
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      .focus-border-#{$color}-#{$shade} {
+        &:focus {
+            border-color: var(--#{$color}-#{$shade}) !important;
+        }
+      }
+    }
+  }
 
 
 .border {

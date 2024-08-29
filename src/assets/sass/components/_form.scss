@@ -84,7 +84,7 @@
     inset-inline-end: 24px;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    color: hsl(var(--heading-color));
+    color: var(--neutral-700);
      
     &--left {
         inset-inline-start: 20px;
@@ -100,7 +100,7 @@ textarea+.input-icon {
 /* Label */
 .form-label {
     margin-block-end: 6px;
-    color: hsl(var(--heading-color));
+    color: var(--neutral-700);
     font-weight: 500;
 }
 
@@ -156,7 +156,7 @@ textarea+.input-icon {
     }
     option {
         background-color: hsl(var(--white));
-        color: hsl(var(--heading-color));
+        color: var(--neutral-700);
     }
 }
 /* Form Select End */
@@ -178,8 +178,8 @@ textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-aut
 }
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-    -webkit-text-fill-color: hsl(var(--heading-color)) !important;
-    caret-color: hsl(var(--heading-color));
+    -webkit-text-fill-color: var(--neutral-700) !important;
+    caret-color: var(--neutral-700);
 }
 /* Autofill Css End */
 
@@ -297,7 +297,7 @@ input[type=number]{
         padding-inline-start: 12px;
         cursor: pointer;
          
-        color: hsl(var(--heading-color)); 
+        color: var(--neutral-700); 
         font-family: var(--poppins-font)
     }
     label {

@@ -41,7 +41,7 @@ $colors: (
     "90": #888E9C,
     "100": #798090,
     "200": #6A7283,
-    "300": #B3B3B3,
+    "300": #5B6477,
     "400": #4F586D,
     "500": #404A60,
     "600": #343E56,
@@ -247,7 +247,7 @@ $font-sizes: (
   --black: 0 0% 0%;
   --light: 219 13% 39%;
   
-  --heading-color: var(--black);
+  --heading-color: var(--neutral-700);
   --body-color: var(--light);
   --body-bg: var(--gray);
   --border-color: 236 13% 77%;

@@ -42,7 +42,7 @@
 .toggle-mobileMenu {
     line-height: 1;
     font-size: 36px;
-    color: hsl(var(--heading-color));
+    color: var(--neutral-700);
 }
 
 /* Header Menu and Submenu Css Start */
@@ -62,7 +62,7 @@
         }
         &:hover {
             > a {
-                color: hsl(var(--heading-color));
+                color: var(--neutral-700);
                 @media (min-width: 992px) {
                     color: hsl(var(--main));
                 }
@@ -70,7 +70,7 @@
         }
     }
     &__link {
-        color: hsl(var(--heading-color));
+        color: var(--neutral-700);
         font-weight: 500;
         width: 100%;
         padding: 38px 0;
@@ -163,12 +163,12 @@
         }
         &:hover {
             a {
-                color: hsl(var(--heading-color));
+                color: var(--neutral-700);
             }
         }
     }
     &__link {
-        color: hsl(var(--heading-color));
+        color: var(--neutral-700);
         font-weight: 500;
         width: 100%;
         padding-inline-end: 16px;

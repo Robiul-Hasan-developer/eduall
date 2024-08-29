@@ -20,7 +20,7 @@
   
 .text {
   &-heading {
-      color: hsl(var(--heading-color)) !important;
+      color: var(--neutral-700) !important;
   }
   &-body {
       color: hsl(var(--body-color)) !important;
@@ -39,7 +39,7 @@
     }
     &-heading {
         &:hover {
-            color: hsl(var(--heading-color)) !important;
+            color: var(--neutral-700) !important;
         }
     }
     &-body {

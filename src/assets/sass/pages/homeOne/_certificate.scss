@@ -1,0 +1,12 @@
+/* ================================= Certificate Css Start ============================== */
+.certificate {
+    @media (min-width: 1199px) {
+        margin-top: 174px;
+    }
+    &__thumb {
+        position: absolute;
+        bottom: 0;
+        inset-inline-start: 58%;
+    }
+}
+/* ================================= Certificate Css End ============================== */

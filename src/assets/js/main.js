@@ -264,45 +264,68 @@
   });  
   // ========================= Brand Slider Js End ===================
 
-  
-  // ========================= Testimonial Four Slider Js Start ==============
-  // $('.testimonial-four-slider').slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   speed: 1500,
-  //   dots: true,
-  //   pauseOnHover: true,
-  //   arrows: false,
-  //   draggable: true,
-  //   speed: 900,
-  //   infinite: true,
-  //   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-  //   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         arrows: false,
-  //       }
-  //     }
-  //   ]
-  // });
-  // ========================= Testimonial Four Slider Js End ===================
-  
-  // ========================== Password Show Hide Js Start =====================
-  // $(".toggle-password").on('click', function() {
-  //   $(this).toggleClass(" la-eye-slash");
-  //   var input = $($(this).attr("id"));
-  //   if (input.attr("type") == "password") {
-  //   input.attr("type", "text");
-  //   } else {
-  //   input.attr("type", "password");
-  //   }
-  // });
-  // ========================== Password Show Hide Js End =====================
+   // =========================Testimonials Slider Js Start ===================
+   $('.testimonials__thumbs-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.testimonials__slider'
+  });
+
+  $('.testimonials__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.testimonials__thumbs-slider',
+    dots: false,
+    arrows: true,
+    focusOnSelect: true,
+    nextArrow: '#testimonials-next',
+    prevArrow: '#testimonials-prev',
+  });
+  // =========================Testimonials Slider Js End ===================
+
+   // ========================= Counter Up Js End ===================
+   const counterUp = window.counterUp.default;
+
+   const callback = (entries) => {
+     entries.forEach((entry) => {
+       const el = entry.target;
+       if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+         counterUp(el, {
+           duration: 2000,
+           delay: 16,
+         });
+         el.classList.add('is-visible');
+       }
+     });
+   };
+ 
+   const IO = new IntersectionObserver(callback, { threshold: 1 });
+ 
+   // Counter
+   const counter = document.querySelector('.counter');
+   if (counter) {
+     IO.observe(counter);
+   }
+ 
+   // Counter Two for each
+  //  const counterNumbers = document.querySelectorAll('.counter');
+  //  if (counterNumbers.length > 0) {
+  //    counterNumbers.forEach((counterNumber) => {
+  //      IO.observe(counterNumber);
+  //    });
+  //  }
+
+
+  // ========================= magnific Popup Js Start =====================
+  $('.play-button').magnificPopup({
+    type:'iframe'
+  });
+// ========================= magnific Popup Js End =====================
+   
+
+
 
   });
   // ==========================================

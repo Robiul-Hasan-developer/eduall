@@ -39,7 +39,7 @@ h5, .h5,
 h6, .h6 {
   margin: 0 0 16px 0;
   font-family: var(--heading-font);
-  color: hsl(var(--heading-color));
+  color: var(--neutral-700);
   line-height: 1.2;
   font-weight: 700;
 }

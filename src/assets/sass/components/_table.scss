@@ -13,7 +13,7 @@
         border-bottom: 0;
     }
     &.style-two {
-        color: hsl(var(--heading-color));
+        color: var(--neutral-700);
         thead tr, tbody tr {
             border-bottom: 1px solid hsl(var(--black)/.1);
         }

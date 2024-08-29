@@ -76,7 +76,7 @@
         &[aria-expanded="false"] {
             &::after {
                 content: "\E136";
-                color: hsl(var(--heading-color));
+                color: var(--neutral-700);
             }
         }
     }
