@@ -15,6 +15,14 @@
             padding: 24px 8px;
         }
     }
+    &__user {
+        position: absolute;
+        inset-block-end: calc(100% - 30px);
+        inset-inline-end: 24px;
+        background-color: var(--main-600);
+        border-radius: 50rem;
+        z-index: 1;
+    }
 }
 
 .wishlist-btn {

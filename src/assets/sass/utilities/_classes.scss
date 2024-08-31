@@ -9,6 +9,12 @@
     }
 }
 
+.grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
 /* Section Background */
 .section-bg {
     background-color: hsl(var(--section-bg)) !important;
@@ -19,6 +25,11 @@
     @media screen and (min-width: 425px) and (max-width: 575px) {
         width: 50%;
     }
+}
+
+
+.outline-0 {
+    outline: none !important;
 }
 
 /* Transition */

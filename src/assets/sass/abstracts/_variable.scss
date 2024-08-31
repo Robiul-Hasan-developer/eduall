@@ -28,6 +28,19 @@ $colors: (
     "800": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2)),
     "900": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3))
   ),
+  "main-three": (
+    "25": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) + (100% - var(--main-three-l)) * 0.94)),
+    "50": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) + (100% - var(--main-three-l)) * 0.9)),
+    "100": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) + (100% - var(--main-three-l)) * 0.8)),
+    "200": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) + (100% - var(--main-three-l)) * 0.7)),
+    "300": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) + (100% - var(--main-three-l)) * 0.6)),
+    "400": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) + (100% - var(--main-three-l)) * 0.5)),
+    "500": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) + (100% - var(--main-three-l)) * 0.4)),
+    "600": hsl(var(--main-three-h), var(--main-three-s), var(--main-three-l)), // main-three theme color
+    "700": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) - var(--main-three-l) * 0.1)),
+    "800": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) - var(--main-three-l) * 0.2)),
+    "900": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) - var(--main-three-l) * 0.3))
+  ),
   
   "neutral": (
     "10": #FFFFFF,
@@ -153,6 +166,7 @@ $colors: (
 
 // Space
 $spaces: (
+  "1": #{rem(1px)},
   "2": #{rem(2px)},
   "3": #{rem(3px)},
   "4": #{rem(4px)},
@@ -182,12 +196,14 @@ $spaces: (
   "50": #{rem(50px)},
   "52": #{rem(52px)},
   "56": #{rem(56px)},
+  "60": #{rem(60px)},
   "64": #{rem(64px)},
   "68": #{rem(68px)},
   "72": #{rem(72px)},
   "76": #{rem(76px)},
   "80": #{rem(80px)},
   "90": #{rem(90px)},
+  "96": #{rem(96px)},
   "110": #{rem(110px)},
   "120": #{rem(120px)},
   "144": #{rem(144px)},
@@ -241,6 +257,12 @@ $font-sizes: (
   --main-two-s: 89%;
   --main-two-l: 59%;
   --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+
+  /* template main Two color */
+  --main-three-h: 144;
+  --main-three-s: 56%;
+  --main-three-l: 42%;
+  --main-three: var(--main-three-h) var(--main-three-s) var(--main-three-l);
 
    /* White Color */
   --white: 0 0% 100%;

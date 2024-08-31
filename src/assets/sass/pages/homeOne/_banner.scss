@@ -53,6 +53,22 @@ body {
     }
 }
 
+.buttons-wrapper {
+    @include sm-screen {
+        gap: 8px !important;
+    }
+    .btn {
+        @include xsm-screen {
+            padding-left: 16px;
+            padding-right: 16px;
+            i {
+                display: none !important;
+            }
+        }
+       
+    }
+}
+
 .banner-box {
     position: absolute;
     @include msm-screen {

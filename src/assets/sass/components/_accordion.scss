@@ -1,24 +1,42 @@
 /* =========================== Accordion Css start ============================= */ 
 .common-accordion {
     .accordion-item {
-        border: 1px solid var(--border-color);
-        background-color: hsl(var(--white)) !important;
-        border-radius: 8px;
+        border: 1px solid var(--neutral-30);
+        border-radius: 16px;
         overflow: hidden;
         &:not(:last-child) {
             margin-block-end:20px;
         }
+        &:not(.accordion-button.collapsed) {
+            background-color: var(--main-600)  !important;
+            color: #fff !important;
+        }
     }
+
+    .accordion-button[aria-expanded="true"] {
+        color: #fff !important;
+    }
+    
+    .accordion-collapse.collapse.show {
+        color: #fff !important;
+    }
+
     .accordion-header {
         line-height: 1;
+        .accordion-button.collapsed {
+            background-color: var(--main-25) !important;
+        }
     }
     .accordion-body {
         padding: 20px 30px;
-        
         padding-block-start: 0;
         @include msm-screen {
-            padding: 12px 20px;
+            padding: 16px;
             padding-block-start: 0;
+        }
+        &__desc {
+            border-top: 1px dashed #fff;
+            padding-top: 12px;
         }
     }
     &:first-of-type .accordion-button.collapsed {
@@ -29,15 +47,14 @@
     }
     .accordion-button{
         color: var(--heading-color);
-         
-        padding: 20px 30px;
-        padding-inline-end: 46px; 
+        padding: 24px 32px;
+        padding-inline-end: 64px; 
         font-weight: 600;
         font-size: clampCal(16, 20);
         font-family: var(--heading-font);
         @include msm-screen {
-            padding: 12px 20px;
-            padding-inline-end: 36px;
+            padding: 16px;
+            padding-inline-end: 64px; 
         }
         &::after {
             background-image: none;
@@ -58,25 +75,33 @@
             &::after {
                 font-family: 'Phosphor';
                 font-weight: 900;
-                content: "\E13C";
+                content: "\E3D4";
                 color: hsl(var(--main));
                 display: inline-block;
                 position: absolute;
                 inset-block-start: 50%;
                 transform: translateY(-50%);
                 inset-inline-end: 30px;
-                height: unset;
-                 
+                height: 36px;
+                width: 36px;
+                background-color: var(--main-600);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                color: #fff;
                 text-align: center;
                 @include msm-screen {
                     inset-inline-end: 20px;
                 }
             }
         }
-        &[aria-expanded="false"] {
+        &[aria-expanded="true"] {
             &::after {
-                content: "\E136";
+                content: "\E32A";
                 color: var(--neutral-700);
+                background-color: #fff;
+                color: var(--main-600);
             }
         }
     }

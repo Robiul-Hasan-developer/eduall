@@ -68,41 +68,14 @@
         }
     }
 }
-.common-input {
-    &--withIcon {
-        padding-inline-end: 50px !important;
-    }
-    &--withLeftIcon {
-        padding-inline-start: 50px !important;
+
+.placeholder-white {
+    &::placeholder {
+        color: #fff;
     }
 }
+
 /* input End */
-
-/* input icon */
-.input-icon {
-    position: absolute;
-    inset-inline-end: 24px;
-    inset-block-start: 50%;
-    transform: translateY(-50%);
-    color: var(--neutral-700);
-     
-    &--left {
-        inset-inline-start: 20px;
-        inset-inline-end: auto;
-    }
-}
-textarea+.input-icon {
-    inset-block-start: 15px;
-    transform: translateY(0);
-}
-/* input icon */
-
-/* Label */
-.form-label {
-    margin-block-end: 6px;
-    color: var(--neutral-700);
-    font-weight: 500;
-}
 
 /* Form Select */  
 .select-has-icon {

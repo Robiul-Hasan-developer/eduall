@@ -31,4 +31,17 @@
         z-index: -1;
     }
 }
+
+.mash-reverse {
+    &.mash-bg-main {
+        &::before {
+            left: auto;
+            right: 0;
+        }
+        &::after {
+            right: auto;
+            left: 0;
+        }
+    }
+}
 /* ======================= Mash Bg Css End ============================== */

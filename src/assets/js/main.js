@@ -168,7 +168,7 @@
   $('.features-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     speed: 1500,
     dots: false,
@@ -285,6 +285,14 @@
   });
   // =========================Testimonials Slider Js End ===================
 
+  
+  // ========================= magnific Popup Js Start =====================
+  $('.play-button').magnificPopup({
+    type:'iframe'
+  });
+  // ========================= magnific Popup Js End =====================
+  
+
    // ========================= Counter Up Js End ===================
    const counterUp = window.counterUp.default;
 
@@ -317,14 +325,75 @@
   //    });
   //  }
 
+  // ========================= Brand Slider Js Start ==============
+  $('.category-item-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#category-next',
+    prevArrow: '#category-prev',
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Brand Slider Js End ===================
 
-  // ========================= magnific Popup Js Start =====================
-  $('.play-button').magnificPopup({
-    type:'iframe'
-  });
-// ========================= magnific Popup Js End =====================
-   
-
+  // ========================= Testimonials Slider Two Js Start ==============
+  $('.testimonials-two-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#testimonials-two-next',
+    prevArrow: '#testimonials-two-prev',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Testimonials Slider Two Js End ===================
 
 
   });

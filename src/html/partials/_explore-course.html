@@ -3,13 +3,12 @@
     <img src="assets/images/shapes/shape2.png" alt="" class="shape six animation-scalation">
 
     <div class="container">
-
         <div class="section-heading text-center style-flex gap-24">
             <div class="section-heading__inner text-start">
                 <h2 class="mb-0">Explore 4,000+ Free Online Courses For Students</h2>
             </div>
-            <div class="">
-                <p class="section-heading__desc text-start mt-0">Welcome to our diverse and dynamic course catalog. we're dedicated to providing you...</p>
+            <div class="section-heading__content">
+                <p class="section-heading__desc text-start mt-0 text-line-2">Welcome to our diverse and dynamic course catalog. we're dedicated to providing you...</p>
                 <a href="course-list-view.html" class="item-hover__text flex-align gap-8 text-main-600 mt-24 hover-text-decoration-underline transition-1" tabindex="0">
                     See All Course
                     <i class="ph ph-arrow-right"></i>
@@ -38,6 +37,12 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8" id="pills-webDesign-tab" data-bs-toggle="pill" data-bs-target="#pills-webDesign" type="button" role="tab" aria-controls="pills-webDesign" aria-selected="false">
+                        <i class="text-xl d-flex ph-bold ph-code"></i>
+                        web Design
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
                     <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8" id="pills-Academic-tab" data-bs-toggle="pill" data-bs-target="#pills-Academic" type="button" role="tab" aria-controls="pills-Academic" aria-selected="false">
                         <i class="text-xl d-flex ph-bold ph-graduation-cap"></i>
                         Academic
@@ -59,6 +64,9 @@
                 @@include('../partials/_tabs-course.html')
             </div>
             <div class="tab-pane fade" id="pills-programming" role="tabpanel" aria-labelledby="pills-programming-tab" tabindex="0">
+                @@include('../partials/_tabs-course.html')
+            </div>
+            <div class="tab-pane fade" id="pills-webDesign" role="tabpanel" aria-labelledby="pills-webDesign-tab" tabindex="0">
                 @@include('../partials/_tabs-course.html')
             </div>
             <div class="tab-pane fade" id="pills-weDesign" role="tabpanel" aria-labelledby="pills-weDesign-tab" tabindex="0">
