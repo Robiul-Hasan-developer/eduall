@@ -312,18 +312,18 @@
    const IO = new IntersectionObserver(callback, { threshold: 1 });
  
    // Counter
-   const counter = document.querySelector('.counter');
-   if (counter) {
-     IO.observe(counter);
-   }
+  //  const counter = document.querySelector('.counter');
+  //  if (counter) {
+  //    IO.observe(counter);
+  //  }
  
    // Counter Two for each
-  //  const counterNumbers = document.querySelectorAll('.counter');
-  //  if (counterNumbers.length > 0) {
-  //    counterNumbers.forEach((counterNumber) => {
-  //      IO.observe(counterNumber);
-  //    });
-  //  }
+   const counterNumbers = document.querySelectorAll('.counter');
+   if (counterNumbers.length > 0) {
+     counterNumbers.forEach((counterNumber) => {
+       IO.observe(counterNumber);
+     });
+   }
 
   // ========================= Brand Slider Js Start ==============
   $('.category-item-slider').slick({
@@ -394,7 +394,33 @@
     ]
   });  
   // ========================= Testimonials Slider Two Js End ===================
-
+  
+  // ========================= Background Image Js Start ===================
+    $(".background-img").css('background-image', function () {
+      var bg = 'url(' + $(this).data("background-image") + ')';
+      return bg;
+    });
+  // ========================= Background Image Js End ===================
+  
+  // ========================= Testimonials Slider Two Js Start ==============
+  $('.banner-three__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    fade: true,
+    nextArrow: '#banner-three-next',
+    prevArrow: '#banner-three-prev',
+  });  
+  // ========================= Testimonials Slider Two Js End ===================
 
   });
   // ==========================================

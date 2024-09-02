@@ -13,6 +13,17 @@
   }
 }
 
+.responsive-arrow {
+    @include xl-screen {
+        .slick-arrow {
+            width: 40px !important;
+            height: 40px !important;
+            background-color: hsl(var(--white)/.2) !important;
+            color: hsl(var(--white)) !important;
+        }
+    }
+}
+
 /* Dots Css Start */ 
 .slick-dots {
     text-align: center;

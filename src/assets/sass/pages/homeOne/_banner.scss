@@ -2,6 +2,7 @@
 
 body {
     position: relative;
+    z-index: 1;
     &::before, &::after {
         position: absolute;
         content: "";
@@ -12,6 +13,7 @@ body {
         filter: blur(450px);
         top: 264px;
         left: 0;
+        z-index: -1;
     }
     &::after {
         background-color: var(--main-two-600);
@@ -144,6 +146,11 @@ body {
 .enrolled-students {
     img:not(:first-child) {
         margin-inline-start: -24px;
+    }
+    &.style-two {
+        img:not(:first-child) {
+            margin-inline-start: -16px;
+        }
     }
 }
 
