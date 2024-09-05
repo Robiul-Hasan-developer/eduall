@@ -421,7 +421,88 @@
     prevArrow: '#banner-three-prev',
   });  
   // ========================= Testimonials Slider Two Js End ===================
+  
+  // ========================= Testimonials Slider Two Js Start ==============
+  $('.testimonials-three-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '0px',
+    nextArrow: '#testimonials-three-next',
+    prevArrow: '#testimonials-three-prev',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Testimonials Slider Two Js End ===================
 
+  
+  // ========================= Brand Slider Js Start ==============
+  $('.blog-two-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: false,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#blog-two-next',
+    prevArrow: '#blog-two-prev',
+    responsive: [
+      {
+        breakpoint: 1299,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Brand Slider Js End ===================
+
+  
   });
   // ==========================================
   //      End Document Ready function

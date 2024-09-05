@@ -2441,6 +2441,14 @@ button:focus {
     }
 }
 
+.mt--5 {
+    margin-block-end: -5px;
+}
+
+.me--5 {
+    margin-inline-end: -5px;
+}
+
 .mt-0 {
     margin-block-start: 0 !important;
 }
@@ -3734,6 +3742,11 @@ button:focus {
 
 .pb-160 {
     padding-block-end: var(--size-160) !important;
+}
+
+.px-60 {
+    padding-left: clamp(1.5rem, -1.239rem + 5.705vw, 3.75rem) !important;
+    padding-right: clamp(1.5rem, -1.239rem + 5.705vw, 3.75rem) !important;
 }
 
 .pt-0 {
@@ -8252,6 +8265,14 @@ button:focus {
     text-overflow: ellipsis;
 }
 
+.text-line-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .scroll-sm::-webkit-scrollbar {
     width: 6px;
 }
@@ -8506,23 +8527,23 @@ button:focus {
 /* ======================= Mash Bg Css End ============================== */
 /* ======================== Animation Css Start ==================================== */
 .animation-item:hover .animate__bounce {
-    animation: bounce 1s infinite;
+    animation: bounce 1s;
 }
 
 .animation-item:hover .animate__wobble {
-    animation: wobble 1s ease-in-out infinite;
+    animation: wobble 1s ease-in-out;
 }
 
 .animation-item:hover .animate__heartBeat {
-    animation: heartbeat 1s ease-in-out infinite;
+    animation: heartbeat 1s ease-in-out;
 }
 
 .animation-item:hover .animate__flipInY {
-    animation: flipInY 1s ease-in-out infinite;
+    animation: flipInY 1s ease-in-out;
 }
 
 .animation-item:hover .animate__swing {
-    animation: swing 1s ease-in-out infinite;
+    animation: swing 1s ease-in-out;
 }
 
 @keyframes bounce {
@@ -10064,4 +10085,74 @@ body::after {
     }
 }
 /* =========================== About Three Css End =============================== */
+/* =============================== Faculty Css Start ================================= */
+.check-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+}
+
+.text-up {
+    position: absolute;
+    inset-inline-end: 32px;
+    inset-block-end: calc(100% - 24px);
+}
+
+/* =============================== Faculty Css End ================================= */
+/* ===================================== Testimonials Section Three Css Start ================================= */
+.testimonials-three-item {
+    transition: 0.2s linear;
+}
+
+@media (min-width: 575px) {
+    .testimonials-three .slick-list {
+        padding: 72px 0 !important;
+    }
+
+    .testimonials-three .slick-slide {
+        margin: 0;
+        opacity: 0.6;
+    }
+
+    .testimonials-three .slick-slide.slick-current.slick-center {
+        opacity: 1;
+        transform: scaleX(1.36) scaleY(1.25);
+        transform-origin: center;
+    }
+
+    .testimonials-three .slick-slide.slick-current.slick-center .testimonials-three-item {
+        box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.14) !important;
+    }
+}
+/* ===================================== Testimonials Section Three Css End ================================= */
+/* ============================= Event Section Css Start =============================== */
+.event-item {
+    gap: clamp(1.5rem, -0.021rem + 3.17vw, 2.75rem);
+}
+
+@media (min-width: 1199px) {
+    .event-item {
+        padding-inline-start: clamp(1.5rem, -2.83rem + 5.333vw, 2.5rem) !important;
+        padding-inline-end: clamp(1.5rem, -2.83rem + 5.333vw, 2.5rem) !important;
+    }
+}
+
+.event-item h1, .event-item h2, .event-item h3, .event-item h4, .event-item h5, .event-item h6, .event-item span, .event-item a {
+    transition: 0.1s linear;
+}
+
+.event-item:hover h1, .event-item:hover h2, .event-item:hover h3, .event-item:hover h4, .event-item:hover h5, .event-item:hover h6, .event-item:hover span, .event-item:hover a {
+    color: #fff !important;
+}
+
+.event-item:hover .btn {
+    border-color: #fff !important;
+}
+
+.event-item:hover .btn:hover {
+    background-color: #fff !important;
+    color: var(--main-600) !important;
+}
+
+/* ============================= Event Section Css End =============================== */
 /*# sourceMappingURL=main.css.map */

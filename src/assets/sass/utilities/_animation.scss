@@ -2,20 +2,20 @@
 .animation-item {
     &:hover {
         .animate__bounce {
-            animation: bounce 1s infinite;
+            animation: bounce 1s;
         }
 
         .animate__wobble {
-            animation: wobble 1s ease-in-out infinite;
+            animation: wobble 1s ease-in-out;
         }
         .animate__heartBeat {
-            animation: heartbeat 1s ease-in-out infinite;
+            animation: heartbeat 1s ease-in-out;
         }   
         .animate__flipInY {
-            animation: flipInY 1s ease-in-out infinite;
+            animation: flipInY 1s ease-in-out;
         }
         .animate__swing {
-            animation: swing 1s ease-in-out infinite;
+            animation: swing 1s ease-in-out;
         }
     }
 }
