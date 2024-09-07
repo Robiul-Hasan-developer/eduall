@@ -7,10 +7,11 @@
         &:not(:last-child) {
             margin-block-end:20px;
         }
-        &:not(.accordion-button.collapsed) {
-            background-color: var(--main-600)  !important;
-            color: #fff !important;
-        }
+    }
+
+    .accordion-item:has(.accordion-collapse.collapse.show), .accordion-item:has(.accordion-collapse.collapsing) {
+        background-color: var(--main-600)  !important;
+        color: #fff !important;
     }
 
     .accordion-button[aria-expanded="true"] {
@@ -105,5 +106,55 @@
             }
         }
     }
+
+    /* Style Two Start */
+    &.style-two {
+        .accordion-header {
+            .accordion-button {
+                &.collapsed {
+                    background-color: hsl(var(--white)) !important;
+                }
+            }
+            [aria-expanded=false]::after {
+                background-color: transparent;
+                color: var(--main-600);
+                border: 1px solid var(--neutral-30);
+            }
+        }
+    }
+    /* Style Two Start */
+
+    /* Style Three Start */
+    &.style-three {
+        .accordion-item {
+            .accordion-button {
+                background-color: #fff !important;
+                &:not(.collapsed) {
+                    background-color: hsl(var(--main)) !important;
+                    border-radius: 16px !important;
+                }
+                &[aria-expanded=true]::after, &[aria-expanded=false]::after {
+                    width: unset;
+                    height: unset;
+                    background: transparent;
+                    color: var(--neutral-500);
+                    content: "\E136";
+                }
+                &[aria-expanded=true]::after {
+                    content: "\E13C";
+                    color: #fff;
+                }
+            }
+            .accordion-collapse.collapse.show {
+                color: var(--nuetral-500) !important;
+            }
+        }
+        .accordion-item:has(.accordion-collapse.collapse.show), .accordion-item:has(.accordion-collapse.collapsing) {
+            background-color: #fff !important;
+            color: var(--neutral-700) !important;
+        }
+    }
+    /* Style Three End */
+
 }
 /* ================================= Accordion Css End =========================== */

@@ -23,6 +23,23 @@
         border-radius: 50rem;
         z-index: 1;
     }
+
+    &.list-view {
+        @media (min-width: 575px) {
+            display: flex;
+            .course-item {
+                &__thumb {
+                    max-width: 386px;
+                }
+                &__content {
+                    padding: 28px 32px 28px 40px;
+                    @media (max-width: 768px) {
+                        padding: 24px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .wishlist-btn {

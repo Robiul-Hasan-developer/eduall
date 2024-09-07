@@ -5,8 +5,8 @@
     font-weight: 400;
     outline: none;
     width: 100%;
-    padding: 15px 24px;
-    background-color: transparent !important; 
+    padding: 12px 24px;
+    background-color: hsl(var(--white)) !important; 
     border: 1px solid var(--neutral-30);
     color: hsl(var(--black)); 
     line-height: 1;
@@ -210,23 +210,23 @@ input[type=number]{
     .form-check-input {
         transition: .2s linear;
         box-shadow: none;
-        background-color: transparent;
+        background-color: hsl(var(--white));
         box-shadow: none !important;
         border: 0;
         position: relative;
         border-radius: 3px;
         width: 18px;
         height: 18px;
-        border: 1px solid hsl(var(--black) / .4);   
+        border: 1px solid var(--neutral-40);   
         cursor: pointer;
         transition: .2s linear;
         margin-block-start: 0;
         &::before {
             position: absolute;
-            content: "\f00c";
-            font-family: "Font Awesome 5 Free";
+            content: "\E182";
+            font-family: "Phosphor";
             font-weight: 900;
-            color: hsl(var(--white)); 
+            color: var(--main-600); 
             font-size: 12px;
             inset-block-start: 50%;
             inset-inline-start: 50%;
@@ -252,8 +252,8 @@ input[type=number]{
             opacity: 0;
         }
         &:checked {
-            background-color: hsl(var(--main)) !important;
-            border-color: hsl(var(--main)) !important;
+            background-color: hsl(var(--white)) !important;
+            border-color: var(--neutral-40) !important;
             box-shadow: none;
             &[type=checkbox] {
                 background-image:none;
@@ -269,7 +269,6 @@ input[type=number]{
         width: calc(100% - 18px);
         padding-inline-start: 12px;
         cursor: pointer;
-         
         color: var(--neutral-700); 
         font-family: var(--poppins-font)
     }

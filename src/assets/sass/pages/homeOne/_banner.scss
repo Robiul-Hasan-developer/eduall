@@ -185,8 +185,17 @@ body {
         inset-block-end: 14%;
     }
     &.seven {
-        bottom: 0;
-        left: 26%;
+        inset-block-end: 0;
+        inset-inline-start: 26%;
+    }
+    &.eight {
+        inset-block-end: 10%;
+        inset-inline-end: 26%;
+    }
+    &.nine {
+        inset-inline-start: 3%;
+        inset-block-start: 24%;
+        animation-delay: 1s;
     }
 }
 

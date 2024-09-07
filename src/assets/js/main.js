@@ -502,6 +502,40 @@
   });  
   // ========================= Brand Slider Js End ===================
 
+
+  // ========================== Range Slider Js Start =====================
+   $(function() {
+    $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 1000,
+        values: [ 100, 1000 ],
+        slide: function( event, ui ) {
+            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
+  
+  // ========================== Course List filter bar btn start ================================
+  $('.list-bar-btn').on('click', function () {
+    $('.course-sidebar').addClass('active');
+    $('.side-overlay').addClass('show');
+  });
+
+  $('.course-sidebar-close, .side-overlay').on('click', function () {
+    $('.course-sidebar').removeClass('active');
+    $('.side-overlay').removeClass('show');
+  });
+  // ========================== Course List filter bar btn End ================================
+
+  // ========================== Tooltip Start ================================
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  // ========================== Tooltip Start End ================================
+
+  
   
   });
   // ==========================================
