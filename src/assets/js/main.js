@@ -520,12 +520,12 @@
   
   // ========================== Course List filter bar btn start ================================
   $('.list-bar-btn').on('click', function () {
-    $('.course-sidebar').addClass('active');
+    $('.sidebar').addClass('active');
     $('.side-overlay').addClass('show');
   });
 
-  $('.course-sidebar-close, .side-overlay').on('click', function () {
-    $('.course-sidebar').removeClass('active');
+  $('.sidebar-close, .side-overlay').on('click', function () {
+    $('.sidebar').removeClass('active');
     $('.side-overlay').removeClass('show');
   });
   // ========================== Course List filter bar btn End ================================
@@ -535,6 +535,21 @@
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   // ========================== Tooltip Start End ================================
 
+
+  // ================== Password Show Hide Js Start ==========
+  $(".toggle-password").on('click', function() {
+    $(this).toggleClass("active");
+    var input = $($(this).attr("id"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+      $(this).removeClass('ph-bold ph-eye-closed');
+      $(this).addClass('ph-bold ph-eye');
+    } else {
+      input.attr("type", "password");
+        $(this).addClass('ph-bold ph-eye-closed');
+    }
+  });
+  // ========================= Password Show Hide Js End ===========================
   
   
   });

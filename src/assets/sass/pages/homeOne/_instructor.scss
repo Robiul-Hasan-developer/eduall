@@ -1,4 +1,11 @@
 /* ======================== Instructor Css Start ========================= */
+.instructor-item {
+    .cover-img {
+        min-height: 344px;
+    }
+}
+
+
 .social-infos {
     position: absolute;
     inset-block-end: calc(100% - 24px);

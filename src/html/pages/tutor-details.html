@@ -1,0 +1,524 @@
+@@include('../partials/_template-top.html')
+
+    @@include('../partials/_header.html')
+
+    @@include('../partials/_breadcrumb.html', {
+        'breadcrumbTitle': 'Tutors Details',
+        'prevPageText': '',
+        'arrowTwoShowHide': 'd-none',
+        'prevPageLink': 'course.html',
+        'breadcrumbText': 'Tutors Details',
+    })
+
+    <!-- ============================== Tutor Details Section Start ============================== -->
+    <section class="tutor-details py-120">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="border border-neutral-30 rounded-12 bg-white p-8">
+                        <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 bg-main-25">
+                            <div class="p-16 border border-neutral-50 rounded-circle aspect-ratio-1 max-w-150 max-h-150 mx-auto">
+                                <div class="position-relative">
+                                    <img src="assets/images/thumbs/instructor-img1.png" alt="" class="rounded-circle bg-dark-yellow aspect-ratio-1 cover-img">
+                                    <span class="w-32 h-32 bg-success-600 rounded-circle border border-main-25 border-3 flex-center text-white position-absolute inset-block-end-0 inset-inline-end-0 me-4">
+                                        <i class="ph-bold ph-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="mb-16 text-center mt-40">Savannah Nguyen</h4>
+                            <div class="flex-center gap-10 flex-wrap my-20">
+                                <span class="text-neutral-500 text-md">ID: <span class="text-main-600 fw-medium">TS-950</span></span>
+                                <span class="w-4 h-4 bg-main-600 rounded-circle"></span>
+                                <span class="text-neutral-500 text-md">Gender: <span class="text-main-600 fw-medium">Male </span></span>
+                                <span class="w-4 h-4 bg-main-600 rounded-circle"></span>
+                                <div class="flex-align gap-4">
+                                    <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-md text-neutral-700">
+                                        4.8
+                                        <span class="text-neutral-100"> (114)</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <ul class="social-list flex-center gap-16 mt-28">
+                                <li class="social-list__item">
+                                    <a href="https://www.facebook.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"><i class="ph-bold ph-facebook-logo"></i></a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.twitter.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"> <i class="ph-bold ph-twitter-logo"></i></a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.linkedin.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"><i class="ph-bold ph-instagram-logo"></i></a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.pinterest.com" class="text-main-600 text-xl hover-text-white w-40 h-40 rounded-circle border border-main-600 hover-bg-main-600 flex-center"><i class="ph-bold ph-pinterest-logo"></i></a>
+                                </li>
+                            </ul>
+                            <span class="d-block border border-neutral-30 my-20 border-dashed"></span>
+                            <div class="d-flex flex-column gap-16">
+                                <div class="flex-align gap-16">
+                                    <span class="text-2xl text-main-600">
+                                        <i class="ph-bold ph-phone-call"></i>
+                                    </span>
+                                    <a href="tel:252555-0126" class="text-neutral-700 hover-text-main-600">(252) 555-0126</a>
+                                </div>
+                                <div class="flex-align gap-16">
+                                    <span class="text-2xl text-success-600">
+                                        <i class="ph-bold ph-envelope-simple"></i>
+                                    </span>
+                                    <a href="mailto:demo@gmail.com" class="text-neutral-700 hover-text-main-600">demo@gmail.com</a>
+                                </div>
+                                <div class="flex-align gap-16">
+                                    <span class="text-2xl text-warning-600">
+                                        <i class="ph-bold ph-map-pin-line"></i>
+                                    </span>
+                                    <span class="text-neutral-700">2715 Ash Dr. San Jose, South Dakota</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-neutral-30 rounded-12 bg-white p-8 mt-24">
+                        <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 bg-main-25">
+                            <h4 class="mb-16">Get In Touch</h4>
+                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                            <form action="#" class="d-flex flex-column gap-20">
+                                <div class="">
+                                    <label for="name" class="text-lg fw-semibold text-neutral-700 mb-8">Name</label>
+                                    <input type="text" class="common-input border-transparent rounded-pill focus-border-main-600" id="name" placeholder="Enter Your Name...">
+                                </div>
+                                <div class="">
+                                    <label for="Email" class="text-lg fw-semibold text-neutral-700 mb-8">Email</label>
+                                    <input type="email" class="common-input border-transparent rounded-pill focus-border-main-600" id="Email" placeholder="Enter Your Email...">
+                                </div>
+                                <div class="">
+                                    <label for="Phone" class="text-lg fw-semibold text-neutral-700 mb-8">Phone</label>
+                                    <input type="tel" class="common-input border-transparent rounded-pill focus-border-main-600" id="Phone" placeholder="Enter Your Number...">
+                                </div>
+                                <div class="">
+                                    <label for="Message" class="text-lg fw-semibold text-neutral-700 mb-8">Message</label>
+                                    <textarea class="common-input border-transparent rounded-24 focus-border-main-600" id="Message" placeholder="Enter Your Message..."></textarea>
+                                </div>
+                                <div class="">
+                                    <button type="submit" class="btn btn-main rounded-pill flex-center gap-8 mt-20">
+                                        Submit Review
+                                        <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+
+                    <ul class="nav nav-pills common-tab d-inline-flex gap-16 bg-white p-12 border border-neutral-30 rounded-pill" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8 active" id="pills-tutionInfo-tab" data-bs-toggle="pill" data-bs-target="#pills-tutionInfo" type="button" role="tab" aria-controls="pills-tutionInfo" aria-selected="true">
+                                <i class="text-xl text-main-600 d-flex ph-bold ph-user"></i>
+                                Tuition Info
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8" id="pills-qualification-tab" data-bs-toggle="pill" data-bs-target="#pills-qualification" type="button" role="tab" aria-controls="pills-qualification" aria-selected="false">
+                                <i class="text-xl text-main-600 d-flex ph-bold ph-graduation-cap"></i>
+                                Qualification
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8" id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews" aria-selected="false">
+                                <i class="text-xl text-main-600 d-flex ph-bold ph-star"></i>
+                                Reviews
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-tutionInfo" role="tabpanel" aria-labelledby="pills-tutionInfo-tab" tabindex="0">
+                             <!-- Tuition Info Start -->
+                             <div class="tutor-details__content">
+                                <div class="border border-neutral-30 rounded-12 bg-white p-8 mt-24">
+                                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 bg-main-25">
+                                        <h4 class="mb-16">Tuition Info</h4>
+                                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                                        <ul class="tution-info-list bg-white rounded-8">
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Expected Minimum Salary</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> <span class="text-main-600 fw-semibold ">$400 </span> per month </span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Expected Minimum Salary</span>
+                                                <span class="w-50-percent fw-semibold text-warning-600 text-md">Available</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Days Per Week</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> 4 Day/Week</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Preferred Tuition Style</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> Private Tuition, Online Tuition</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Tuitoring Experience</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> 6 Years</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Place of Learning</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> Home Visit</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Extra Facilities</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> Phone help</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Preferred Medium of Instruction</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> Bangla Medium, English Version</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Preferred Class</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> Class 10 (Bangla Medium), Class 4 (Bangla Medium), Class 4 (English Version), Class 5 (Bangla Medium), Class 5 (English Version), Class 6 (English Version), Class 6 (Bangla Medium), Class 7 (Bangla Medium), Class 8 (Bangla Medium), Class 9 (Bangla Medium), HSC-1st YEAR (Bangla Medium), SSC (Bangla Medium), HSC-2nd YEAR (Bangla Medium)</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Preferred Subjects</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> General Maths (Class 9), Higher Math (Class 10), Agricultural Education (Class 6), All (Class 7), Bangla (Class 7), Bangladesh & Global Studies (Class 7), Bangladesh And Global Studies (Class 10), BGS (SSC), Biology (Class 9), Chemistry (Class 9), English (Class 7), General Science (Class 7), Genaral Math (Class 10), Higher maths (Class 9), Higher Maths (HSC-2nd YEAR), History (SSC), Home economics (Class 8), ‎Home Science (Class 10), Home Economics (Class 9), ICT (Class 6), Maths (SSC), Others (Class 5), Mathematics (Class 9), Physics (Class 9), Science (Class 9), Islamic Studies (Class 8), Social science (Class 7)</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Preferred Time</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> Evening, After Magrib</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Preferred Area to Teach</span>
+                                                <span class="w-50-percent fw-normal text-neutral-500 text-md"> 2464 Royal Ln. Mesa, New Jersey 45463</span>
+                                            </li>
+                                            <li class="d-flex align-items-start px-32 py-16">
+                                                <span class="w-50-percent fw-semibold text-neutral-700">Student Reviews</span>
+                                                <div class="flex-align gap-8">
+                                                    <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tuition Info End -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-qualification" role="tabpanel" aria-labelledby="pills-qualification-tab" tabindex="0">
+                            <!-- Qualification Start -->
+                            <div class="tutor-details__content">
+                                <div class="border border-neutral-30 rounded-12 bg-white p-8 mt-24">
+                                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 bg-main-25">
+                                        <h4 class="mb-16">Educational Qualification</h4>
+                                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                                        <div class="overflow-x-auto">
+                                            <ul class="tution-info-list style-two bg-white rounded-8 border border-white border-2 rounded-12">
+                                                <li class="px-32 py-16">
+                                                    <span class="fw-semibold text-neutral-700">Exam Name</span>
+                                                    <span class="fw-semibold text-neutral-700">Year</span>
+                                                    <span class="fw-semibold text-neutral-700">Institute</span>
+                                                    <span class="fw-semibold text-neutral-700">Group/Subject</span>
+                                                    <span class="fw-semibold text-neutral-700">Result</span>
+                                                </li>
+                                                <li class="px-32 py-16">
+                                                    <span class="fw-normal text-neutral-700">SSC / O-level / Dakhil</span>
+                                                    <span class="fw-normal text-neutral-700">2015</span>
+                                                    <span class="fw-normal text-neutral-700">Birshreshtha Munshi Abdur Rouf public College</span>
+                                                    <span class="fw-normal text-neutral-700">Science</span>
+                                                    <span class="fw-normal text-main-600 text-md">5.00</span>
+                                                </li>
+                                                <li class="px-32 py-16">
+                                                    <span class="fw-normal text-neutral-700">HSC / A level / Alim</span>
+                                                    <span class="fw-normal text-neutral-700">2017</span>
+                                                    <span class="fw-normal text-neutral-700">Birshreshtha Noor Mohammad Public College</span>
+                                                    <span class="fw-normal text-neutral-700">Science</span>
+                                                    <span class="fw-normal text-main-600 text-md">5.00</span>
+                                                </li>
+                                                <li class="px-32 py-16">
+                                                    <span class="fw-normal text-neutral-700">Graduation / Bachelor / Diploma</span>
+                                                    <span class="fw-normal text-neutral-700">Graduation Complete</span>
+                                                    <span class="fw-normal text-neutral-700">Sher-e-Bangla Agricultural University</span>
+                                                    <span class="fw-normal text-neutral-700">null</span>
+                                                    <span class="fw-normal text-main-600 text-md">3.30 </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Qualification End -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab" tabindex="0">
+                            <!-- Reviews Start -->
+                            <div class="tutor-details__content">
+                                <div class="border border-neutral-30 rounded-12 bg-white p-8 mt-24">
+                                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32">
+                                        <h5 class="mb-0">Average Reviews</h5>
+                                        <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+                
+                                        <div class="d-flex flex-sm-row flex-column gap-36">
+                                            <div class="rounded-16 px-40 py-24 flex-center flex-column flex-shrink-0 text-center bg-main-600 text-white">
+                                                <h2 class="mb-8 text-white">4.8</h2>
+                                                <div class="flex-center gap-4">
+                                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star-half"></i></span>
+                                                </div>
+                                                <span class="mt-8 text-gray-500">26 Rating</span>
+                                            </div>
+                
+                                            <div class="flex-grow-1">
+                                                <div class="flex-align gap-20 mb-8">
+                                                    <div class="flex-align gap-8">
+                                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                                    </div>
+                                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 90%"></div>
+                                                    </div>
+                                                    <span class="text-gray-900 flex-shrink-0">90%</span>
+                                                </div>
+                                                <div class="flex-align gap-20 mb-8">
+                                                    <div class="flex-align gap-8">
+                                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                                    </div>
+                                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 75%"></div>
+                                                    </div>
+                                                    <span class="text-gray-900 flex-shrink-0">75%</span>
+                                                </div>
+                                                <div class="flex-align gap-20 mb-8">
+                                                    <div class="flex-align gap-8">
+                                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                                    </div>
+                                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 67%"></div>
+                                                    </div>
+                                                    <span class="text-gray-900 flex-shrink-0">67%</span>
+                                                </div>
+                                                <div class="flex-align gap-20 mb-8">
+                                                    <div class="flex-align gap-8">
+                                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                                    </div>
+                                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 44%"></div>
+                                                    </div>
+                                                    <span class="text-gray-900 flex-shrink-0">44%</span>
+                                                </div>
+                                                <div class="flex-align gap-20">
+                                                    <div class="flex-align gap-8">
+                                                        <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                        <span class="text-gray-900 flex-shrink-0">5</span>
+                                                    </div>
+                                                    <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-main-600 rounded-pill" style="width: 21%"></div>
+                                                    </div>
+                                                    <span class="text-gray-900 flex-shrink-0">21%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+                                        <div class="flex-between gap-16 flex-wrap mb-24">
+                                            <h6 class="mb-0">All Reviews</h6>
+                                            <div class="flex-align gap-16">
+                                                <div class="flex-align gap-8">
+                                                    <span class="text-neutral-500 flex-shrink-0">Sort By :</span>
+                                                    <select class="form-select ps-20 pe-28 py-8 fw-medium rounded-pill bg-main-25 border border-neutral-30 text-neutral-700">
+                                                        <option value="1">Newest</option>
+                                                        <option value="1">Trending</option>
+                                                        <option value="1">Popular</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <!-- Review Item -->
+                                        <div class="border border-neutral-30 rounded-12 bg-white p-32">
+                                            <div class="flex-align gap-8 mb-16">
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                                            </div>
+                                            <p class="text-neutral-700">"This course was fantastic! The instructor's explanations were clear and concise, making it easy to understand even the more complex topics."</p>
+                                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                                            <div class="flex-align gap-24">
+                                                <img src="assets/images/thumbs/reviewer-img1.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                                <div class="">
+                                                    <h6 class="text-xl mb-8 fw-medium">Mary Johnson</h6>
+                                                    <span class="text-neutral-700 text-sm">Project Manager</span>
+                                                </div>
+                                            </div>
+                                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                
+                                            <div class="flex-align flex-wrap gap-40">
+                                                <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                                    <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                                    <span class="like-button__text">178</span>
+                                                </button>
+                                                <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                                    <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                                    Reply
+                                                </a>
+                                            </div>
+                                            <div class="flex-align gap-20 mt-24">
+                                                <img src="assets/images/thumbs/reviewer-img2.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                                <input type="text" class="common-input rounded-pill bg-main-25 border-neutral-30 py-16" placeholder="Join the discussion...">
+                                            </div>
+                                        </div>
+                                        <!-- Review Item -->
+                
+                                        <!-- Review Item -->
+                                        <div class="border border-neutral-30 rounded-12 bg-white p-32 mt-24">
+                                            <div class="flex-align gap-8 mb-16">
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                                            </div>
+                                            <p class="text-neutral-700">"Great course for beginners and advanced learners alike. The projects were particularly helpful in applying what I learned. Highly recommend!"</p>
+                                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                                            <div class="flex-align gap-24">
+                                                <img src="assets/images/thumbs/reviewer-img2.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                                <div class="">
+                                                    <h6 class="text-xl mb-8 fw-medium">Alice Brown</h6>
+                                                    <span class="text-neutral-700 text-sm">Software Developer</span>
+                                                </div>
+                                            </div>
+                                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                
+                                            <div class="flex-align flex-wrap gap-40">
+                                                <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                                    <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                                    <span class="like-button__text">178</span>
+                                                </button>
+                                                <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                                    <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                                    Reply
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Review Item -->
+                
+                                        <!-- Review Item -->
+                                        <div class="border border-neutral-30 rounded-12 bg-white p-32 mt-24">
+                                            <div class="flex-align gap-8 mb-16">
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                                <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                                            </div>
+                                            <p class="text-neutral-700">"Dr. Smith is an amazing instructor. Her real-world experience and teaching style made this course one of the best I've ever taken."</p>
+                                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                                            <div class="flex-align gap-24">
+                                                <img src="assets/images/thumbs/reviewer-img3.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                                                <div class="">
+                                                    <h6 class="text-xl mb-8 fw-medium">David Wilson</h6>
+                                                    <span class="text-neutral-700 text-sm">Ethical Hacker</span>
+                                                </div>
+                                            </div>
+                                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                
+                                            <div class="flex-align flex-wrap gap-40">
+                                                <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                                    <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                                    <span class="like-button__text">178</span>
+                                                </button>
+                                                <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                                    <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                                    Reply
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Review Item -->
+                
+                                        <button type="button" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
+                                            See All Reviews
+                                            <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- Comment Form Start -->
+                                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                                        <form action="#" id="commentForm">
+                                            <h5 class="mb-0">Write a Review</h5>
+                                            <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+                                            <div class="mb-24">
+                                                <label for="name" class="text-neutral-700 text-lg fw-medium mb-12">Name </label>
+                                                <input type="text" class="common-input rounded-pill" id="name" placeholder="Enter Name...">
+                                            </div>
+                                            <div class="mb-24">
+                                                <label for="email" class="text-neutral-700 text-lg fw-medium mb-12">Email </label>
+                                                <input type="text" class="common-input rounded-pill" id="email" placeholder="Enter Email...">
+                                            </div>
+                                            <div class="mb-24">
+                                                <label for="starReview" class="text-neutral-700 text-lg fw-medium mb-12">Star Reviews </label>
+                                                
+                                                <div id="half-star-rating">
+                                                    <div class="rating-group">
+                                                        <input class="rating__input rating__input--none" checked="" name="rating2" id="rating2-0" value="0" type="radio">
+                                                        <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                                        <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                                        <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                                        <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                                        <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                                        <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked="">
+                                                        <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                                        <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                                        <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                                        <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                                        <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                                        <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                                    </div>
+                                                </div>
+                
+                                            </div>
+                                            <div class="mb-24">
+                                                <label for="desc" class="text-neutral-700 text-lg fw-medium mb-12">Your Question </label>
+                                                <textarea id="desc" class="common-input rounded-24" placeholder="Write you question..."></textarea>
+                                            </div>
+                                            <div class="mb-0">
+                                                <button type="submit" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
+                                                    Submit Review
+                                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Comment Form End -->
+                                </div>
+                            </div>
+                            <!-- Reviews End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== Tutor Details Section End ============================== -->
+    
+    @@include('../partials/_certificate.html')
+    
+    @@include('../partials/_footer.html')
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>

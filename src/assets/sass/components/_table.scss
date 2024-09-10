@@ -1,12 +1,6 @@
 /* ======================= Common Table Css Start ======================= */
-.table-card {
-    border: 1px solid hsl(var(--white)/.2);
-    border-radius: 10px;
-    padding: clampCal(20, 36);
-}
 .table {
     color: hsl(var(--white));
-    
     margin-block-end: 0;
     min-width: max-content;
     &>:not(caption)>*>* {

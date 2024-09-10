@@ -973,6 +973,10 @@ input[type=number] {
     background-color: hsl(var(--main)) !important;
 }
 
+.common-tab .nav-item .nav-link.active i {
+    color: hsl(var(--white)) !important;
+}
+
 .common-tab .nav-item .nav-link:hover {
     color: hsl(var(--main));
 }
@@ -3899,6 +3903,20 @@ button:focus {
   padding-right: clamp(1.5rem, -1.239rem + 5.705vw, 3.75rem) !important;
 }
 
+.px-32 {
+  padding-left: clamp(1rem, -0.217rem + 2.536vw, 2rem) !important;
+  padding-right: clamp(1rem, -0.217rem + 2.536vw, 2rem) !important;
+}
+
+.py-40 {
+  padding-left: clamp(1.5rem, 0.283rem + 2.536vw, 2.5rem) !important;
+  padding-right: clamp(1.5rem, 0.283rem + 2.536vw, 2.5rem) !important;
+}
+
+.p-32 {
+  padding: clamp(1rem, -0.217rem + 2.536vw, 2rem) !important;
+}
+
 .pt-0 {
   padding-block-start: 0 !important;
 }
@@ -4114,6 +4132,10 @@ button:focus {
 
 .scale-hover-item:hover .scale-hover-item__img {
   transform: scale(1.2);
+}
+
+.aspect-ratio-1 {
+  aspect-ratio: 1;
 }
 
 /* ================================= Classes Css End =========================== */
@@ -4485,12 +4507,28 @@ button:focus {
   max-height: unset !important;
 }
 
+.max-h-416 {
+  max-height: 416px !important;
+}
+
+.max-h-150 {
+  max-height: 150px !important;
+}
+
 .max-w-unset {
   max-width: unset !important;
 }
 
 .max-w-340 {
   max-width: 340px;
+}
+
+.max-w-150 {
+  max-width: 150px;
+}
+
+.max-w-416 {
+  max-width: 416px;
 }
 
 .w-50-percent {
@@ -9866,6 +9904,10 @@ body::after {
 }
 /* =========================== ABout Css End ============================ */
 /* ======================== Instructor Css Start ========================= */
+.instructor-item .cover-img {
+  min-height: 344px;
+}
+
 .social-infos {
   position: absolute;
   inset-block-end: calc(100% - 24px);
@@ -10236,17 +10278,17 @@ body::after {
 /* ============================= Event Section Css End =============================== */
 /* ======================== Course List View Css Start ============================= */
 @media screen and (max-width: 1399px) {
-  .course-sidebar {
+  .sidebar {
     padding: 24px !important;
   }
 }
 @media screen and (max-width: 1199px) {
-  .course-sidebar {
+  .sidebar {
     padding: 16px !important;
   }
 }
 @media screen and (max-width: 991px) {
-  .course-sidebar {
+  .sidebar {
     position: fixed;
     left: 0;
     top: 0;
@@ -10262,7 +10304,7 @@ body::after {
     height: 100vh;
   }
 
-  .course-sidebar.active {
+  .sidebar.active {
     transform: translateX(0%);
   }
 }
@@ -10298,4 +10340,69 @@ body::after {
 }
 
 /* ======================== Course Details Css End ============================= */
+/* ============================== Tutor Details Css Start ============================== */
+@media (max-width: 480px) {
+  .tution-info-list li {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tution-info-list li .w-50-percent {
+    width: 100% !important;
+  }
+
+  .tution-info-list li span:nth-child(2) {
+    font-size: 14px !important;
+  }
+}
+.tution-info-list li:nth-child(even) {
+  background-color: var(--main-25);
+}
+
+.tution-info-list.style-two {
+  min-width: 700px;
+}
+
+.tution-info-list.style-two li {
+  display: flex;
+  flex-direction: row !important;
+  gap: 16px !important;
+}
+
+.tution-info-list.style-two li span {
+  width: 20%;
+}
+
+/* ============================== Tutor Details Css End ============================== */
+/* ============================ Account Css Start ========================= */
+@media (min-width: 992px) {
+  .account-img {
+    position: relative;
+    left: 13%;
+  }
+}
+/* ============================ Account Css End ========================= */
+/* ========================= Contact Page Css Start =========================== */
+.contact-item * {
+  transition: 0.2s linear;
+}
+
+.contact-item:hover * {
+  color: hsl(var(--white)) !important;
+}
+
+.contact-item:hover .contact-item__icon {
+  color: var(--main-600) !important;
+  background-color: hsl(var(--white)) !important;
+}
+
+.contact-item:hover .contact-item__icon i {
+  color: var(--main-600) !important;
+}
+
+.contact-item .contact-item__icon {
+  transition: 0s !important;
+}
+
+/* ========================= Contact Page Css End =========================== */
 /*# sourceMappingURL=main.css.map */
