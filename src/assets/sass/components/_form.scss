@@ -192,8 +192,10 @@ input[type=number]{
     &.common-radio {
         .form-check-input {
             border-radius: 50%;
+            border-color: var(--neutral-200);
             &:checked { 
                 background-color: transparent !important;
+                border-color: var(--main-600) !important;
                 &::after {
                     visibility: visible;
                     opacity: 1;
@@ -284,40 +286,4 @@ input[type=number]{
     }
 }
 /* Custom Checkbox & Radio Css End */
-
-
-/* Switch Css Start */
-.form-switch {
-    padding-inline-start: 0;
-    .form-check-input {
-      box-shadow: none !important;  
-      margin: 0;
-      position: relative;
-      background-color: var(--gray-100);
-      border: 0;
-      background-image: none !important;
-      width: 30px;
-      height: 18px;
-      &:checked {
-        background-color: var(--primary-600);
-        &::before {
-          left: calc(100% - 15px);
-          transition: .2s linear;
-        }
-      }    
-      &::before {
-        position: absolute;
-        content: "";
-        width: 12px;
-        height: 12px;
-        background: #fff;
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 3px;
-        transition: .2s linear;
-      }
-    }
-  }
-  /* Switch Css End */
 /* ================================= Form Css End =========================== */

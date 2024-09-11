@@ -313,7 +313,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="breadcrumb__wrapper">
-                    <h1 class="breadcrumb__title display-4 fw-semibold text-center"> Sign In</h1>
+                    <h1 class="breadcrumb__title display-4 fw-semibold text-center"> Apply for Admission</h1>
                     <ul class="breadcrumb__list d-flex align-items-center justify-content-center gap-4">
                         <li class="breadcrumb__item">
                             <a href="index.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium"> 
@@ -329,7 +329,7 @@
                             <i class="text-neutral-500 d-flex ph-bold ph-caret-right"></i>
                         </li>
                         <li class="breadcrumb__item"> 
-                            <span class="text-main-two-600"> Sign In </span> 
+                            <span class="text-main-two-600"> Apply for Admission </span> 
                         </li>
                     </ul>
                 </div>
@@ -339,54 +339,226 @@
 </section>
 <!-- ==================== Breadcrumb End Here ==================== -->
 
-    <!-- ============================== Tutor Details Section Start ============================== -->
-    <div class="account py-120 position-relative">
+    <!-- ================================ Apply For Admission Section Start =================================== -->
+    <section class="py-120">
         <div class="container">
-            <div class="row gy-4 align-items-center">
-                <div class="col-lg-6">
-                    <div class="bg-main-25 border border-neutral-30 rounded-8 p-32">
-                        <div class="mb-40">
-                            <h3 class="mb-16 text-neutral-500">Welcome Back!</h3>
-                            <p class="text-neutral-500">Sign in to your account and join us</p>
-                        </div>
-                        <form action="#">
-                            <div class="mb-24">
-                                <label for="email" class="fw-medium text-lg text-neutral-500 mb-16">Enter Your Email ID</label>
-                                <input type="email" class="common-input rounded-pill" id="email" placeholder="Enter Your Email...">
+            <div class="border border-neutral-30 rounded-12 bg-main-25 p-24 bg-main-25">
+                <form action="#">
+                    <h3 class="mb-24">Apply for Admission</h3> 
+    
+                    <!-- Personal information Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-white p-24">
+                        <h5 class="mb-0">Personal information</h5>
+                        <span class="d-block border border-main-25 my-24 border-dashed"></span>
+                        <div class="row gy-4">
+                            <div class="col-sm-6">
+                                <label for="name" class="text-neutral-700 text-lg fw-medium mb-12">Student Name <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="name" placeholder="Enter Your Name...">
                             </div>
-                            <div class="mb-16">
-                                <label for="password" class="fw-medium text-lg text-neutral-500 mb-16">Enter Your Password</label>
-                                <div class="position-relative">
-                                    <input type="password" class="common-input rounded-pill" id="password" placeholder="Enter Your Password...">
-                                    <span class="toggle-password position-absolute top-50 inset-inline-end-0 me-16 translate-middle-y ph-bold ph-eye-closed" id="#password"></span>
+                            <div class="col-sm-6">
+                                <label for="email" class="text-neutral-700 text-lg fw-medium mb-12">Email <span class="text-danger-600">*</span> </label>
+                                <input type="email" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="email" placeholder="Enter Your Email...">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="Phone" class="text-neutral-700 text-lg fw-medium mb-12">Phone <span class="text-danger-600">*</span> </label>
+                                <input type="tel" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="Phone" placeholder="Enter Your Number...">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="Gender" class="text-neutral-700 text-lg fw-medium mb-12">Gender <span class="text-danger-600">*</span> </label>
+                                <div class="flex-align gap-24">
+                                    <div class="form-check common-check common-radio mb-0">
+                                        <input class="form-check-input" type="radio" name="gender" id="Male">
+                                        <label class="form-check-label fw-normal flex-grow-1" for="Male">Male</label>
+                                    </div>
+                                    <div class="form-check common-check common-radio mb-0">
+                                        <input class="form-check-input" type="radio" name="gender" id="Female">
+                                        <label class="form-check-label fw-normal flex-grow-1" for="Female">Female</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mb-16 text-end">
-                                <a href="javascript:void(0)" class="text-warning-600 hover-text-decoration-underline">Forget password</a>
+                            <div class="col-sm-6">
+                                <label for="dateBirth" class="text-neutral-700 text-lg fw-medium mb-12">Date of birth <span class="text-danger-600">*</span> </label>
+                                <input type="date" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="dateBirth" placeholder="Enter Your Email...">
                             </div>
-                            <div class="mb-16">
-                                <p class="text-neutral-500">Don't have an account? 
-                                    <a href="sign-up.html" class="fw-semibold text-main-600 hover-text-decoration-underline">Sign Up</a> 
-                                </p>
+                            <div class="col-sm-6">
+                                <label for="selectCity" class="text-neutral-700 text-lg fw-medium mb-12">Select city <span class="text-danger-600">*</span> </label>
+                                <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectCity">
+                                    <option value="">Dhaka</option>
+                                    <option value="">Chandpur</option>
+                                    <option value="">Rajshahi</option>
+                                    <option value="">Rangpur</option>
+                                    <option value="">Sylhet</option>
+                                    <option value="">Khulna</option>
+                                </select>
                             </div>
-                            <div class="mt-40">
-                                <button type="submit" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
-                                    Sign In
+                            <div class="col-sm-6">
+                                <label for="selectState" class="text-neutral-700 text-lg fw-medium mb-12">Select city <span class="text-danger-600">*</span> </label>
+                                <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectState">
+                                    <option value="">Uttara</option>
+                                    <option value="">Mirpur</option>
+                                    <option value="">Baddha</option>
+                                    <option value="">Gulshan</option>
+                                    <option value="">Banani</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="selectCountry" class="text-neutral-700 text-lg fw-medium mb-12">Select Country <span class="text-danger-600">*</span> </label>
+                                <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectCountry">
+                                    <option value="">Bangladesh</option>
+                                    <option value="">Pakistan</option>
+                                    <option value="">Bhutan</option>
+                                    <option value="">Nepal</option>
+                                    <option value="">Australia</option>
+                                    <option value="">England</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="zipCode" class="text-neutral-700 text-lg fw-medium mb-12">Zip code <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="zipCode" placeholder="Enter code...">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="address" class="text-neutral-700 text-lg fw-medium mb-12">Your address </label>
+                                <textarea class="common-input bg-main-25 rounded-24 border-transparent focus-border-main-600" id="address" placeholder="Enter Your address..."></textarea>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Personal information End -->
+    
+                    <!-- Parent detail Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-white p-24 mt-24">
+                        <h5 class="mb-0"> Parent details </h5>
+                        <span class="d-block border border-main-25 my-24 border-dashed"></span>
+                        <div class="row gy-4">
+                            <div class="col-sm-12">
+                                <label for="Gender" class="text-neutral-700 text-lg fw-medium mb-12">Gender <span class="text-danger-600">*</span> </label>
+                                <div class="flex-align gap-24">
+                                    <div class="form-check common-check common-radio mb-0">
+                                        <input class="form-check-input" type="radio" name="gender" id="Mr">
+                                        <label class="form-check-label fw-normal flex-grow-1" for="Mr">Mr.</label>
+                                    </div>
+                                    <div class="form-check common-check common-radio mb-0">
+                                        <input class="form-check-input" type="radio" name="gender" id="Mrs">
+                                        <label class="form-check-label fw-normal flex-grow-1" for="Mrs">Mrs.</label>
+                                    </div>
+                                    <div class="form-check common-check common-radio mb-0">
+                                        <input class="form-check-input" type="radio" name="gender" id="Ms">
+                                        <label class="form-check-label fw-normal flex-grow-1" for="Ms">Ms.</label>
+                                    </div>
+                                    <div class="form-check common-check common-radio mb-0">
+                                        <input class="form-check-input" type="radio" name="gender" id="Dr">
+                                        <label class="form-check-label fw-normal flex-grow-1" for="Dr">Dr.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="fullname" class="text-neutral-700 text-lg fw-medium mb-12">Full Name <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="fullname" placeholder="Enter Your Name...">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="relation" class="text-neutral-700 text-lg fw-medium mb-12">Relation with applicant <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="relation" placeholder="Enter relation">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="PhoneParent" class="text-neutral-700 text-lg fw-medium mb-12">Phone <span class="text-danger-600">*</span> </label>
+                                <input type="tel" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="PhoneParent" placeholder="Enter Your Number...">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email" class="text-neutral-700 text-lg fw-medium mb-12">Email <span class="text-danger-600">*</span> </label>
+                                <input type="email" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="email" placeholder="Enter Your Email...">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="jobTitle" class="text-neutral-700 text-lg fw-medium mb-12">Job Title <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="jobTitle" placeholder="Job title">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="addressParent" class="text-neutral-700 text-lg fw-medium mb-12">Home address</label>
+                                <textarea class="common-input bg-main-25 rounded-24 border-transparent focus-border-main-600" id="addressParent" placeholder="Enter Your address..."></textarea>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Parent detail End -->
+
+    
+                    <!-- Education Start -->
+                    <div class="border border-neutral-30 rounded-12 bg-white p-24 mt-24">
+                        <h5 class="mb-0">Education</h5>
+                        <span class="d-block border border-main-25 my-24 border-dashed"></span>
+                        <div class="row gy-4">
+                            <div class="col-sm-6">
+                                <label for="ssName" class="text-neutral-700 text-lg fw-medium mb-12">School or college name <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="ssName" placeholder="Enter Name...">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="passYear" class="text-neutral-700 text-lg fw-medium mb-12">Year of passing <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="passYear" placeholder="Enter year">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="boardUniversity" class="text-neutral-700 text-lg fw-medium mb-12">Board of university <span class="text-danger-600">*</span> </label>
+                                <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="boardUniversity" placeholder="Enter board...">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="classGrad" class="text-neutral-700 text-lg fw-medium mb-12">Class grad <span class="text-danger-600">*</span> </label>
+                                <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="classGrad">
+                                    <option value="">1st Class</option>
+                                    <option value="">2nd Class</option>
+                                    <option value="">3rd Class</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="address" class="text-neutral-700 text-lg fw-medium mb-12">School or college address</label>
+                                <textarea class="common-input bg-main-25 rounded-24 border-transparent focus-border-main-600" id="address" placeholder="Enter address..."></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-main rounded-pill flex-center gap-8 mt-16">
+                                    Submit Now
                                     <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
                                 </button>
                             </div>
-                        </form>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6 d-lg-block d-none">
-                    <div class="account-img">
-                        <img src="assets/images/thumbs/account-img.png" alt="">
+                    <!-- Education End -->
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ================================ Apply For Admission Section End =================================== -->
+    
+    <!-- ================================= Certificate Section Start ================================= -->
+<div class="certificate">
+    <div class="container container--lg">
+        <div class="certificate-box px-16 bg-main-600 rounded-16">
+            <div class="container">
+                <div class="position-relative py-80">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6">
+                            <div class="certificate__content">
+                                <div class="flex-align gap-8 mb-16">
+                                    <span class="w-8 h-8 bg-white rounded-circle"></span>
+                                    <h5 class="text-white mb-0">Get Certificate</h5>
+                                </div>
+                                <h2 class="text-white mb-40 fw-medium">Get Quality Skills Certificate From the EduAll</h2>
+                                <a href="" class="btn btn-white rounded-pill flex-align d-inline-flex gap-8 hover-bg-main-800">
+                                    Get Started Now
+                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 d-xl-block d-none">
+                            <div class="certificate__thumb">    
+                                <img src="assets/images/thumbs/certificate-img.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ============================== Tutor Details Section End ============================== -->
+ </div>
+<!-- ================================= Certificate Section End ================================= -->
     
     
 <!-- ==================== Footer Start Here ==================== -->

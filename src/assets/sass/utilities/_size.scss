@@ -28,8 +28,16 @@
 .max-w-340 {
   max-width: 340px;
 }
+.max-w-274 {
+  @media (min-width: 576x) {
+    max-width: 274px;
+  }
+}
 .max-w-150 {
   max-width: 150px;
+}
+.max-w-636 {
+  max-width: 636px;
 }
 .max-w-416 {
   max-width: 416px;
