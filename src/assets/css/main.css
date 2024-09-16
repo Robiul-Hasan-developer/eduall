@@ -8849,39 +8849,11 @@ button:focus {
   inset-inline-end: 0;
   inset-block-start: 0;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.preloader .loader {
-  background: hsl(var(--main));
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  inset-inline-start: 50%;
-  margin-inline-start: -23px;
-  margin-block-start: -14px;
-  position: absolute;
-  inset-block-start: 50%;
-  animation: load 0.75s linear infinite;
-}
-
-.preloader .loader:after {
-  content: "";
-  position: absolute;
-  width: 69px;
-  height: 69px;
-  inset-block-start: 3px;
-  inset-inline-end: 0;
-  inset-inline-start: 0;
-  margin: auto;
-  background: hsl(var(--white));
-  border-radius: 50%;
-}
-
-@keyframes load {
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* ================================= preload Css End ===========================  */
 /* ====================== Section Heading ==================== */
 .section-heading {
@@ -9455,6 +9427,10 @@ button:focus {
 }
 
 .slick-initialized.slick-slider .slick-slide > div {
+  height: 100%;
+}
+
+.slick-initialized.slick-slider .slick-slide > div > div {
   height: 100%;
 }
 
