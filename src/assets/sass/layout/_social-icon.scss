@@ -1,23 +1,34 @@
 
 /* ================================= Social Icon Css Start =========================== */
-// .social-list {
-//     display: inline-flex;
-//     gap: 12px;
-//     align-items: center;
-//     &__link {
-//         width: 36px;
-//         height: 36px;
-//         border: 1px solid hsl(var(--white)/.2);
-//         border-radius: 50%;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         color: hsl(var(--white));
-//         &:hover {
-//             background-color: hsl(var(--main));
-//             border-color: hsl(var(--main));
-//             color: hsl(var(--white));
-//         }
-//     }
-// }
+.social-hover {
+    &:hover {
+        .social-list {
+            &__item {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    .social-list {
+        &__item {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(24px);
+            transition: .2s linear;
+            &:nth-child(1) {
+                transition-delay: 0s;
+            }
+            &:nth-child(2) {
+                transition-delay: 0.1s;
+            }
+            &:nth-child(3) {
+                transition-delay: 0.2s;
+            }
+            &:nth-child(4) {
+                transition-delay: 0.3s;
+            }
+        }
+    }
+}
 /* ================================= Social Icon Css End ===========================  */

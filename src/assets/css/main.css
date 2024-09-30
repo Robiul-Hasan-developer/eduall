@@ -1092,6 +1092,10 @@ input[type=number] {
     background-color: #fff !important;
 }
 
+.common-accordion.style-three .accordion-item .accordion-button.bg-main-25 {
+    background-color: var(--main-25) !important;
+}
+
 .common-accordion.style-three .accordion-item .accordion-button:not(.collapsed) {
     background-color: hsl(var(--main)) !important;
     border-radius: 16px !important;
@@ -1234,6 +1238,35 @@ input[type=number] {
   color: red;
 }
 
+/* ================================ Playr Css Start ================================ */
+.plyr__poster, .plyr__video-wrapper {
+  background-color: transparent !important;
+}
+
+.plyr--video {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.player {
+  width: 100%;
+}
+
+.plyr__poster {
+  background-size: cover;
+}
+
+@media screen and (max-width: 575px) {
+  .plyr__controls__item.plyr__control[data-plyr=pip] {
+    display: none;
+  }
+}
+@media screen and (max-width: 424px) {
+  .plyr__controls__item.plyr__control[data-plyr=fullscreen] {
+    display: none;
+  }
+}
+/* ================================ Playr Css End ================================ */
 /* ================================= Typography Css Start =========================== */
 * {
   margin: 0;
@@ -2589,6 +2622,20 @@ button:focus {
   margin-inline-start: 0 !important;
 }
 
+.ms--150px {
+  margin-inline-start: 24px;
+}
+
+@media (min-width: 991px) {
+  .ms--150px {
+    margin-inline-start: -150px !important;
+  }
+}
+@media (min-width: 991px) {
+  .mt--200px {
+    margin-top: -200px !important;
+  }
+}
 .me-0 {
   margin-inline-end: 0 !important;
 }
@@ -4007,6 +4054,13 @@ button:focus {
   gap: 24px;
 }
 
+.grid-cols-4 {
+  gap: 24px;
+  display: grid;
+  min-width: min-content;
+  grid-template-columns: 1fr 1fr 1fr 220px;
+}
+
 /* Section Background */
 .section-bg {
   background-color: hsl(var(--section-bg)) !important;
@@ -4018,6 +4072,10 @@ button:focus {
     width: 50%;
   }
 }
+.item-active-effect:active {
+  transform: scale(0.9);
+}
+
 .list-dotted {
   list-style: disc;
   padding-inline-start: 2rem;
@@ -4052,6 +4110,15 @@ button:focus {
   inset-inline-end: 0;
 }
 
+.inset-inline-end--64 {
+  inset-inline-end: -64px !important;
+}
+
+@media (max-width: 991px) {
+  .inset-inline-end--64 {
+    inset-inline-end: 24px !important;
+  }
+}
 .inset-block-start-0 {
   inset-block-start: 0;
 }
@@ -4496,6 +4563,10 @@ button:focus {
     max-width: 274px;
   }
 }
+.max-w-176 {
+  max-width: 176px;
+}
+
 .max-w-150 {
   max-width: 150px;
 }
@@ -8338,6 +8409,10 @@ button:focus {
   border-radius: 10rem !important;
 }
 
+.rounded-top-start-8px {
+  border-top-left-radius: 8px !important;
+}
+
 /* Hide Scroll bar Css For Custom Modal */
 .scroll-hide {
   position: absolute;
@@ -9414,6 +9489,35 @@ button:focus {
 
 /* ===================== Scroll to Top End ================================= */
 /* ================================= Social Icon Css Start =========================== */
+.social-hover:hover .social-list__item {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.social-hover .social-list__item {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: 0.2s linear;
+}
+
+.social-hover .social-list__item:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.social-hover .social-list__item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.social-hover .social-list__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.social-hover .social-list__item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
 /* ================================= Social Icon Css End ===========================  */
 /* ================= Slick Arrow & Dots css Start ================ */
 .slick-initialized.slick-slider .slick-track {
@@ -9473,6 +9577,37 @@ button:focus {
 
 /* Dots Css End */
 /* ================= Slick Arrow & Dots css Start ================ */
+/* ================================= Social Icon Css Start =========================== */
+.social-hover:hover .social-list__item {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.social-hover .social-list__item {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: 0.2s linear;
+}
+
+.social-hover .social-list__item:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.social-hover .social-list__item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.social-hover .social-list__item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.social-hover .social-list__item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+/* ================================= Social Icon Css End ===========================  */
 /* ===================================== Banner Css Start =========================== */
 body {
   position: relative;
@@ -9883,6 +10018,46 @@ body::after {
   display: none;
 }
 
+/* Instructor Two Item Css Start */
+.instructor-item-two:hover .instructor-item-two__thumb::before {
+  transform: rotate(225deg);
+}
+
+.instructor-item-two:hover .instructor-item-two__thumb-inner::before {
+  visibility: visible;
+  opacity: 0.3;
+}
+
+.instructor-item-two__thumb::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent var(--main-600) transparent var(--main-600);
+  border-radius: inherit;
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+.instructor-item-two__thumb-inner::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--neutral-900);
+  border-radius: inherit;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+/* Instructor Two Item Css End */
 /* ======================== Instructor Css End ========================= */
 /* ============================== Choose Us Section Start ================================== */
 .animation-video {

@@ -1,0 +1,752 @@
+@@include('../partials/_template-top.html')
+
+    @@include('../partials/_header.html')
+
+    @@include('../partials/_breadcrumb.html', {
+        'breadcrumbTitle': 'Tuition Jobs',
+        'prevPageText': '',
+        'arrowTwoShowHide': 'd-none',
+        'prevPageLink': 'course.html',
+        'breadcrumbText': 'Tuition Jobs',
+    })
+
+    <!-- ============================== Tutor Section Start ============================== -->
+    <section class="course-list-view py-120 background-img bg-img" data-background-image="assets/images/bg/gradient-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="sidebar rounded-12 bg-white p-32 box-shadow-md">
+                        <form action="#">
+                            <div class="flex-between mb-24">
+                                <h4 class="mb-0">Filter</h4>
+                                <button type="button" class="sidebar-close text-xl text-neutral-500 d-lg-none hover-text-main-600">
+                                    <i class="ph-bold ph-x"></i>
+                                </button>
+                            </div>
+    
+                            <div class="position-relative">
+                                <input type="text" class="common-input pe-48 rounded-pill bg-main-25" placeholder="Enter Your Email...">
+                                <button type="submit" class="text-neutral-500 text-xl d-flex position-absolute top-50 translate-middle-y inset-inline-end-0 me-24 hover-text-main-600"><i class="ph-bold ph-magnifying-glass"></i></button>
+                            </div>
+
+                            <div class="position-relative mt-32">
+                                <h6 class="text-lg mb-24 fw-semibold">Search Date</h6>
+                                <input type="date" class="common-input rounded-pill bg-main-25">
+                            </div>
+                            <span class="d-block border border-neutral-30 border-dashed my-24"></span>
+    
+                            <div class="d-flex flex-column gap-32">
+                                <div class="">
+                                    <h6 class="text-lg mb-24 fw-semibold">Tutor Type</h6>
+                                    <div class="d-flex flex-column gap-16">
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="AllTutors">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="AllTutors">All Tutors</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Premiums">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Premiums">Premiums</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-24 fw-semibold">Gender</h6>
+                                    <div class="d-flex flex-column gap-16">
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Male">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Male">Male</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Female">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Female">Female</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-24 fw-semibold">Tuition Type</h6>
+                                    <div class="d-flex flex-column gap-16">
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Home">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Home">Home</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Online">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Online">Online</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Package">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Package">Package</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Group">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Group">Group</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="School">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="School">School</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Collage">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Collage">Collage</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Pricing scale</h6>
+                                    <div class="custom--range">
+                                        <div id="slider-range"></div>
+                                        <div class="custom--range__content">
+                                            <input type="text" class="custom--range__prices text-neutral-600 text-start text-md fw-medium w-100 text-center bg-transparent border-0 outline-0" id="amount" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Star Category</h6>
+                                    <div class="d-flex flex-column gap-16">
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star5">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star5">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    5 Star
+                                                </label>
+                                            </div>
+                                            <span class="text-neutral-500">122</span>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star4">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star4">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    4 Star
+                                                </label>
+                                            </div>
+                                            <span class="text-neutral-500">356</span>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star3">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star3">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    3 Star
+                                                </label>
+                                            </div>
+                                            <span class="text-neutral-500">356</span>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star2">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star2">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    2 Star
+                                                </label>
+                                            </div>
+                                            <span class="text-neutral-500">213</span>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star1s">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star1s">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    1 Star
+                                                </label>
+                                            </div>
+                                            <span class="text-neutral-500">10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Location</h6>
+                                    <input type="text" class="common-input border-transparent rounded-pill focus-border-main-600 bg-main-25" placeholder="Enter location...">
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Select Country</h6>
+                                    <select class="common-input form-select border-transparent rounded-pill focus-border-main-600 bg-main-25">
+                                        <option value="1">Bangladesh</option>
+                                        <option value="1">Pakistan</option>
+                                        <option value="1">England</option>
+                                        <option value="1">Australia</option>
+                                        <option value="1">Indoneshia</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Select Language</h6>
+                                    <select class="common-input form-select border-transparent rounded-pill focus-border-main-600 bg-main-25">
+                                        <option value="1">Bangla</option>
+                                        <option value="1">English</option>
+                                        <option value="1">Hindi</option>
+                                        <option value="1">Urdhu</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Select Department </h6>
+                                    <select class="common-input form-select border-transparent rounded-pill focus-border-main-600 bg-main-25">
+                                        <option value="1">English</option>
+                                        <option value="1">Bangla</option>
+                                        <option value="1">Economics</option>
+                                        <option value="1">Management</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Select Subject</h6>
+                                    <select class="common-input form-select border-transparent rounded-pill focus-border-main-600 bg-main-25">
+                                        <option value="1">English</option>
+                                        <option value="1">Bangla</option>
+                                        <option value="1">Economics</option>
+                                        <option value="1">Management</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <span class="d-block border border-neutral-30 border-dashed my-32"></span>
+                            <button type="reset" class="btn btn-outline-main rounded-pill flex-center gap-16 fw-semibold w-100">
+                                <i class="ph-bold ph-arrow-clockwise d-flex text-lg"></i>
+                                Reset Filters
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="flex-between gap-16 flex-wrap mb-40">
+                        <span class="text-neutral-500">Showing 5 of 600 Results</span>
+                        <div class="flex-align gap-16">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-500 flex-shrink-0">Sort By :</span>
+                                <select class="form-select ps-20 pe-28 py-8 fw-medium rounded-pill bg-main-25 border border-neutral-30 text-neutral-700">
+                                    <option value="1">Newest</option>
+                                    <option value="1">Trending</option>
+                                    <option value="1">Popular</option>
+                                </select>
+                            </div>
+                            <button type="button" class="list-bar-btn text-xl w-40 h-40 bg-main-600 text-white rounded-8 flex-center d-lg-none">
+                                <i class="ph-bold ph-funnel"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row gy-4">
+
+                        <div class="col-12">
+                            <div class="bg-white rounded-16 p-12 h-100 box-shadow-md p-32">
+                                <div class="position-relative">
+                                    <div class="pb-24 border-bottom border-neutral-50 border-dashed border-0">
+                                        <h4 class="mb-20">Tutor Needed For Bangla Medium</h4>
+                                        <div class="flex-align gap-16">
+                                            <span class="flex-align gap-8 text-md fw-medium text-main-600 py-8 px-20 bg-main-25 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-house"></i>
+                                                </span>
+                                                Home Tutoring
+                                            </span>
+                                            <span class="flex-align gap-8 text-md fw-medium text-success-600 py-8 px-20 bg-success-50 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-clock"></i>
+                                                </span>
+                                                A Day Ago
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Body -->
+                                     <div class="overflow-x-auto">
+                                        <div class="grid-cols-4 py-24 min-width-max-content">
+                                            <div class="">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-user"></i></span>
+                                                    <span class="">Job ID</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-globe"></i></span>
+                                                    <span class="">Medium:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-watch"></i> </span>
+                                                    <span class="">Class:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">HSC-1st year</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-calendar-dot"></i></span>
+                                                    <span class="">Tutoring Days:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">3 Days/Week</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-users"></i> </span>
+                                                    <span class="">Preferred Tutor:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Any Gender</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-map-pin"></i></span>
+                                                    <span class="">Location:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Badda, Dhaka</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-tag"></i></span>
+                                                    <span class="">Salary:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0"> <span class="text-warning-600">$800</span> per/m</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-graduation-cap"></i> </span>
+                                                    <span class="">Subject:</span>
+                                                </div>
+                                                <div class="flex-align gap-8 mt-8">
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">HIGHER MATHS</span>
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">PHYSICS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <!-- Body -->
+
+                                    <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                        <span class="text-neutral-200">Posted at June 6, 2024</span>
+                                        <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                            Apply Now
+                                            <i class="ph ph-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white rounded-16 p-12 h-100 box-shadow-md p-32">
+                                <div class="position-relative">
+                                    <div class="pb-24 border-bottom border-neutral-50 border-dashed border-0">
+                                        <h4 class="mb-20">Male Tutor Needed For English Version </h4>
+                                        <div class="flex-align gap-16">
+                                            <span class="flex-align gap-8 text-md fw-medium text-main-600 py-8 px-20 bg-main-25 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-house"></i>
+                                                </span>
+                                                Home Tutoring
+                                            </span>
+                                            <span class="flex-align gap-8 text-md fw-medium text-success-600 py-8 px-20 bg-success-50 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-clock"></i>
+                                                </span>
+                                                A Day Ago
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Body -->
+                                     <div class="overflow-x-auto">
+                                        <div class="grid-cols-4 py-24 min-width-max-content">
+                                            <div class="">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-user"></i></span>
+                                                    <span class="">Job ID</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-globe"></i></span>
+                                                    <span class="">Medium:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-watch"></i> </span>
+                                                    <span class="">Class:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">HSC-1st year</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-calendar-dot"></i></span>
+                                                    <span class="">Tutoring Days:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">3 Days/Week</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-users"></i> </span>
+                                                    <span class="">Preferred Tutor:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Any Gender</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-map-pin"></i></span>
+                                                    <span class="">Location:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Badda, Dhaka</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-tag"></i></span>
+                                                    <span class="">Salary:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0"> <span class="text-warning-600">$800</span> per/m</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-graduation-cap"></i> </span>
+                                                    <span class="">Subject:</span>
+                                                </div>
+                                                <div class="flex-align gap-8 mt-8">
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">HIGHER MATHS</span>
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">PHYSICS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <!-- Body -->
+
+                                    <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                        <span class="text-neutral-200">Posted at June 6, 2024</span>
+                                        <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                            Apply Now
+                                            <i class="ph ph-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white rounded-16 p-12 h-100 box-shadow-md p-32">
+                                <div class="position-relative">
+                                    <div class="pb-24 border-bottom border-neutral-50 border-dashed border-0">
+                                        <h4 class="mb-20">Tutor Needed For English Medium</h4>
+                                        <div class="flex-align gap-16">
+                                            <span class="flex-align gap-8 text-md fw-medium text-main-600 py-8 px-20 bg-main-25 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-house"></i>
+                                                </span>
+                                                Home Tutoring
+                                            </span>
+                                            <span class="flex-align gap-8 text-md fw-medium text-success-600 py-8 px-20 bg-success-50 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-clock"></i>
+                                                </span>
+                                                A Day Ago
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Body -->
+                                     <div class="overflow-x-auto">
+                                        <div class="grid-cols-4 py-24 min-width-max-content">
+                                            <div class="">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-user"></i></span>
+                                                    <span class="">Job ID</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-globe"></i></span>
+                                                    <span class="">Medium:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-watch"></i> </span>
+                                                    <span class="">Class:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">HSC-1st year</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-calendar-dot"></i></span>
+                                                    <span class="">Tutoring Days:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">3 Days/Week</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-users"></i> </span>
+                                                    <span class="">Preferred Tutor:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Any Gender</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-map-pin"></i></span>
+                                                    <span class="">Location:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Badda, Dhaka</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-tag"></i></span>
+                                                    <span class="">Salary:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0"> <span class="text-warning-600">$800</span> per/m</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-graduation-cap"></i> </span>
+                                                    <span class="">Subject:</span>
+                                                </div>
+                                                <div class="flex-align gap-8 mt-8">
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">HIGHER MATHS</span>
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">PHYSICS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <!-- Body -->
+
+                                    <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                        <span class="text-neutral-200">Posted at June 6, 2024</span>
+                                        <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                            Apply Now
+                                            <i class="ph ph-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white rounded-16 p-12 h-100 box-shadow-md p-32">
+                                <div class="position-relative">
+                                    <div class="pb-24 border-bottom border-neutral-50 border-dashed border-0">
+                                        <h4 class="mb-20">Tutor Needed For Bangla Medium</h4>
+                                        <div class="flex-align gap-16">
+                                            <span class="flex-align gap-8 text-md fw-medium text-main-600 py-8 px-20 bg-main-25 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-house"></i>
+                                                </span>
+                                                Home Tutoring
+                                            </span>
+                                            <span class="flex-align gap-8 text-md fw-medium text-success-600 py-8 px-20 bg-success-50 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-clock"></i>
+                                                </span>
+                                                A Day Ago
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Body -->
+                                     <div class="overflow-x-auto">
+                                        <div class="grid-cols-4 py-24 min-width-max-content">
+                                            <div class="">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-user"></i></span>
+                                                    <span class="">Job ID</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-globe"></i></span>
+                                                    <span class="">Medium:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-watch"></i> </span>
+                                                    <span class="">Class:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">HSC-1st year</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-calendar-dot"></i></span>
+                                                    <span class="">Tutoring Days:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">3 Days/Week</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-users"></i> </span>
+                                                    <span class="">Preferred Tutor:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Any Gender</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-map-pin"></i></span>
+                                                    <span class="">Location:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Badda, Dhaka</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-tag"></i></span>
+                                                    <span class="">Salary:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0"> <span class="text-warning-600">$800</span> per/m</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-graduation-cap"></i> </span>
+                                                    <span class="">Subject:</span>
+                                                </div>
+                                                <div class="flex-align gap-8 mt-8">
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">HIGHER MATHS</span>
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">PHYSICS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <!-- Body -->
+
+                                    <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                        <span class="text-neutral-200">Posted at June 6, 2024</span>
+                                        <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                            Apply Now
+                                            <i class="ph ph-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="bg-white rounded-16 p-12 h-100 box-shadow-md p-32">
+                                <div class="position-relative">
+                                    <div class="pb-24 border-bottom border-neutral-50 border-dashed border-0">
+                                        <h4 class="mb-20">Tutor Needed For English Medium</h4>
+                                        <div class="flex-align gap-16">
+                                            <span class="flex-align gap-8 text-md fw-medium text-main-600 py-8 px-20 bg-main-25 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-house"></i>
+                                                </span>
+                                                Home Tutoring
+                                            </span>
+                                            <span class="flex-align gap-8 text-md fw-medium text-success-600 py-8 px-20 bg-success-50 rounded-pill">
+                                                <span class="d-flex text-xl">
+                                                    <i class="ph-bold ph-clock"></i>
+                                                </span>
+                                                A Day Ago
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Body -->
+                                     <div class="overflow-x-auto">
+                                        <div class="grid-cols-4 py-24 min-width-max-content">
+                                            <div class="">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-user"></i></span>
+                                                    <span class="">Job ID</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-globe"></i></span>
+                                                    <span class="">Medium:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Bangla Medium</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-watch"></i> </span>
+                                                    <span class="">Class:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">HSC-1st year</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-calendar-dot"></i></span>
+                                                    <span class="">Tutoring Days:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">3 Days/Week</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-users"></i> </span>
+                                                    <span class="">Preferred Tutor:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Any Gender</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-map-pin"></i></span>
+                                                    <span class="">Location:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0">Badda, Dhaka</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"> <i class="ph-bold ph-tag"></i></span>
+                                                    <span class="">Salary:</span>
+                                                </div>
+                                                <h6 class="text-lg fw-medium mt-8 mb-0"> <span class="text-warning-600">$800</span> per/m</h6>
+                                            </div>
+                                            <div class="min-width-max-content">
+                                                <div class="flex-align gap-8 text-neutral-500">
+                                                    <span class="text-xl"><i class="ph-bold ph-graduation-cap"></i> </span>
+                                                    <span class="">Subject:</span>
+                                                </div>
+                                                <div class="flex-align gap-8 mt-8">
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">HIGHER MATHS</span>
+                                                    <span class="flex-align gap-8 text-xs text-uppercase fw-normal text-success-600 py-4 px-16 bg-success-50 rounded-pill">PHYSICS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <!-- Body -->
+
+                                    <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                        <span class="text-neutral-200">Posted at June 6, 2024</span>
+                                        <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                            Apply Now
+                                            <i class="ph ph-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="pagination mt-40 flex-align gap-12 flex-wrap justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-left"></i></a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">...</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== Tutor Section End ============================== -->
+    
+    @@include('../partials/_certificate.html')
+    
+    @@include('../partials/_footer.html')
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>

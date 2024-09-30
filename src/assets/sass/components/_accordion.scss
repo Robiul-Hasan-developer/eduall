@@ -129,6 +129,9 @@
         .accordion-item {
             .accordion-button {
                 background-color: #fff !important;
+                &.bg-main-25 {
+                    background-color: var(--main-25) !important;
+                }
                 &:not(.collapsed) {
                     background-color: hsl(var(--main)) !important;
                     border-radius: 16px !important;
@@ -155,6 +158,5 @@
         }
     }
     /* Style Three End */
-
 }
 /* ================================= Accordion Css End =========================== */
