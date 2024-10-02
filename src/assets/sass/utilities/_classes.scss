@@ -88,6 +88,13 @@
     }
 }
 
+.end-n4 {
+    inset-inline-end: -6px;
+}
+.top-n6 {
+    inset-block-start: -6px;
+}
+
 .start {
     &-auto {
         inset-inline-start: auto !important;

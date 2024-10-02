@@ -16,5 +16,11 @@
     background-color: var(--main-25);
     z-index: -1;
   }
+  &.style-two {
+    &::before {
+      bottom: auto;
+      top: 0;
+    }
+  }
 }
 /* ============================== Features Section Css End ============================== */

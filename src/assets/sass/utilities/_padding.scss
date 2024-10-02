@@ -45,11 +45,20 @@
   padding-left: clampCal(24, 60) !important;
   padding-right: clampCal(24, 60) !important;
 }
+
+.py-60 {
+  padding-top: clampCal(24, 60) !important;
+  padding-bottom: clampCal(24, 60) !important;
+}
 .px-32 {
   padding-left: clampCal(16, 32) !important;
   padding-right: clampCal(16, 32) !important;
 }
 .py-40 {
+  padding-left: clampCal(24, 40) !important;
+  padding-right: clampCal(24, 40) !important;
+}
+.px-40 {
   padding-left: clampCal(24, 40) !important;
   padding-right: clampCal(24, 40) !important;
 }

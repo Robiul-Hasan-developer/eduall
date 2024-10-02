@@ -619,8 +619,16 @@
     input.val(value); 
   }); 
   // ========================= Increment & Decrement Js End ===================
-  
-  
+
+  // ========================= Vanilla Title Animation Js Start ===================
+    // VanillaTilt.init(document.querySelector(".your-element"), {
+    //   max: 25,
+    //   speed: 400
+    // });
+    
+    // //It also supports NodeList
+    // VanillaTilt.init(document.querySelectorAll(".your-element"));
+  // ========================= Vanilla Title Animation Js End ===================
   
   
   });

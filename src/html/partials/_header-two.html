@@ -1,0 +1,54 @@
+<!-- ============================ Header Two Start ============================ -->
+<header class="header border-bottom-0 bg-white">
+    <div class="container">
+        <nav class="header-inner flex-between gap-8">
+
+            <!-- Select Start -->
+            <div class="header-select border border-neutral-30 bg-main-25 rounded-pill position-relative ms-0">
+                <span class="select-icon position-absolute top-50 translate-middle-y inset-inline-start-0 z-1 ms-lg-4 ms-12 text-xl pointer-event-none d-flex">
+                    <i class="ph-bold ph-squares-four"></i>
+                </span>
+                <select class="js-example-basic-single border-0" name="state">
+                    <option value="1" selected disabled>Categories</option>
+                    <option value="1">Design</option>
+                    <option value="1">Development</option>
+                    <option value="1">Architecture</option>
+                    <option value="1">Life Style</option>
+                    <option value="1">Data Science</option>
+                    <option value="1">Marketing</option>
+                    <option value="1">Music</option>
+                    <option value="1">Typography</option>
+                    <option value="1">Finance</option>
+                    <option value="1">Motivation</option>
+                </select>
+            </div>
+            <!-- Select End -->
+
+            <!-- Menu Start  -->
+            <div class="header-menu d-lg-block d-none">
+                @@include('../partials/_nav-menu.html', {
+                    "class" : ""
+                })
+            </div>
+            <!-- Menu End  -->
+
+            <!-- Header Right start -->
+            <div class="header-right flex-align">
+                <a href="wishlist.html" class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
+                    <i class="ph-bold ph-heart"></i>
+                    <span class="w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">5</span>
+                </a>
+                <a href="cart.html" class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
+                    <i class="ph-bold ph-shopping-cart-simple"></i>
+                    <span class="w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">3</span>
+                </a>
+
+                <button type="button" class="toggle-mobileMenu d-lg-none text-neutral-200 flex-center">
+                    <i class="ph ph-list"></i> 
+                </button>
+            </div>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ============================ Header Two End ============================ -->

@@ -282,6 +282,7 @@
     line-height: 1;
     text-transform: capitalize;
     padding: 17px 32px;
+    justify-content: center;
 }
 
 .btn:hover, .btn:focus, .btn:focus-visible {
@@ -888,6 +889,17 @@ input[type=number] {
         font-size: 12px;
     }
 }
+/* Style Two Css */
+.style-two .select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 3px 0;
+    padding-inline-start: 0px !important;
+    padding-inline-end: 48px !important;
+}
+
+.style-two .select2-selection.select2-selection--single {
+    background-color: transparent !important;
+}
+
 /* ======================= Select 2 Css End =========================== */
 /* ================================= Tab Css Start =========================== */
 .nav-tab-wrapper {
@@ -3913,12 +3925,22 @@ button:focus {
   padding-right: clamp(1.5rem, -1.239rem + 5.705vw, 3.75rem) !important;
 }
 
+.py-60 {
+  padding-top: clamp(1.5rem, -1.239rem + 5.705vw, 3.75rem) !important;
+  padding-bottom: clamp(1.5rem, -1.239rem + 5.705vw, 3.75rem) !important;
+}
+
 .px-32 {
   padding-left: clamp(1rem, -0.217rem + 2.536vw, 2rem) !important;
   padding-right: clamp(1rem, -0.217rem + 2.536vw, 2rem) !important;
 }
 
 .py-40 {
+  padding-left: clamp(1.5rem, 0.283rem + 2.536vw, 2.5rem) !important;
+  padding-right: clamp(1.5rem, 0.283rem + 2.536vw, 2.5rem) !important;
+}
+
+.px-40 {
   padding-left: clamp(1.5rem, 0.283rem + 2.536vw, 2.5rem) !important;
   padding-right: clamp(1.5rem, 0.283rem + 2.536vw, 2.5rem) !important;
 }
@@ -4125,6 +4147,14 @@ button:focus {
 
 .inset-block-end-0 {
   inset-block-end: 0;
+}
+
+.end-n4 {
+  inset-inline-end: -6px;
+}
+
+.top-n6 {
+  inset-block-start: -6px;
 }
 
 .start-auto {
@@ -4565,6 +4595,14 @@ button:focus {
 }
 .max-w-176 {
   max-width: 176px;
+}
+
+.max-w-708 {
+  max-width: 708px;
+}
+
+.min-w-320 {
+  min-width: 320px;
 }
 
 .max-w-150 {
@@ -8413,6 +8451,22 @@ button:focus {
   border-top-left-radius: 8px !important;
 }
 
+.rounded-top-start-72px {
+  border-top-left-radius: 72px !important;
+}
+
+.rounded-top-end-72px {
+  border-top-right-radius: 72px !important;
+}
+
+.rounded-bottom-start-72px {
+  border-bottom-left-radius: 72px !important;
+}
+
+.rounded-bottom-end-72px {
+  border-bottom-right-radius: 72px !important;
+}
+
 /* Hide Scroll bar Css For Custom Modal */
 .scroll-hide {
   position: absolute;
@@ -8718,6 +8772,13 @@ button:focus {
   position: relative;
 }
 
+.mash-bg-main.mash-main-style-two::before {
+  width: 585px;
+  height: 585px;
+  background-color: var(--main-three-200);
+  left: 10%;
+}
+
 .mash-bg-main::before {
   position: absolute;
   content: "";
@@ -8734,6 +8795,13 @@ button:focus {
 
 .mash-bg-main-two {
   position: relative;
+}
+
+.mash-bg-main-two.mash-two-style-two::after {
+  width: 585px;
+  height: 585px;
+  background-color: var(--main-two-200);
+  right: 10%;
 }
 
 .mash-bg-main-two::after {
@@ -8758,6 +8826,24 @@ button:focus {
 .mash-reverse.mash-bg-main::after {
   right: auto;
   left: 0;
+}
+
+.mash-bg-main {
+  position: relative;
+}
+
+.mash-bg-main::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-600);
+  border-radius: 50%;
+  filter: blur(400px);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: -1;
 }
 
 /* ======================= Mash Bg Css End ============================== */
@@ -9218,6 +9304,22 @@ button:focus {
   }
 }
 /* ================================= Header Css End =========================== */
+/* ================================== Header Top Start ================================== */
+.header-top {
+  padding: 24px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .header-top {
+    padding: 16px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-top {
+    padding: 8px 0;
+  }
+}
+/* ================================== Header Top End ================================== */
 /* Mobile Menu Sidebar Start */
 .mobile-menu {
   position: fixed;
@@ -9646,6 +9748,7 @@ body::after {
   filter: blur(450px);
   top: 48px;
   left: 50%;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1199px) {
@@ -9662,18 +9765,20 @@ body::after {
 }
 @media (min-width: 1500px) {
   .banner-thumb__img {
-    transform: translateX(126px);
+    margin-left: 126px;
   }
 }
 @media screen and (max-width: 767px) {
   .buttons-wrapper {
     gap: 8px !important;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 575px) {
   .buttons-wrapper .btn {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .buttons-wrapper .btn i {
@@ -9753,6 +9858,20 @@ body::after {
     inset-inline-end: 8px;
   }
 }
+.banner-box.position-top {
+  inset-block-end: auto;
+  inset-block-start: 6%;
+  inset-inline-start: 36% !important;
+  inset-inline-end: auto;
+}
+
+.banner-box.position-bottom {
+  inset-block-start: auto;
+  inset-block-end: 6%;
+  inset-inline-start: 26% !important;
+  inset-inline-end: auto;
+}
+
 @media (max-width: 424px) {
   .enrolled-students {
     display: none;
@@ -9830,6 +9949,11 @@ body::after {
   animation-delay: 1s;
 }
 
+.shape.ten {
+  left: 40%;
+  top: 10%;
+}
+
 .animation-rotation {
   animation: roatation 8s linear infinite;
 }
@@ -9840,6 +9964,10 @@ body::after {
 
 .animation-walking {
   animation: walking 10s linear infinite;
+}
+
+.animation-upDown {
+  animation: upDown 4s linear infinite;
 }
 
 @keyframes upDown {
@@ -9903,6 +10031,11 @@ body::after {
   bottom: 0;
   background-color: var(--main-25);
   z-index: -1;
+}
+
+.half-bg.style-two::before {
+  bottom: auto;
+  top: 0;
 }
 
 /* ============================== Features Section Css End ============================== */
@@ -10356,12 +10489,13 @@ body::after {
 
 @media (min-width: 575px) {
   .testimonials-three .slick-list {
-    padding: 72px 0 !important;
+    padding: 90px 0 !important;
   }
 
   .testimonials-three .slick-slide {
     margin: 0;
     opacity: 0.6;
+    transition: 0.4s linear;
   }
 
   .testimonials-three .slick-slide.slick-current.slick-center {
@@ -10404,6 +10538,24 @@ body::after {
 }
 
 /* ============================= Event Section Css End =============================== */
+/* =========================== Banner Four Css Start =========================== */
+@media (min-width: 1200px) {
+  .banner-four-thumb {
+    left: 5%;
+  }
+}
+@media (min-width: 1600px) {
+  .banner-four-thumb {
+    left: 20%;
+  }
+}
+.box {
+  height: 150px;
+  background-color: red;
+  width: 200px;
+}
+
+/* =========================== Banner Four Css End =========================== */
 /* ======================== Course List View Css Start ============================= */
 @media screen and (max-width: 1399px) {
   .sidebar {

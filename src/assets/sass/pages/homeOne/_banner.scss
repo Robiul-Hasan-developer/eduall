@@ -36,6 +36,7 @@ body {
         filter: blur(450px);
         top: 48px;
         left: 50%;
+        z-index: -1;
     }
 }
 
@@ -50,7 +51,7 @@ body {
     }
     &__img {
         @media (min-width: 1500px) {
-            transform: translateX(126px);
+            margin-left: 126px;
         }
     }
 }
@@ -58,11 +59,13 @@ body {
 .buttons-wrapper {
     @include sm-screen {
         gap: 8px !important;
+        display: grid;
+        grid-template-columns: auto auto;
     }
     .btn {
-        @include xsm-screen {
-            padding-left: 16px;
-            padding-right: 16px;
+        @include msm-screen {
+            padding-left: 14px;
+            padding-right: 14px;
             i {
                 display: none !important;
             }
@@ -122,6 +125,20 @@ body {
         }
         @include msm-screen {
             inset-inline-end: 8px;
+        }
+    }
+    &.position {
+        &-top {
+            inset-block-end: auto;
+            inset-block-start: 6%;
+            inset-inline-start: 36% !important;
+            inset-inline-end: auto;
+        }
+        &-bottom {
+            inset-block-start: auto;
+            inset-block-end: 6%;
+            inset-inline-start: 26% !important;
+            inset-inline-end: auto;
         }
     }
 }
@@ -197,6 +214,10 @@ body {
         inset-block-start: 24%;
         animation-delay: 1s;
     }
+    &.ten {
+        left: 40%;
+        top: 10%;
+    }
 }
 
 .animation-rotation {
@@ -209,6 +230,9 @@ body {
 
 .animation-walking {
     animation: walking 10s linear infinite;
+}
+.animation-upDown {
+   animation: upDown 4s linear infinite;
 }
 
 @keyframes upDown {

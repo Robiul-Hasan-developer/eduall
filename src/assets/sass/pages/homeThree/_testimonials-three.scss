@@ -5,11 +5,12 @@
 .testimonials-three {
     @media (min-width: 575px) {
         .slick-list {
-            padding: 72px 0 !important;
+            padding: 90px 0 !important;
         }
         .slick-slide {
             margin: 0;
             opacity: .6;
+            transition: .4s linear;
             &.slick-current.slick-center {
                 opacity: 1;
                 transform: scaleX(1.36) scaleY(1.25);
