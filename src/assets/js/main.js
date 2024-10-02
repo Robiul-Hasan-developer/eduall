@@ -76,29 +76,37 @@
   // ===================== Scroll Back to Top Js End ======================
 
   // ========================== add active class to ul>li top Active current page Js Start =====================
-  function dynamicActiveMenuClass(selector) {
-    let FileName = window.location.pathname.split("/").reverse()[0];
+function dynamicActiveMenuClass(selector) {
+  let FileName = window.location.pathname.split("/").reverse()[0];
 
+  // If we are at the root path ("/" or no file name), keep the activePage class on the Home item
+  if (FileName === "" || FileName === "index.html") {
+    // Keep the activePage class on the Home link
+    selector.find("li.nav-menu__item.has-submenu").eq(0).addClass("activePage");
+  } else {
+    // Remove activePage class from all items first
+    selector.find("li").removeClass("activePage");
+
+    // Add activePage class to the correct li based on the current URL
     selector.find("li").each(function () {
       let anchor = $(this).find("a");
       if ($(anchor).attr("href") == FileName) {
         $(this).addClass("activePage");
       }
     });
-    // if any li has activePage element add class
+
+    // If any li has activePage element, add class to its parent li
     selector.children("li").each(function () {
       if ($(this).find(".activePage").length) {
         $(this).addClass("activePage");
       }
     });
-    // if no file name return
-    if ("" == FileName) {
-      selector.find("li").eq(0).addClass("activePage");
-    }
   }
-  if ($('ul').length) {
-    dynamicActiveMenuClass($('ul'));
-  }
+}
+
+if ($('ul').length) {
+  dynamicActiveMenuClass($('ul'));
+}
   // ========================== add active class to ul>li top Active current page Js End =====================
 
     
@@ -311,12 +319,6 @@
  
    const IO = new IntersectionObserver(callback, { threshold: 1 });
  
-   // Counter
-  //  const counter = document.querySelector('.counter');
-  //  if (counter) {
-  //    IO.observe(counter);
-  //  }
- 
    // Counter Two for each
    const counterNumbers = document.querySelectorAll('.counter');
    if (counterNumbers.length > 0) {
@@ -459,7 +461,6 @@
   });  
   // ========================= Testimonials Slider Two Js End ===================
 
-  
   // ========================= Brand Slider Js Start ==============
   $('.blog-two-slider').slick({
     slidesToShow: 3,
@@ -502,7 +503,6 @@
   });  
   // ========================= Brand Slider Js End ===================
 
-
   // ========================== Range Slider Js Start =====================
    $(function() {
     $( "#slider-range" ).slider({
@@ -534,7 +534,6 @@
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   // ========================== Tooltip Start End ================================
-
 
   // ================== Password Show Hide Js Start ==========
   $(".toggle-password").on('click', function() {
@@ -598,7 +597,6 @@
   });  
   // ========================= Brand Slider Js End ===================
 
-
   // ========================= Increment & Decrement Js Start ===================
   var minus = $('.quantity__minus');
   var plus = $('.quantity__plus');
@@ -619,18 +617,39 @@
     input.val(value); 
   }); 
   // ========================= Increment & Decrement Js End ===================
+  
+  // ========================= Review Js Start ==============
+  $('.review-slider, .review-slider-two').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    dots: true,
+    pauseOnHover: true,
+    arrows: true,
+    draggable: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
+    speed: 900,
+    infinite: true,
+    nextArrow: '#review-slider-next',
+    prevArrow: '#review-slider-prev',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ]
+  });  
+  // ========================= Review Js End ===================
 
-  // ========================= Vanilla Title Animation Js Start ===================
-    // VanillaTilt.init(document.querySelector(".your-element"), {
-    //   max: 25,
-    //   speed: 400
-    // });
-    
-    // //It also supports NodeList
-    // VanillaTilt.init(document.querySelectorAll(".your-element"));
-  // ========================= Vanilla Title Animation Js End ===================
-  
-  
+  // ========================= Wow Js Start ===================
+  new WOW().init();
+  // ========================= Wow Js End ===================
+
   });
   // ==========================================
   //      End Document Ready function

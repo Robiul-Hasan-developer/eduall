@@ -218,6 +218,18 @@ body {
         left: 40%;
         top: 10%;
     }
+    &.style-left {
+        inset-block-end: -48px;
+        inset-inline-start: -48px;
+    }
+    &.style-right {
+        inset-inline-end: -48px;
+        inset-block-start: -48px;
+    }
+    &.style-top {
+        inset-inline-start: -48px;
+        inset-block-start: -48px;
+    }
 }
 
 .animation-rotation {

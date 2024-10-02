@@ -33,6 +33,7 @@
     padding-block-start: 20px;
     li {
         display: inline-block;
+        line-height: 0;
         button {
             border: none;
             background-color: hsl(var(--black)/.2);

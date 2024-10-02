@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <!-- plyr Css -->
     <link rel="stylesheet" href="assets/css/plyr.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head> 
@@ -58,10 +60,10 @@
         <div class="mobile-menu__menu">
             
 <ul class="nav-menu flex-align nav-menu--mobile">
-    <li class="nav-menu__item has-submenu">
+    <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)" class="nav-menu__link">Home</a>
         <ul class="nav-submenu scroll-sm">
-            <li class="nav-submenu__item">
+            <li class="nav-submenu__item activePage">
                 <a href="index.html" class="nav-submenu__link hover-bg-neutral-30"> Home LMS</a>
             </li>
             <li class="nav-submenu__item">
@@ -275,10 +277,10 @@
             <div class="header-menu d-lg-block d-none">
                 
 <ul class="nav-menu flex-align ">
-    <li class="nav-menu__item has-submenu">
+    <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)" class="nav-menu__link">Home</a>
         <ul class="nav-submenu scroll-sm">
-            <li class="nav-submenu__item">
+            <li class="nav-submenu__item activePage">
                 <a href="index.html" class="nav-submenu__link hover-bg-neutral-30"> Home LMS</a>
             </li>
             <li class="nav-submenu__item">
@@ -382,11 +384,11 @@
 
             <!-- Header Right start -->
             <div class="header-right flex-align">
-                <a href="wishlist.html" class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
+                <a href="javarscript:void(0)" class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
                     <i class="ph-bold ph-heart"></i>
                     <span class="w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">5</span>
                 </a>
-                <a href="cart.html" class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
+                <a href="javarscript:void(0)" class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
                     <i class="ph-bold ph-shopping-cart-simple"></i>
                     <span class="w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">3</span>
                 </a>
@@ -423,10 +425,10 @@
                     </h1>
                     <p class="text-neutral-500 text-line-2">Find the Perfect Tutor Near You: Enhance Learning with Expert Guidance and Personalized Support Today!</p>
                     <div class="buttons-wrapper flex-align flex-wrap gap-24 mt-40">
-                        <a href="find-tutor.html" class="btn btn-main rounded-pill flex-align gap-8">
+                        <button type="button" class="btn btn-main rounded-pill flex-align gap-8"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Find Best Tutor
                             <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
-                        </a>
+                        </button>
                         <a href="apply-admission.html" class="btn btn-outline-main rounded-pill flex-align gap-8">
                             Applying Tutor
                             <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
@@ -446,12 +448,12 @@
             <div class="col-xl-6">
                 <div class="banner-four-thumb position-relative">
 
-                    <div class="banner-four-thumb__images d-flex gap-24" data-tilt data-tilt-full-page-listening>
+                    <div class="banner-four-thumb__images d-flex gap-24">
                         <div class="banner-four-thumb__image">
-                            <img src="assets/images/thumbs/banner-four-img1.png" alt="Banner Image" class="rounded-bottom-start-72px rounded-top-end-72px">
+                            <img src="assets/images/thumbs/banner-four-img1.png" alt="Banner Image" class="rounded-bottom-start-72px rounded-top-end-72px" data-tilt data-tilt-max="10" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
                         </div>
                         <div class="banner-four-thumb__image mt-160">
-                            <img src="assets/images/thumbs/banner-four-img2.png" alt="Banner Image" class="rounded-bottom-end-72px rounded-bottom-end-72px">
+                            <img src="assets/images/thumbs/banner-four-img2.png" alt="Banner Image" class="rounded-bottom-end-72px rounded-bottom-end-72px" data-tilt data-tilt-max="10" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
                         </div>
                     </div>
 
@@ -459,7 +461,7 @@
                         <span class="banner-box__icon flex-shrink-0 w-48 h-48 d-flex bg-main-three-50 text-main-three-600 text-2xl flex-center rounded-circle"><i class="ph ph-suitcase-simple"></i></span>
                         <div>
                             <span>Available Tutors</span>
-                            <h6 class="mt-8 fw-medium text-xl d-block text-main-three-600 mb-0">1520+</h6>
+                            <h6 class="mt-8 fw-medium text-xl d-block text-main-three-600 mb-0 counter">1520+</h6>
                         </div>
                     </div>
                     <div class="banner-box three position-bottom px-24 py-12 rounded-12 bg-white fw-medium box-shadow-lg flex-align d-inline-flex gap-16">
@@ -472,8 +474,85 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 </section>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+    <form action="#" class="modal-content p-24">
+        <div class="modal-header pt-0 pb-24 border-bottom border-dashed border-top-0 border-end-0 border-start-0">
+            <h4 class="mb-0">Find Best Tutors</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="py-24">
+            <div class="row gy-4">
+                <div class="col-sm-6">
+                    <label for="location" class="text-neutral-700 text-lg fw-medium mb-12">Location  </label>
+                    <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="location" placeholder="Enter location...">
+                </div>
+                <div class="col-sm-6">
+                    <label for="selectLanguage" class="text-neutral-700 text-lg fw-medium mb-12">Select language <span class="text-danger-600">*</span> </label>
+                    <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectLanguage">
+                        <option value="1">English</option>
+                        <option value="1">Bangla</option>
+                        <option value="1">Hindi</option>
+                        <option value="1">Urdhu</option>
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <label class="text-neutral-700 text-lg fw-medium mb-12">Gender <span class="text-danger-600">*</span> </label>
+                    <div class="flex-align gap-24">
+                        <div class="form-check common-check common-radio mb-0">
+                            <input class="form-check-input" type="radio" name="gender" id="Male">
+                            <label class="form-check-label fw-normal flex-grow-1" for="Male">Male</label>
+                        </div>
+                        <div class="form-check common-check common-radio mb-0">
+                            <input class="form-check-input" type="radio" name="gender" id="Female">
+                            <label class="form-check-label fw-normal flex-grow-1" for="Female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="selectDept" class="text-neutral-700 text-lg fw-medium mb-12">Select Department <span class="text-danger-600">*</span> </label>
+                    <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectDept">
+                        <option value="1">Humanity</option>
+                        <option value="1">Science</option>
+                        <option value="1">Commerce</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <label for="selectSub" class="text-neutral-700 text-lg fw-medium mb-12">Select Subject <span class="text-danger-600">*</span> </label>
+                    <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectSub">
+                        <option value="1">English</option>
+                        <option value="1">Physics</option>
+                        <option value="1">Chemistry</option>
+                        <option value="1">Biology</option>
+                    </select>
+                </div>
+                <div class="col-sm-12">
+                    <label for="selectCountry" class="text-neutral-700 text-lg fw-medium mb-12">Select Country <span class="text-danger-600">*</span> </label>
+                    <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectCountry">
+                        <option value="">Bangladesh</option>
+                        <option value="">Pakistan</option>
+                        <option value="">Bhutan</option>
+                        <option value="">Nepal</option>
+                        <option value="">Australia</option>
+                        <option value="">England</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pt-24 border-top border-dashed border-bottom-0 border-end-0 border-start-0">
+            <button type="submit" class="btn btn-main rounded-pill flex-align gap-8" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Find Now
+                <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+            </button>
+        </div>
+    </form>
+    </div>
+</div>
 <!-- ========================= Banner Four SEction End =============================== -->
 
     <!-- ============================ Tuition Types Section Start ==================================== -->
@@ -582,18 +661,18 @@
                 <div class="row gy-xl-0 gy-5 flex-wrap-reverse align-items-center">
                     <div class="col-xl-6 pe-xl-5">
                         <div class="about-two__thumb position-relative pe-0 me-xl-5">
-                            <img src="assets/images/thumbs/about-four-img.png" class="rounded-16 cover-img" alt="">
-                            <div class="offer-message animation-item style-two px-24 py-12 inset-inline-end--64 rounded-6 border border-white bg-success-600 fw-medium flex-align d-inline-flex gap-16 box-shadow-lg">
+                            <img src="assets/images/thumbs/about-four-img.png" class="rounded-16 cover-img" alt="" data-tilt data-tilt-max="6" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
+                            <div class="offer-message animation-item style-two px-24 py-12 inset-inline-end--64 rounded-6 border border-white bg-success-600 fw-medium flex-align d-inline-flex gap-16 box-shadow-lg animation-upDown">
                                 <span class="flex-shrink-0 w-48 h-48 bg-white text-success-600 text-2xl flex-center rounded-circle">
                                     <i class="animate__heartBeat ph-bold ph-certificate"></i>
                                 </span>
                                 <div>
-                                    <h6 class="text-white mb-1 text-2xl">12+</h6>
+                                    <h6 class="text-white mb-1 text-2xl counter">12+</h6>
                                     <span class="text-white">Award Winning</span>
                                 </div>
                             </div>
                             
-                            <div class="d-sm-flex d-none position-absolute inset-block-end-0 inset-inline-start-0 me-lg-0 ms--150px px-24 py-12 rounded-12 bg-white fw-medium flex-align d-inline-flex gap-16 box-shadow-lg">
+                            <div class="d-sm-flex d-none position-absolute inset-block-end-0 inset-inline-start-0 me-lg-0 ms--150px px-24 py-12 rounded-12 bg-white fw-medium flex-align d-inline-flex gap-16 box-shadow-lg" data-tilt data-tilt-max="8" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-scale="1.04">
                                 <div class="text-center">
                                     <img src="assets/images/thumbs/about-four-short-img.png" class="mb-24" alt="">
                                     <div class="mt-24">
@@ -728,10 +807,661 @@
     </section>
     <!-- ================================= Counter Section Three End ============================== -->
 
+    <!-- ======================================= Popular Teacher section start =========================== -->
+    <section class="tutor-two py-120 position-relative z-1 background-img" data-background-image="assets/images/bg/gradient-bg-2.png">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <div class="flex-align d-inline-flex gap-8 mb-16">
+                    <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
+                    <h5 class="text-main-600 mb-0">Our Popular Tutors</h5>
+                </div>
+                <h2 class="mb-24">Here are few of the Verified Teachers</h2>
+                <p class="">Our tutoring sessions are interactive and engaging, focusing on the student's specific needs.</p>
+            </div>
+            
+            <div class="tutor-slider">
+                <div>
+                    <div class="scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-20">
+                        <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative">
+                            <a href="tutor-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/instructor-img1.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                            </a>
+                        </div>
+                        <div class="pt-32 pb-24 px-16 position-relative">
+                            <div class="">
+                                <h4 class="mb-16">
+                                    <a href="tutor-details.html" class="link text-line-2">Ronald Richards</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-12">
+                                        <span class="text-2xl text-main-600 d-flex"><i class="ph-bold ph-graduation-cap"></i></span>
+                                        <span class="">Global University</span>
+                                    </div>
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-24 flex-between gap-16 flex-wrap">
+                                    <h4 class="mb-0 text-main-two-600">
+                                        $155 <span class="text-inherit text-neutral-200 fw-normal">per/hr</span> 
+                                    </h4>
+                                    <div class="flex-align gap-8 py-10 px-14 border border-main-100 rounded-8 bg-main-25">
+                                        <span class="text-xl d-flex text-main-600"><i class="ph-bold ph-map-pin"></i></span>
+                                        <span class="text-sm fw-medium text-neutral-500">New York</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Apply Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-20">
+                        <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative">
+                            <a href="tutor-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/instructor-img2.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                            </a>
+                        </div>
+                        <div class="pt-32 pb-24 px-16 position-relative">
+                            <div class="">
+                                <h4 class="mb-16">
+                                    <a href="tutor-details.html" class="link text-line-2">Jacob Jones</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-12">
+                                        <span class="text-2xl text-main-600 d-flex"><i class="ph-bold ph-graduation-cap"></i></span>
+                                        <span class="">LKS University</span>
+                                    </div>
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-24 flex-between gap-16 flex-wrap">
+                                    <h4 class="mb-0 text-main-two-600">
+                                        $155 <span class="text-inherit text-neutral-200 fw-normal">per/hr</span> 
+                                    </h4>
+                                    <div class="flex-align gap-8 py-10 px-14 border border-main-100 rounded-8 bg-main-25">
+                                        <span class="text-xl d-flex text-main-600"><i class="ph-bold ph-map-pin"></i></span>
+                                        <span class="text-sm fw-medium text-neutral-500">Phoenix</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Apply Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-20">
+                        <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative">
+                            <a href="tutor-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/instructor-img3.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                            </a>
+                        </div>
+                        <div class="pt-32 pb-24 px-16 position-relative">
+                            <div class="">
+                                <h4 class="mb-16">
+                                    <a href="tutor-details.html" class="link text-line-2">Darlene Robertson</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-12">
+                                        <span class="text-2xl text-main-600 d-flex"><i class="ph-bold ph-graduation-cap"></i></span>
+                                        <span class="">Notware</span>
+                                    </div>
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-24 flex-between gap-16 flex-wrap">
+                                    <h4 class="mb-0 text-main-two-600">
+                                        $155 <span class="text-inherit text-neutral-200 fw-normal">per/hr</span> 
+                                    </h4>
+                                    <div class="flex-align gap-8 py-10 px-14 border border-main-100 rounded-8 bg-main-25">
+                                        <span class="text-xl d-flex text-main-600"><i class="ph-bold ph-map-pin"></i></span>
+                                        <span class="text-sm fw-medium text-neutral-500">Chicago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Apply Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-20">
+                        <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative">
+                            <a href="tutor-details.html" class="w-100 h-100">
+                                <img src="assets/images/thumbs/instructor-img4.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                            </a>
+                        </div>
+                        <div class="pt-32 pb-24 px-16 position-relative">
+                            <div class="">
+                                <h4 class="mb-16">
+                                    <a href="tutor-details.html" class="link text-line-2">Esther Howard</a>
+                                </h4>
+                                <div class="flex-between gap-8 flex-wrap">
+                                    <div class="flex-align gap-12">
+                                        <span class="text-2xl text-main-600 d-flex"><i class="ph-bold ph-graduation-cap"></i></span>
+                                        <span class="">Global University</span>
+                                    </div>
+                                    <div class="flex-align gap-4">
+                                        <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                        <span class="text-lg text-neutral-700">
+                                            4.7
+                                            <span class="text-neutral-100">(6.4k)</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-24 flex-between gap-16 flex-wrap">
+                                    <h4 class="mb-0 text-main-two-600">
+                                        $155 <span class="text-inherit text-neutral-200 fw-normal">per/hr</span> 
+                                    </h4>
+                                    <div class="flex-align gap-8 py-10 px-14 border border-main-100 rounded-8 bg-main-25">
+                                        <span class="text-xl d-flex text-main-600"><i class="ph-bold ph-map-pin"></i></span>
+                                        <span class="text-sm fw-medium text-neutral-500">Phoenix</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-between gap-8 pt-24 border-top border-neutral-50 mt-24 border-dashed border-0">
+                                <a href="contact.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                                    Apply Now
+                                    <i class="ph ph-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex-center gap-16 mt-40">
+                <button type="button" id="tutor-prev" class="slick-prev slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48" style="">
+                    <i class="ph ph-caret-left"></i>
+                </button>
+                <button type="button" id="tutor-next" class="slick-next slick-arrow flex-center rounded-circle border border-gray-100 hover-border-main-600 text-xl hover-bg-main-600 hover-text-white transition-1 w-48 h-48" style="">
+                    <i class="ph ph-caret-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================= Popular Teacher section End =========================== -->
+
+    <!-- ============================ Work Process section start ================================ -->
+<section class="tutor-two py-120 position-relative z-1 half-bg half-bg__64 style-two">
+    <div class="container">
+
+        <div class="section-heading text-center">
+            <div class="flex-align d-inline-flex gap-8 mb-16">
+                <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
+                <h5 class="text-main-600 mb-0">Working Process</h5>
+            </div>
+            <h2 class="mb-24">How It Works For Tutors</h2>
+            <p class="">Our tutoring sessions are interactive and engaging, focusing on the student's specific needs.</p>
+        </div>     
+
+        <div class="row gy-4">
+            <div class="col-xxl-3 col-sm-6">
+                <div class="bg-white border border-neutral-30 animation-item rounded-16 p-16 item-hover text-center">
+                    <div class="bg-main-25 p-24 rounded-16 item-hover__bg-main transition-2">
+                        <div class="w-136 h-136 bg-white p-16 box-shadow-md rounded-circle mx-auto d-inline-flex align-items-center justify-content-center position-relative">
+                            <span class="border border-main-600 border-dashed rounded-circle w-100 h-100 flex-center">
+                                <img src="assets/images/icons/work-process-icon1.png" alt="" class="animate__flipInY">
+                            </span>
+                            <span class="w-40 h-40 flex-center rounded-circle bg-main-600 text-white text-lg position-absolute top-n6 end-n4 box-shadow-md item-hover__bg item-hover__text-main transition-2">01</span>
+                        </div>
+                        
+                        <h4 class="display-four mb-0 mt-32 text-neutral-700 item-hover__text transition-2">College Tutoring</h4>
+                        <p class="text-sm text-neutral-500 item-hover__text transition-2 mt-16">This helps us adjust the learning plan as needed keep </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-sm-6">
+                <div class="bg-white border border-neutral-30 animation-item rounded-16 p-16 item-hover text-center">
+                    <div class="bg-main-25 p-24 rounded-16 item-hover__bg-main transition-2">
+                        <div class="w-136 h-136 bg-white p-16 box-shadow-md rounded-circle mx-auto d-inline-flex align-items-center justify-content-center position-relative">
+                            <span class="border border-main-600 border-dashed rounded-circle w-100 h-100 flex-center">
+                                <img src="assets/images/icons/work-process-icon2.png" alt="" class="animate__flipInY">
+                            </span>
+                            <span class="w-40 h-40 flex-center rounded-circle bg-main-600 text-white text-lg position-absolute top-n6 end-n4 box-shadow-md item-hover__bg item-hover__text-main transition-2">02</span>
+                        </div>
+                        
+                        <h4 class="display-four mb-0 mt-32 text-neutral-700 item-hover__text transition-2">Set Schedule</h4>
+                        <p class="text-sm text-neutral-500 item-hover__text transition-2 mt-16">This helps us adjust the learning plan as needed keep </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-sm-6">
+                <div class="bg-white border border-neutral-30 animation-item rounded-16 p-16 item-hover text-center">
+                    <div class="bg-main-25 p-24 rounded-16 item-hover__bg-main transition-2">
+                        <div class="w-136 h-136 bg-white p-16 box-shadow-md rounded-circle mx-auto d-inline-flex align-items-center justify-content-center position-relative">
+                            <span class="border border-main-600 border-dashed rounded-circle w-100 h-100 flex-center">
+                                <img src="assets/images/icons/work-process-icon3.png" alt="" class="animate__flipInY">
+                            </span>
+                            <span class="w-40 h-40 flex-center rounded-circle bg-main-600 text-white text-lg position-absolute top-n6 end-n4 box-shadow-md item-hover__bg item-hover__text-main transition-2">03</span>
+                        </div>
+                        
+                        <h4 class="display-four mb-0 mt-32 text-neutral-700 item-hover__text transition-2">Applying Tuition</h4>
+                        <p class="text-sm text-neutral-500 item-hover__text transition-2 mt-16">This helps us adjust the learning plan as needed keep </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-sm-6">
+                <div class="bg-white border border-neutral-30 animation-item rounded-16 p-16 item-hover text-center">
+                    <div class="bg-main-25 p-24 rounded-16 item-hover__bg-main transition-2">
+                        <div class="w-136 h-136 bg-white p-16 box-shadow-md rounded-circle mx-auto d-inline-flex align-items-center justify-content-center position-relative">
+                            <span class="border border-main-600 border-dashed rounded-circle w-100 h-100 flex-center">
+                                <img src="assets/images/icons/work-process-icon4.png" alt="" class="animate__flipInY">
+                            </span>
+                            <span class="w-40 h-40 flex-center rounded-circle bg-main-600 text-white text-lg position-absolute top-n6 end-n4 box-shadow-md item-hover__bg item-hover__text-main transition-2">04</span>
+                        </div>
+                        
+                        <h4 class="display-four mb-0 mt-32 text-neutral-700 item-hover__text transition-2">Start Journey</h4>
+                        <p class="text-sm text-neutral-500 item-hover__text transition-2 mt-16">This helps us adjust the learning plan as needed keep </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+    </div>
+</section>
+<!-- ============================ Work Process section End ================================ -->
+
+    <!-- ================================== Free Trail Section Start ================================ -->
+<section class="free-trails py-120 position-relative z-1 bg-main-25">
+    <div class="position-relative">
+        <div class="container">
+            <div class="row gy-xl-0 gy-5 flex-wrap-reverse align-items-center">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="assets/images/thumbs/trail-img.png" alt="" data-tilt data-tilt-max="8" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
+                        <div class="w-120 h-120 bg-main-two-600 rounded-circle border border-white d-flex flex-column align-items-center justify-content-center position-absolute start-50 top-0 translate-middle-x mt-28">
+                            <h3 class="text-white mb-0 fw-medium counter counter">12.4k</h3>
+                            <span class="text-white text-secondary">Community</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-40">
+                        <div class="flex-align d-inline-flex gap-8 mb-16">
+                            <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
+                            <h5 class="text-main-600 mb-0">Request a Class for FREE Trial</h5>
+                        </div>
+                        <h2 class="mb-24">Experience Personalized Learning Today</h2>
+                        <p class="text-neutral-500 text-line-2">Ready to experience the benefits of personalized tutoring firsthand? Sign up for a FREE trial class today and see how our expert tutors can help you.</p>
+                    </div>
+
+                    <ul class="grid-cols-2">
+                        <li class="flex-align gap-8">
+                            <img src="assets/images/icons/check2.png" alt="">
+                            <span class="text-neutral-500 text-md fw-medium">Fill Out the Form</span>
+                        </li>
+                        <li class="flex-align gap-8">
+                            <img src="assets/images/icons/check2.png" alt="">
+                            <span class="text-neutral-500 text-md fw-medium">Schedule Your Class</span>
+                        </li>
+                        <li class="flex-align gap-8">
+                            <img src="assets/images/icons/check2.png" alt="">
+                            <span class="text-neutral-500 text-md fw-medium">Meet Your Tutor </span>
+                        </li>
+                        <li class="flex-align gap-8">
+                            <img src="assets/images/icons/check2.png" alt="">
+                            <span class="text-neutral-500 text-md fw-medium">Start The Class</span>
+                        </li>
+                    </ul>
+
+                    <div class="pt-40 border-top border-neutral-50 mt-40 border-dashed border-0">
+                        <a href="sign-up.html" class="btn btn-main rounded-pill flex-align d-inline-flex gap-8">
+                            Register Now
+                            <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- ================================== Free Trail Section End ================================ -->
+
+
+    <!-- =========================== Specialist section start ==================================== -->
+ <section class="specialist py-120">
+    <div class="container">
+        <div class="section-heading text-center">
+            <div class="flex-align d-inline-flex gap-8 mb-16">
+                <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
+                <h5 class="text-main-600 mb-0">Find Our Specialist</h5>
+            </div>
+            <h2 class="mb-24">Find Your Subject Specialist</h2>
+        </div>
+
+        <div class="row gy-4">
+
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-25 py-24 flex-align gap-24">
+                    <span class="text-main-600">
+                        <img src="assets/images/icons/specialist-icon1.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Bangla</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-two-25 py-24 flex-align gap-24">
+                    <span class="text-main-two-600">
+                        <img src="assets/images/icons/specialist-icon2.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">English</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-three-25 py-24 flex-align gap-24">
+                    <span class="text-main-three-600">
+                        <img src="assets/images/icons/specialist-icon3.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Mathematics</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-two-25 py-24 flex-align gap-24">
+                    <span class="text-main-two-600">
+                        <img src="assets/images/icons/specialist-icon4.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Biology</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-two-25 py-24 flex-align gap-24">
+                    <span class="text-main-two-600">
+                        <img src="assets/images/icons/specialist-icon5.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Physics</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-three-25 py-24 flex-align gap-24">
+                    <span class="text-main-three-600">
+                        <img src="assets/images/icons/specialist-icon6.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Chemistry</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-two-25 py-24 flex-align gap-24">
+                    <span class="text-main-two-600">
+                        <img src="assets/images/icons/specialist-icon7.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">ICT & IT</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-25 py-24 flex-align gap-24">
+                    <span class="text-main-600">
+                        <img src="assets/images/icons/specialist-icon8.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Geography</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-three-25 py-24 flex-align gap-24">
+                    <span class="text-main-three-600">
+                        <img src="assets/images/icons/specialist-icon9.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Architecture</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-two-25 py-24 flex-align gap-24">
+                    <span class="text-main-two-600">
+                        <img src="assets/images/icons/specialist-icon10.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Business</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-25 py-24 flex-align gap-24">
+                    <span class="text-main-600">
+                        <img src="assets/images/icons/specialist-icon11.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">History</h4>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <div class="ps-40 pe-8 rounded-12 animation-item bg-main-two-25 py-24 flex-align gap-24">
+                    <span class="text-main-two-600">
+                        <img src="assets/images/icons/specialist-icon12.png" alt="" class="animate__heartBeat">
+                    </span>
+                    <h4 class="mb-0">Philosophy</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ </section>
+<!-- =========================== Specialist section End ==================================== -->
+
+    <!-- ============================== Review Section start =============================== -->
+<section class="review py-120 bg-main-25 overflow-hidden">
+ 
+
+    <div class="container">
+        <div class="section-heading text-center">
+            <div class="flex-align d-inline-flex gap-8 mb-16">
+                <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
+                <h5 class="text-main-600 mb-0">People Love Us!</h5>
+            </div>
+            <h2 class="mb-24">What Our Satisfied Say</h2>
+            <p class="">Our students' success stories speak volumes. Here are just a few testimonials from our satisfied learners</p>
+        </div>
+        <div class="position-relative z-1">
+            <img src="assets/images/shapes/shape2.png" alt="" class="shape two style-left animation-scalation">
+            <img src="assets/images/shapes/shape6.png" alt="" class="shape four style-top animation-scalation">
+            <img src="assets/images/shapes/shape2.png" alt="" class="shape four style-right animation-scalation">
+            
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="bg-white p-32 rounded-12 box-shadow-md">
+                        <h4 class="text-center mb-32">What our Parents say about us</h4>
+                        <div class="review-slider">
+                            <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-25 hover-bg-main-600">
+                                <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
+                                    <img src="assets/images/thumbs/testimonials-three-img1.png" alt="" class="cover-img">
+                                </span>
+                                <h4 class="mt-24 mb-8 item-hover__text transition-2">Robiul Hasan</h4>
+                                <span class="text-neutral-500 d-block item-hover__text transition-2">Front End Developer</span>
+                                <ul class="flex-align d-inline-flex gap-8 my-24">
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                </ul>
+                                <p class="text-xl-res item-hover__text transition-2">"I've taken several courses through, and each one has exceeded my expectations. I've gained valuable skills that have helped me advance in my career. Highly recommend!"</p>
+                            </div>
+                            <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-two-25 hover-bg-main-two-600">
+                                <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
+                                    <img src="assets/images/thumbs/testimonials-three-img4.png" alt="" class="cover-img">
+                                </span>
+                                <h4 class="mt-24 mb-8 item-hover__text transition-2">Floyd Miles</h4>
+                                <span class="text-neutral-500 d-block item-hover__text transition-2">Doctor</span>
+                                <ul class="flex-align d-inline-flex gap-8 my-24">
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                </ul>
+                                <p class="text-xl-res item-hover__text transition-2">"I've taken several courses through, and each one has exceeded my expectations. I've gained valuable skills that have helped me advance in my career. Highly recommend!"</p>
+                            </div>
+                            <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-25 hover-bg-main-600">
+                                <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
+                                    <img src="assets/images/thumbs/testimonials-three-img3.png" alt="" class="cover-img">
+                                </span>
+                                <h4 class="mt-24 mb-8 item-hover__text transition-2">Nora Fatehi</h4>
+                                <span class="text-neutral-500 d-block item-hover__text transition-2">Engineer</span>
+                                <ul class="flex-align d-inline-flex gap-8 my-24">
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                </ul>
+                                <p class="text-xl-res item-hover__text transition-2">"I've taken several courses through, and each one has exceeded my expectations. I've gained valuable skills that have helped me advance in my career. Highly recommend!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white p-32 rounded-12 box-shadow-md">
+                        <h4 class="text-center mb-32">What our Tutors say about us</h4>
+                        <div class="review-slider-two">
+                            <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-25 hover-bg-main-600">
+                                <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
+                                    <img src="assets/images/thumbs/testimonials-three-img2.png" alt="" class="cover-img">
+                                </span>
+                                <h4 class="mt-24 mb-8 item-hover__text transition-2">Kathryn Murphy</h4>
+                                <span class="text-neutral-500 d-block item-hover__text transition-2">Graphic Designer</span>
+                                <ul class="flex-align d-inline-flex gap-8 my-24">
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                </ul>
+                                <p class="text-xl-res item-hover__text transition-2">"I've taken several courses through, and each one has exceeded my expectations. I've gained valuable skills that have helped me advance in my career. Highly recommend!"</p>
+                            </div>
+                            <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-two-25 hover-bg-main-two-600">
+                                <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
+                                    <img src="assets/images/thumbs/testimonials-three-img3.png" alt="" class="cover-img">
+                                </span>
+                                <h4 class="mt-24 mb-8 item-hover__text transition-2">Sarah L.</h4>
+                                <span class="text-neutral-500 d-block item-hover__text transition-2">WP Developer</span>
+                                <ul class="flex-align d-inline-flex gap-8 my-24">
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                </ul>
+                                <p class="text-xl-res item-hover__text transition-2">"I've taken several courses through, and each one has exceeded my expectations. I've gained valuable skills that have helped me advance in my career. Highly recommend!"</p>
+                            </div>
+                            <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-25 hover-bg-main-600">
+                                <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
+                                    <img src="assets/images/thumbs/testimonials-three-img3.png" alt="" class="cover-img">
+                                </span>
+                                <h4 class="mt-24 mb-8 item-hover__text transition-2">Nora Fatehi</h4>
+                                <span class="text-neutral-500 d-block item-hover__text transition-2">Engineer</span>
+                                <ul class="flex-align d-inline-flex gap-8 my-24">
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                    <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
+                                </ul>
+                                <p class="text-xl-res item-hover__text transition-2">"I've taken several courses through, and each one has exceeded my expectations. I've gained valuable skills that have helped me advance in my career. Highly recommend!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================== Review Section End =============================== -->
     
-
+        <!-- ============================= How it work section start ================================== -->
+     <section class="how-it-work py-120 position-relative z-1">
+        <img src="assets/images/shapes/shape2.png" alt="" class="shape two animation-scalation">
+        <img src="assets/images/shapes/shape6.png" alt="" class="shape four animation-scalation">
+        
+        <div class="container">
+            <div class="row gy-4 align-items-center flex-wrap-reverse">
+                <div class="col-lg-6">
+                    <div class="row gy-4 how-it-work-wrapper">
+                        <div class="col-sm-6">
+                            <div class="p-40 rounded-12 animation-item item-hover hover-bg-main-600 transition-2 bg-main-25 ">
+                                <span class="w-80 h-80 mb-32 flex-center bg-white box-shadow-md rounded-12 item-hover__bg">
+                                    <img src="assets/images/icons/how-it-work-icon1.png" alt="" class="animate__wobble">
+                                </span>
+                                <h4 class="mb-16 item-hover__text transition-2">Search for Tutors </h4>
+                                <p class="item-hover__text text-neutral-500 transition-2">Post Tuition by creating Account or without Account.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-40 rounded-12 animation-item item-hover hover-bg-main-two-600 transition-2 bg-main-two-25 ">
+                                <span class="w-80 h-80 mb-32 flex-center bg-white box-shadow-md rounded-12 item-hover__bg">
+                                    <img src="assets/images/icons/how-it-work-icon2.png" alt="" class="animate__wobble">
+                                </span>
+                                <h4 class="mb-16 item-hover__text transition-2">Get Free Session</h4>
+                                <p class="item-hover__text text-neutral-500 transition-2">Get free one day demo session with the tutor...</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-40 rounded-12 animation-item item-hover hover-bg-main-two-600 transition-2 bg-main-two-25 ">
+                                <span class="w-80 h-80 mb-32 flex-center bg-white box-shadow-md rounded-12 item-hover__bg">
+                                    <img src="assets/images/icons/how-it-work-icon3.png" alt="" class="animate__wobble">
+                                </span>
+                                <h4 class="mb-16 item-hover__text transition-2">Hire your tutor</h4>
+                                <p class="item-hover__text text-neutral-500 transition-2">If you like the demo session, confirm the teacher.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-40 rounded-12 animation-item item-hover hover-bg-main-three-600 transition-2 bg-main-three-25 ">
+                                <span class="w-80 h-80 mb-32 flex-center bg-white box-shadow-md rounded-12 item-hover__bg">
+                                    <img src="assets/images/icons/how-it-work-icon4.png" alt="" class="animate__wobble">
+                                </span>
+                                <h4 class="mb-16 item-hover__text transition-2">Get results</h4>
+                                <p class="item-hover__text text-neutral-500 transition-2">Gain knowledge, boost confidence and improve...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="mb-40">
+                        <div class="flex-align d-inline-flex gap-8 mb-16">
+                            <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
+                            <h5 class="text-main-600 mb-0">For Students/Guardians</h5>
+                        </div>
+                        <h2 class="mb-24">Here's how it works</h2>
+                        <p class="text-neutral-500 text-xl">We strive to make the tutoring process simple, effective, and stress-free for both students and parents. We carefully match the student with a tutor who specializes in the relevant subject area.</p>
+                        <div class="pt-40 border-top border-neutral-50 mt-40 border-dashed border-0">
+                            <a href="sign-up.html" class="btn btn-main rounded-pill flex-align d-inline-flex gap-8">
+                                Register Now
+                                <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- ============================= How it work section End ================================== -->
+    
     <!-- ================================= Certificate Section Start ================================= -->
 <div class="certificate">
     <div class="container container--lg">
@@ -754,7 +1484,7 @@
                         </div>
                         <div class="col-xl-6 d-xl-block d-none">
                             <div class="certificate__thumb">    
-                                <img src="assets/images/thumbs/certificate-img.png" alt="" data-tilt>
+                                <img src="assets/images/thumbs/certificate-img.png" alt="" data-tilt data-tilt-max="8" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
                             </div>
                         </div>
                     </div>
@@ -919,6 +1649,9 @@
     <script src="assets/js/plyr.js"></script>
     <!-- vanilla Tilt -->
     <script src="assets/js/vanilla-tilt.min.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+    
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 

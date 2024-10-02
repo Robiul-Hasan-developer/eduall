@@ -1,6 +1,6 @@
 /* ============================= Event Section Css Start =============================== */
 .event-item {
-    gap: clampCal(24, 44);
+    gap: clampCal(24, 32);
     @media (min-width: 1199px) {
         padding-inline-start: clampCal(24, 40, 1299, 1599) !important;
         padding-inline-end: clampCal(24, 40, 1299, 1599) !important;

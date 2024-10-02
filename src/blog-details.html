@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <!-- plyr Css -->
     <link rel="stylesheet" href="assets/css/plyr.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head> 
@@ -58,10 +60,10 @@
         <div class="mobile-menu__menu">
             
 <ul class="nav-menu flex-align nav-menu--mobile">
-    <li class="nav-menu__item has-submenu">
+    <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)" class="nav-menu__link">Home</a>
         <ul class="nav-submenu scroll-sm">
-            <li class="nav-submenu__item">
+            <li class="nav-submenu__item activePage">
                 <a href="index.html" class="nav-submenu__link hover-bg-neutral-30"> Home LMS</a>
             </li>
             <li class="nav-submenu__item">
@@ -229,10 +231,10 @@
                 <div class="header-menu d-lg-block d-none">
                     
 <ul class="nav-menu flex-align ">
-    <li class="nav-menu__item has-submenu">
+    <li class="nav-menu__item has-submenu activePage">
         <a href="javascript:void(0)" class="nav-menu__link">Home</a>
         <ul class="nav-submenu scroll-sm">
-            <li class="nav-submenu__item">
+            <li class="nav-submenu__item activePage">
                 <a href="index.html" class="nav-submenu__link hover-bg-neutral-30"> Home LMS</a>
             </li>
             <li class="nav-submenu__item">
@@ -798,7 +800,7 @@
                         </div>
                         <div class="col-xl-6 d-xl-block d-none">
                             <div class="certificate__thumb">    
-                                <img src="assets/images/thumbs/certificate-img.png" alt="" data-tilt>
+                                <img src="assets/images/thumbs/certificate-img.png" alt="" data-tilt data-tilt-max="8" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
                             </div>
                         </div>
                     </div>
@@ -963,6 +965,9 @@
     <script src="assets/js/plyr.js"></script>
     <!-- vanilla Tilt -->
     <script src="assets/js/vanilla-tilt.min.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+    
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 

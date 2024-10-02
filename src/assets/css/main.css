@@ -126,6 +126,7 @@
     --size-110: 6.875rem;
     --size-120: 7.5rem;
     --size-144: 9rem;
+    --size-136: 8.5rem;
     --size-160: 10rem;
     --main-25: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.96));
     --main-50: hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9));
@@ -1593,6 +1594,10 @@ button:focus {
   margin: var(--size-144) !important;
 }
 
+.m-136 {
+  margin: var(--size-136) !important;
+}
+
 .m-160 {
   margin: var(--size-160) !important;
 }
@@ -1759,6 +1764,10 @@ button:focus {
 
 .mx-144 {
   margin-inline: var(--size-144) !important;
+}
+
+.mx-136 {
+  margin-inline: var(--size-136) !important;
 }
 
 .mx-160 {
@@ -1929,6 +1938,10 @@ button:focus {
   margin-block: var(--size-144) !important;
 }
 
+.my-136 {
+  margin-block: var(--size-136) !important;
+}
+
 .my-160 {
   margin-block: var(--size-160) !important;
 }
@@ -2095,6 +2108,10 @@ button:focus {
 
 .ms-144 {
   margin-inline-start: var(--size-144) !important;
+}
+
+.ms-136 {
+  margin-inline-start: var(--size-136) !important;
 }
 
 .ms-160 {
@@ -2265,6 +2282,10 @@ button:focus {
   margin-inline-end: var(--size-144) !important;
 }
 
+.me-136 {
+  margin-inline-end: var(--size-136) !important;
+}
+
 .me-160 {
   margin-inline-end: var(--size-160) !important;
 }
@@ -2433,6 +2454,10 @@ button:focus {
   margin-block-start: var(--size-144) !important;
 }
 
+.mt-136 {
+  margin-block-start: var(--size-136) !important;
+}
+
 .mt-160 {
   margin-block-start: var(--size-160) !important;
 }
@@ -2599,6 +2624,10 @@ button:focus {
 
 .mb-144 {
   margin-block-end: var(--size-144) !important;
+}
+
+.mb-136 {
+  margin-block-end: var(--size-136) !important;
 }
 
 .mb-160 {
@@ -2908,6 +2937,10 @@ button:focus {
   padding: var(--size-144) !important;
 }
 
+.p-136 {
+  padding: var(--size-136) !important;
+}
+
 .p-160 {
   padding: var(--size-160) !important;
 }
@@ -3074,6 +3107,10 @@ button:focus {
 
 .px-144 {
   padding-inline: var(--size-144) !important;
+}
+
+.px-136 {
+  padding-inline: var(--size-136) !important;
 }
 
 .px-160 {
@@ -3244,6 +3281,10 @@ button:focus {
   padding-block: var(--size-144) !important;
 }
 
+.py-136 {
+  padding-block: var(--size-136) !important;
+}
+
 .py-160 {
   padding-block: var(--size-160) !important;
 }
@@ -3410,6 +3451,10 @@ button:focus {
 
 .ps-144 {
   padding-inline-start: var(--size-144) !important;
+}
+
+.ps-136 {
+  padding-inline-start: var(--size-136) !important;
 }
 
 .ps-160 {
@@ -3580,6 +3625,10 @@ button:focus {
   padding-inline-end: var(--size-144) !important;
 }
 
+.pe-136 {
+  padding-inline-end: var(--size-136) !important;
+}
+
 .pe-160 {
   padding-inline-end: var(--size-160) !important;
 }
@@ -3746,6 +3795,10 @@ button:focus {
 
 .pt-144 {
   padding-block-start: var(--size-144) !important;
+}
+
+.pt-136 {
+  padding-block-start: var(--size-136) !important;
 }
 
 .pt-160 {
@@ -3916,6 +3969,10 @@ button:focus {
   padding-block-end: var(--size-144) !important;
 }
 
+.pb-136 {
+  padding-block-end: var(--size-136) !important;
+}
+
 .pb-160 {
   padding-block-end: var(--size-160) !important;
 }
@@ -3952,6 +4009,10 @@ button:focus {
 
 .p-32 {
   padding: clamp(1rem, -0.217rem + 2.536vw, 2rem) !important;
+}
+
+.p-40 {
+  padding: clamp(1.25rem, -0.271rem + 3.17vw, 2.5rem) !important;
 }
 
 .pt-0 {
@@ -4147,6 +4208,10 @@ button:focus {
 
 .inset-block-end-0 {
   inset-block-end: 0;
+}
+
+.text-xl-res {
+  font-size: clamp(0.9375rem, 0.557rem + 0.792vw, 1.25rem);
 }
 
 .end-n4 {
@@ -4396,6 +4461,10 @@ button:focus {
   width: 9rem !important;
 }
 
+.w-136 {
+  width: 8.5rem !important;
+}
+
 .w-160 {
   width: 10rem !important;
 }
@@ -4562,6 +4631,10 @@ button:focus {
 
 .h-144 {
   height: 9rem !important;
+}
+
+.h-136 {
+  height: 8.5rem !important;
 }
 
 .h-160 {
@@ -8239,6 +8312,10 @@ button:focus {
   font-size: 9rem !important;
 }
 
+.text-136 {
+  font-size: 8.5rem !important;
+}
+
 .text-160 {
   font-size: 10rem !important;
 }
@@ -8441,6 +8518,10 @@ button:focus {
 
 .rounded-144 {
   border-radius: 9rem !important;
+}
+
+.rounded-136 {
+  border-radius: 8.5rem !important;
 }
 
 .rounded-160 {
@@ -8753,6 +8834,10 @@ button:focus {
   gap: var(--size-144) !important;
 }
 
+.gap-136 {
+  gap: var(--size-136) !important;
+}
+
 .gap-160 {
   gap: var(--size-160) !important;
 }
@@ -8762,8 +8847,16 @@ button:focus {
   color: #fff !important;
 }
 
+.item-hover:hover .item-hover__text-main {
+  color: var(--main-600) !important;
+}
+
 .item-hover:hover .item-hover__bg {
   background-color: #fff !important;
+}
+
+.item-hover:hover .item-hover__bg-main {
+  background-color: var(--main-600) !important;
 }
 
 /* Item Hover Css End */
@@ -9656,6 +9749,7 @@ button:focus {
 
 .slick-dots li {
   display: inline-block;
+  line-height: 0;
 }
 
 .slick-dots li button {
@@ -9954,6 +10048,21 @@ body::after {
   top: 10%;
 }
 
+.shape.style-left {
+  inset-block-end: -48px;
+  inset-inline-start: -48px;
+}
+
+.shape.style-right {
+  inset-inline-end: -48px;
+  inset-block-start: -48px;
+}
+
+.shape.style-top {
+  inset-inline-start: -48px;
+  inset-block-start: -48px;
+}
+
 .animation-rotation {
   animation: roatation 8s linear infinite;
 }
@@ -10036,6 +10145,10 @@ body::after {
 .half-bg.style-two::before {
   bottom: auto;
   top: 0;
+}
+
+.half-bg__64::before {
+  height: 64%;
 }
 
 /* ============================== Features Section Css End ============================== */
@@ -10511,7 +10624,7 @@ body::after {
 /* ===================================== Testimonials Section Three Css End ================================= */
 /* ============================= Event Section Css Start =============================== */
 .event-item {
-  gap: clamp(1.5rem, -0.021rem + 3.17vw, 2.75rem);
+  gap: clamp(1.5rem, 0.891rem + 1.268vw, 2rem);
 }
 
 @media (min-width: 1199px) {
@@ -10556,6 +10669,16 @@ body::after {
 }
 
 /* =========================== Banner Four Css End =========================== */
+@media (min-width: 576px) {
+  .how-it-work-wrapper {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 576px) {
+  .how-it-work-wrapper div[class*=col]:nth-child(even) > div {
+    transform: translateY(24px);
+  }
+}
 /* ======================== Course List View Css Start ============================= */
 @media screen and (max-width: 1399px) {
   .sidebar {

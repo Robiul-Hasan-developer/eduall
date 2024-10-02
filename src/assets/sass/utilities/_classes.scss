@@ -88,6 +88,10 @@
     }
 }
 
+.text-xl-res {
+    font-size: clampCal(15, 20);
+}
+
 .end-n4 {
     inset-inline-end: -6px;
 }
