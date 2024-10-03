@@ -421,7 +421,18 @@ if ($('ul').length) {
     fade: true,
     nextArrow: '#banner-three-next',
     prevArrow: '#banner-three-prev',
-  });  
+  });
+
+  $('.banner-three__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $('.wow').css('visibility', 'hidden').removeClass('animated'); 
+  });
+
+  $('.banner-three__slider').on('afterChange', function(event, slick, currentSlide) {
+    new WOW().init();
+    $('.wow').css('visibility', 'visible'); 
+  });
+// ========================= Testimonials Slider Two Js End ===================
+
   // ========================= Testimonials Slider Two Js End ===================
   
   // ========================= Testimonials Slider Two Js Start ==============
@@ -649,6 +660,16 @@ if ($('ul').length) {
   // ========================= Wow Js Start ===================
   new WOW().init();
   // ========================= Wow Js End ===================
+
+  // ========================= AOS Animation Js Start ===================
+  AOS.init({
+    offset: 40,
+    duration: 1000,
+    // once: true,
+    easing: 'ease',
+  });
+  // ========================= AOS Animation Js End ===================
+  
 
   });
   // ==========================================

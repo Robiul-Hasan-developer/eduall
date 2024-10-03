@@ -10216,6 +10216,7 @@ body::after {
   position: absolute;
   inset-inline-start: -100px;
   inset-block-end: 200px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1199px) {
@@ -10381,7 +10382,7 @@ body::after {
 
 @media (min-width: 1199px) {
   .certificate {
-    margin-top: 174px;
+    padding-top: 174px;
   }
 }
 .certificate::before {

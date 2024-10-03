@@ -11,20 +11,20 @@
         <div class="row gy-5 align-items-center">
             <div class="col-xl-6">
                 <div class="banner-content">
-                    <div class="flex-align d-inline-flex gap-8 mb-16">
+                    <div class="flex-align d-inline-flex gap-8 mb-16 wow bounceInDown">
                         <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
                         <h5 class="text-main-600 mb-0">Find the Right Tutor in Your Area</h5>
                     </div>
-                    <h1 class="display4 fw-semibold mb-24">Best Tutoring Platform
-                        for Home & <span class="text-main-two-600">Online</span>Tuitions
+                    <h1 class="display4 fw-semibold mb-24 wow bounceInLeft">Best Tutoring Platform
+                        for Home & <span class="text-main-two-600 wow bounceInRight"  data-wow-duration="2s" data-wow-delay=".5s" >Online</span>Tuitions
                     </h1>
-                    <p class="text-neutral-500 text-line-2">Find the Perfect Tutor Near You: Enhance Learning with Expert Guidance and Personalized Support Today!</p>
+                    <p class="text-neutral-500 text-line-2 wow bounceInUp">Find the Perfect Tutor Near You: Enhance Learning with Expert Guidance and Personalized Support Today!</p>
                     <div class="buttons-wrapper flex-align flex-wrap gap-24 mt-40">
-                        <button type="button" class="btn btn-main rounded-pill flex-align gap-8"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-main rounded-pill flex-align gap-8" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#findTutor">
                             Find Best Tutor
                             <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
                         </button>
-                        <a href="apply-admission.html" class="btn btn-outline-main rounded-pill flex-align gap-8">
+                        <a href="apply-admission.html" class="btn btn-outline-main rounded-pill flex-align gap-8" data-aos="fade-left">
                             Applying Tutor
                             <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
                         </a>
@@ -32,9 +32,9 @@
                     <div class="mt-40 d-flex align-items-center flex-wrap gap-16">
                         <h6 class="mb-0 flex-shrink-0">Location Tutors :</h6>
                         <div class="flex-grow-1 d-flex align-items-center flex-wrap gap-12">
-                            <span class="py-8 px-24 bg-white box-shadow-md rounded-pill text-sm">New York : <span class="text-main-two-600">598</span></span>
-                            <span class="py-8 px-24 bg-white box-shadow-md rounded-pill text-sm">Florida : <span class="text-main-two-600">245</span></span>
-                            <span class="py-8 px-24 bg-white box-shadow-md rounded-pill text-sm">Captown :  <span class="text-main-two-600">475</span></span>
+                            <span class="py-8 px-24 bg-white box-shadow-md rounded-pill text-sm"  data-aos="fade-up-left"  data-aos-duration="1000">New York : <span class="text-main-two-600">598</span></span>
+                            <span class="py-8 px-24 bg-white box-shadow-md rounded-pill text-sm"  data-aos="fade-up-left"  data-aos-duration="1500">Florida : <span class="text-main-two-600">245</span></span>
+                            <span class="py-8 px-24 bg-white box-shadow-md rounded-pill text-sm"  data-aos="fade-up-left"  data-aos-duration="2000">Captown :  <span class="text-main-two-600">475</span></span>
                         </div>
                     </div>
                 </div>
@@ -44,11 +44,11 @@
                 <div class="banner-four-thumb position-relative">
 
                     <div class="banner-four-thumb__images d-flex gap-24">
-                        <div class="banner-four-thumb__image">
-                            <img src="assets/images/thumbs/banner-four-img1.png" alt="Banner Image" class="rounded-bottom-start-72px rounded-top-end-72px" data-tilt data-tilt-max="10" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
+                        <div class="banner-four-thumb__image wow bounceIn">
+                            <img src="assets/images/thumbs/banner-four-img1.png" alt="Banner Image" class="rounded-bottom-start-72px rounded-top-end-72px" data-tilt data-tilt-max="14" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
                         </div>
-                        <div class="banner-four-thumb__image mt-160">
-                            <img src="assets/images/thumbs/banner-four-img2.png" alt="Banner Image" class="rounded-bottom-end-72px rounded-bottom-end-72px" data-tilt data-tilt-max="10" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
+                        <div class="banner-four-thumb__image wow bounceIn mt-160">
+                            <img src="assets/images/thumbs/banner-four-img2.png" alt="Banner Image" class="rounded-bottom-end-72px rounded-bottom-end-72px" data-tilt data-tilt-max="14" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-transition="1s" data-tilt-full-page-listening>
                         </div>
                     </div>
 
@@ -71,12 +71,13 @@
         </div>
     </div>  
 </section>
+
  <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="findTutor" tabindex="-1" aria-labelledby="findTutorLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
     <form action="#" class="modal-content p-24">
         <div class="modal-header pt-0 pb-24 border-bottom border-dashed border-top-0 border-end-0 border-start-0">
-            <h4 class="mb-0">Find Best Tutors</h4>
+            <h4 class="mb-0" id="findTutorLabel">Find Best Tutors</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
@@ -140,7 +141,7 @@
         </div>
         
         <div class="pt-24 border-top border-dashed border-bottom-0 border-end-0 border-start-0">
-            <button type="submit" class="btn btn-main rounded-pill flex-align gap-8" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="submit" class="btn btn-main rounded-pill flex-align gap-8" data-bs-toggle="modal" data-bs-target="#findTutor">
                 Find Now
                 <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
             </button>

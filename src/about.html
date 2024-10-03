@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/plyr.css">
     <!-- animate -->
     <link rel="stylesheet" href="assets/css/animate.css">
+
+    <link rel="stylesheet" href="assets/css/aos.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head> 
@@ -422,11 +424,11 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="flex-align gap-24 mb-24">
-                                    <div class="bg-main-600 rounded-12 text-center py-24 px-2 w-50-percent">    
+                                    <div class="bg-main-600 rounded-12 text-center py-24 px-2 w-50-percent" data-aos="fade-right">    
                                         <h1 class="mb-0 text-white counter">16+</h1>
                                         <span class="text-white">Years of experience</span>
                                     </div>
-                                    <div class="bg-neutral-700 rounded-12 text-center py-24 px-2 w-50-percent">    
+                                    <div class="bg-neutral-700 rounded-12 text-center py-24 px-2 w-50-percent" data-aos="fade-left">    
                                         <h1 class="mb-0 text-white counter">3.2k</h1>
                                         <span class="text-white">Years of experience</span>
                                     </div>
@@ -439,15 +441,15 @@
                 <div class="col-xl-6">
                     <div class="about-content">
                         <div class="mb-40">
-                            <div class="flex-align gap-8 mb-16">
+                            <div class="flex-align gap-8 mb-16 wow bounceInDown">
                                 <span class="w-8 h-8 bg-main-600 rounded-circle"></span>
-                                <h5 class="text-main-600 mb-0">About EduAll</h5>
+                                <h5 class="text-main-600 mb-0 ">About EduAll</h5>
                             </div>
-                            <h2 class="mb-24">The Place Where You Can Achieve</h2>
-                            <p class="text-neutral-500 text-line-2">Welcome to EduAll, where learning knows no bounds. Whether you're a student, professional, or lifelong learner...</p>
+                            <h2 class="mb-24 wow bounceIn">The Place Where You Can Achieve</h2>
+                            <p class="text-neutral-500 text-line-2 wow bounceInUp">Welcome to EduAll, where learning knows no bounds. Whether you're a student, professional, or lifelong learner...</p>
                         </div>
     
-                        <div class="flex-align align-items-start gap-28 mb-32">
+                        <div class="flex-align align-items-start gap-28 mb-32" data-aos="fade-left" data-aos-duration="200">
                             <span class="w-80 h-80 bg-main-25 border border-neutral-30 flex-center rounded-circle flex-shrink-0">
                                 <img src="assets/images/icons/about-img1.png" alt="">
                             </span>
@@ -456,7 +458,7 @@
                                 <p class="text-neutral-500">Driven by a team of dedicated educators, technologists, and visionaries, we strive to create a supportive</p>
                             </div>
                         </div>
-                        <div class="flex-align align-items-start gap-28 mb-0">
+                        <div class="flex-align align-items-start gap-28 mb-0" data-aos="fade-left" data-aos-duration="400">
                             <span class="w-80 h-80 bg-main-25 border border-neutral-30 flex-center rounded-circle flex-shrink-0">
                                 <img src="assets/images/icons/about-img2.png" alt="">
                             </span>
@@ -466,7 +468,7 @@
                             </div>
                         </div>
     
-                        <div class="flex-align flex-wrap gap-32 pt-40 border-top border-neutral-50 mt-40 border-dashed border-0">
+                        <div class="flex-align flex-wrap gap-32 pt-40 border-top border-neutral-50 mt-40 border-dashed border-0" data-aos="fade-left" data-aos-duration="600">
                             <a href="course.html" class="btn btn-main rounded-pill flex-align gap-8">
                                 Read More
                                 <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
@@ -496,20 +498,19 @@
     
     <div class="container">
         <div class="section-heading text-center">
-            <h2 class="mb-24">Course Instructors</h2>
-            <p class="">Join us on this journey of discovery, growth, and transformation. Together, let's shape a brighter future</p>
+            <h2 class="mb-24 wow bounceIn">Course Instructors</h2>
+            <p class=" wow bounceInUp">Join us on this journey of discovery, growth, and transformation. Together, let's shape a brighter future</p>
         </div>
         <div class="instructor-slider">
-            <div class="">
-                <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30">
-                    <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
-                        <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
-                            <img src="assets/images/thumbs/instructor-img1.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
-                        </a>
-                    </div>
-                    <div class="p-24 position-relative">
-                        <div class="social-infos">
-                            <ul class="social-list flex-align flex-column gap-12 mb-12">
+            <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30" data-aos="fade-up"  data-aos-duration="200">
+                <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
+                    <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
+                        <img src="assets/images/thumbs/instructor-img1.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                    </a>
+                </div>
+                <div class="p-24 position-relative">
+                    <div class="social-infos">
+                        <ul class="social-list flex-align flex-column gap-12 mb-12">
     <li class="social-list__item">
         <a href="https://www.facebook.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-facebook-logo"></i></a>
     </li>
@@ -520,57 +521,55 @@
         <a href="https://www.linkedin.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-instagram-logo"></i></a>
     </li>
 </ul>
-                            <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
-                                <i class="ph-bold ph-plus"></i>
-                            </button>
-                        </div>
-                        <div class="">
-                            <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
-                                <a href="instructor-details.html" class="link text-line-2">Devon Lane</a>
-                            </h4>
-                            <div class="flex-between gap-8 flex-wrap mb-16">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">Web Developer</span>
-                                </div>
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">7 Course</span>
-                                </div>
+                        <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
+                            <i class="ph-bold ph-plus"></i>
+                        </button>
+                    </div>
+                    <div class="">
+                        <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
+                            <a href="instructor-details.html" class="link text-line-2">Devon Lane</a>
+                        </h4>
+                        <div class="flex-between gap-8 flex-wrap mb-16">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">Web Developer</span>
                             </div>
-                            <div class="flex-between gap-8 flex-wrap">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">15k Students</span>
-                                </div>
-                                <div class="flex-align gap-4">
-                                    <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
-                                    <span class="text-lg text-neutral-700">
-                                        4.6
-                                        <span class="text-neutral-100">(2.4k)</span>
-                                    </span>
-                                </div>
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">7 Course</span>
                             </div>
                         </div>
-                        <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                            <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
-                                View Profile
-                                <i class="ph ph-arrow-right"></i>
-                            </a>
+                        <div class="flex-between gap-8 flex-wrap">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">15k Students</span>
+                            </div>
+                            <div class="flex-align gap-4">
+                                <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-lg text-neutral-700">
+                                    4.6
+                                    <span class="text-neutral-100">(2.4k)</span>
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                        <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                            View Profile
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30">
-                    <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
-                        <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
-                            <img src="assets/images/thumbs/instructor-img2.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
-                        </a>
-                    </div>
-                    <div class="p-24 position-relative">
-                        <div class="social-infos">
-                            <ul class="social-list flex-align flex-column gap-12 mb-12">
+            <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30" data-aos="fade-up"  data-aos-duration="400">
+                <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
+                    <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
+                        <img src="assets/images/thumbs/instructor-img2.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                    </a>
+                </div>
+                <div class="p-24 position-relative">
+                    <div class="social-infos">
+                        <ul class="social-list flex-align flex-column gap-12 mb-12">
     <li class="social-list__item">
         <a href="https://www.facebook.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-facebook-logo"></i></a>
     </li>
@@ -581,57 +580,55 @@
         <a href="https://www.linkedin.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-instagram-logo"></i></a>
     </li>
 </ul>
-                            <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
-                                <i class="ph-bold ph-plus"></i>
-                            </button>
-                        </div>
-                        <div class="">
-                            <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
-                                <a href="instructor-details.html" class="link text-line-2">John Doe</a>
-                            </h4>
-                            <div class="flex-between gap-8 flex-wrap mb-16">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">WordPress Expert</span>
-                                </div>
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">6 Course</span>
-                                </div>
+                        <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
+                            <i class="ph-bold ph-plus"></i>
+                        </button>
+                    </div>
+                    <div class="">
+                        <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
+                            <a href="instructor-details.html" class="link text-line-2">John Doe</a>
+                        </h4>
+                        <div class="flex-between gap-8 flex-wrap mb-16">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">WordPress Expert</span>
                             </div>
-                            <div class="flex-between gap-8 flex-wrap">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">55k Students</span>
-                                </div>
-                                <div class="flex-align gap-4">
-                                    <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
-                                    <span class="text-lg text-neutral-700">
-                                        4.6
-                                        <span class="text-neutral-100">(2.4k)</span>
-                                    </span>
-                                </div>
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">6 Course</span>
                             </div>
                         </div>
-                        <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                            <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
-                                View Profile
-                                <i class="ph ph-arrow-right"></i>
-                            </a>
+                        <div class="flex-between gap-8 flex-wrap">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">55k Students</span>
+                            </div>
+                            <div class="flex-align gap-4">
+                                <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-lg text-neutral-700">
+                                    4.6
+                                    <span class="text-neutral-100">(2.4k)</span>
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                        <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                            View Profile
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30">
-                    <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
-                        <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
-                            <img src="assets/images/thumbs/instructor-img3.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
-                        </a>
-                    </div>
-                    <div class="p-24 position-relative">
-                        <div class="social-infos">
-                            <ul class="social-list flex-align flex-column gap-12 mb-12">
+            <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30" data-aos="fade-up"  data-aos-duration="600">
+                <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
+                    <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
+                        <img src="assets/images/thumbs/instructor-img3.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                    </a>
+                </div>
+                <div class="p-24 position-relative">
+                    <div class="social-infos">
+                        <ul class="social-list flex-align flex-column gap-12 mb-12">
     <li class="social-list__item">
         <a href="https://www.facebook.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-facebook-logo"></i></a>
     </li>
@@ -642,57 +639,55 @@
         <a href="https://www.linkedin.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-instagram-logo"></i></a>
     </li>
 </ul>
-                            <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
-                                <i class="ph-bold ph-plus"></i>
-                            </button>
-                        </div>
-                        <div class="">
-                            <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
-                                <a href="instructor-details.html" class="link text-line-2">Alexandar</a>
-                            </h4>
-                            <div class="flex-between gap-8 flex-wrap mb-16">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">UI/UX Designer</span>
-                                </div>
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">12 Course</span>
-                                </div>
+                        <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
+                            <i class="ph-bold ph-plus"></i>
+                        </button>
+                    </div>
+                    <div class="">
+                        <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
+                            <a href="instructor-details.html" class="link text-line-2">Alexandar</a>
+                        </h4>
+                        <div class="flex-between gap-8 flex-wrap mb-16">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">UI/UX Designer</span>
                             </div>
-                            <div class="flex-between gap-8 flex-wrap">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">36k Students</span>
-                                </div>
-                                <div class="flex-align gap-4">
-                                    <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
-                                    <span class="text-lg text-neutral-700">
-                                        4.6
-                                        <span class="text-neutral-100">(2.4k)</span>
-                                    </span>
-                                </div>
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">12 Course</span>
                             </div>
                         </div>
-                        <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                            <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
-                                View Profile
-                                <i class="ph ph-arrow-right"></i>
-                            </a>
+                        <div class="flex-between gap-8 flex-wrap">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">36k Students</span>
+                            </div>
+                            <div class="flex-align gap-4">
+                                <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-lg text-neutral-700">
+                                    4.6
+                                    <span class="text-neutral-100">(2.4k)</span>
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                        <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                            View Profile
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30">
-                    <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
-                        <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
-                            <img src="assets/images/thumbs/instructor-img2.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
-                        </a>
-                    </div>
-                    <div class="p-24 position-relative">
-                        <div class="social-infos">
-                            <ul class="social-list flex-align flex-column gap-12 mb-12">
+            <div class="instructor-item scale-hover-item bg-white rounded-16 p-12 h-100 border border-neutral-30" data-aos="fade-up"  data-aos-duration="200">
+                <div class="rounded-12 overflow-hidden position-relative bg-dark-yellow">
+                    <a href="instructor-details.html" class="w-100 h-100 d-flex align-items-end">
+                        <img src="assets/images/thumbs/instructor-img2.png" alt="Course Image" class="scale-hover-item__img rounded-12 cover-img transition-2">
+                    </a>
+                </div>
+                <div class="p-24 position-relative">
+                    <div class="social-infos">
+                        <ul class="social-list flex-align flex-column gap-12 mb-12">
     <li class="social-list__item">
         <a href="https://www.facebook.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-facebook-logo"></i></a>
     </li>
@@ -703,44 +698,43 @@
         <a href="https://www.linkedin.com" class=" flex-center border border-white text-white w-44 h-44 rounded-circle text-xl hover-text-main hover-bg-white"><i class="ph-bold ph-instagram-logo"></i></a>
     </li>
 </ul>
-                            <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
-                                <i class="ph-bold ph-plus"></i>
-                            </button>
-                        </div>
-                        <div class="">
-                            <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
-                                <a href="instructor-details.html" class="link text-line-2">John Doe</a>
-                            </h4>
-                            <div class="flex-between gap-8 flex-wrap mb-16">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">WordPress Expert</span>
-                                </div>
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">6 Course</span>
-                                </div>
+                        <button class="social-infos__button flex-center w-44 h-44 bg-white text-main-600 rounded-circle text-2xl transition-2">
+                            <i class="ph-bold ph-plus"></i>
+                        </button>
+                    </div>
+                    <div class="">
+                        <h4 class="mb-28 pb-24 border-bottom border-neutral-50 mb-24 border-dashed border-0">
+                            <a href="instructor-details.html" class="link text-line-2">John Doe</a>
+                        </h4>
+                        <div class="flex-between gap-8 flex-wrap mb-16">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-lightbulb"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">WordPress Expert</span>
                             </div>
-                            <div class="flex-between gap-8 flex-wrap">
-                                <div class="flex-align gap-8">
-                                    <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
-                                    <span class="text-neutral-700 text-lg fw-medium">55k Students</span>
-                                </div>
-                                <div class="flex-align gap-4">
-                                    <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
-                                    <span class="text-lg text-neutral-700">
-                                        4.6
-                                        <span class="text-neutral-100">(2.4k)</span>
-                                    </span>
-                                </div>
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-watch"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">6 Course</span>
                             </div>
                         </div>
-                        <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
-                            <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
-                                View Profile
-                                <i class="ph ph-arrow-right"></i>
-                            </a>
+                        <div class="flex-between gap-8 flex-wrap">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-700 text-2xl d-flex"><i class="ph-bold ph-users"></i></span>
+                                <span class="text-neutral-700 text-lg fw-medium">55k Students</span>
+                            </div>
+                            <div class="flex-align gap-4">
+                                <span class="text-2xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-lg text-neutral-700">
+                                    4.6
+                                    <span class="text-neutral-100">(2.4k)</span>
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="pt-24 border-top border-neutral-50 mt-28 border-dashed border-0">
+                        <a href="instructor-details.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold" tabindex="0">
+                            View Profile
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -770,24 +764,24 @@
         <div class="col-xl-6">
             <div class="choose-us__content">
                 <div class="mb-40">
-                    <div class="flex-align gap-8 mb-16">
+                    <div class="flex-align gap-8 mb-16 wow bounceInDown">
                         <span class="w-8 h-8 bg-main-600 rounded-circle"></span>
                         <h5 class="text-main-600 mb-0">Why Choose Us</h5>
                     </div>
-                    <h2 class="mb-24">Our Commitment to Excellence, Learn, Grow & Success.</h2>
-                    <p class="text-neutral-500 text-line-2">We are passionate about transforming lives through education. Founded with a vision to make learning accessible to all, we believe in the power of knowledge to unlock opportunities and shape the future.</p>
+                    <h2 class="mb-24  wow bounceIn">Our Commitment to Excellence, Learn, Grow & Success.</h2>
+                    <p class="text-neutral-500 text-line-2  wow bounceInUp">We are passionate about transforming lives through education. Founded with a vision to make learning accessible to all, we believe in the power of knowledge to unlock opportunities and shape the future.</p>
                 </div>
 
                 <ul>
-                    <li class="flex-align gap-12 mb-16">
+                    <li class="flex-align gap-12 mb-16" data-aos="fade-up-left"  data-aos-duration="200">
                         <span class="flex-shrink-0 text-xl text-main-600 d-flex"><i class="ph-bold ph-checks"></i></span>
                         <span class="flex-grow-1 text-neutral-500">9/10 Average Satisfaction Rate</span>
                     </li>
-                    <li class="flex-align gap-12 mb-16">
+                    <li class="flex-align gap-12 mb-16" data-aos="fade-up-left"  data-aos-duration="400">
                         <span class="flex-shrink-0 text-xl text-main-600 d-flex"><i class="ph-bold ph-checks"></i></span>
                         <span class="flex-grow-1 text-neutral-500">96% Completitation Rate</span>
                     </li>
-                    <li class="flex-align gap-12 mb-16">
+                    <li class="flex-align gap-12 mb-16" data-aos="fade-up-left"  data-aos-duration="500">
                         <span class="flex-shrink-0 text-xl text-main-600 d-flex"><i class="ph-bold ph-checks"></i></span>
                         <span class="flex-grow-1 text-neutral-500">Friendly Environment & Expert Teacher</span>
                     </li>
@@ -818,7 +812,7 @@
                     </div>
                 </div>
 
-                <div class="banner-box one style-two px-24 py-12 rounded-12 bg-white fw-medium box-shadow-lg d-inline-block">
+                <div class="banner-box one style-two px-24 py-12 rounded-12 bg-white fw-medium box-shadow-lg d-inline-block" data-aos="fade-left">
                     <span class="text-main-600">36k+</span> Enrolled Students
                     <div class="enrolled-students mt-12">
                         <img src="assets/images/thumbs/enroll-student-img1.png" alt="" class="w-48 h-48 rounded-circle object-fit-cover">
@@ -830,7 +824,7 @@
                     </div>
                 </div>
 
-                <div class="text-end">
+                <div class="text-end" data-aos="zoom-out">
                     <div class="d-sm-inline-block d-block position-relative">
                         <img src="assets/images/thumbs/choose-us-img1.png" alt="" class="choose-us__img rounded-12" data-tilt data-tilt-max="16" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
                         <span class="shadow-main-two w-80 h-80 flex-center bg-main-two-600 rounded-circle position-absolute inset-block-start-0 inset-inline-start-0 mt-40 ms--40 animation-upDown">
@@ -838,7 +832,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="animation-video">
+                <div class="animation-video"  data-aos="zoom-in">
                     <img src="assets/images/thumbs/choose-us-img2.png" alt="" class="border border-white rounded-circle border-3" data-tilt>
                     <a href="https://www.youtube.com/watch?v=MFLVmAE4cqg" class="play-button w-48 h-48 flex-center bg-main-600 text-white rounded-circle text-xl position-absolute top-50 start-50 translate-middle">
                         <i class="ph-fill ph-play"></i>
@@ -855,7 +849,7 @@
  <section class="counter py-120">
     <div class="container">
         <div class="row gy-4">
-            <div class="col-xl-3 col-sm-6 col-xs-6">
+            <div class="col-xl-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="200" >
                 <div class="counter-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-25 border border-neutral-30">
                     <span class="w-80 h-80 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24">
                         <i class="animate__wobble ph ph-users"></i>
@@ -864,7 +858,7 @@
                     <span class="text-neutral-500 text-lg">Successfully Trained</span>
                 </div>
             </div>
-            <div class="col-xl-3 col-sm-6 col-xs-6">
+            <div class="col-xl-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="400" >
                 <div class="counter-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-two-25 border border-neutral-30">
                     <span class="w-80 h-80 flex-center d-inline-flex bg-white text-main-two-600 text-40 rounded-circle box-shadow-md mb-24">
                         <i class="animate__wobble ph ph-video-camera"></i>
@@ -873,7 +867,7 @@
                     <span class="text-neutral-500 text-lg">Courses Completed</span>
                 </div>
             </div>
-            <div class="col-xl-3 col-sm-6 col-xs-6">
+            <div class="col-xl-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="600" >
                 <div class="counter-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-25 border border-neutral-30">
                     <span class="w-80 h-80 flex-center d-inline-flex bg-white text-main-600 text-40 rounded-circle box-shadow-md mb-24">
                         <i class="animate__wobble ph ph-thumbs-up"></i>
@@ -882,7 +876,7 @@
                     <span class="text-neutral-500 text-lg">Satisfaction Rate</span>
                 </div>
             </div>
-            <div class="col-xl-3 col-sm-6 col-xs-6">
+            <div class="col-xl-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-duration="800" >
                 <div class="counter-item animation-item h-100 text-center px-16 py-32 rounded-12 bg-main-two-25 border border-neutral-30">
                     <span class="w-80 h-80 flex-center d-inline-flex bg-white text-main-two-600 text-40 rounded-circle box-shadow-md mb-24">
                         <i class="animate__wobble ph ph-users-three"></i>
@@ -905,10 +899,10 @@
         <div class="row gy-5">
             <div class="col-lg-6">
                 <div class="testimonials__thumbs-slider pe-lg-5 me-xxl-5">
-                    <div class="testimonials__thumbs" data-tilt data-tilt-max="15" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
+                    <div class="testimonials__thumbs wow bounceIn" data-tilt data-tilt-max="15" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
                         <img src="assets/images/thumbs/testimonial-img1.png" alt="">
                     </div>
-                    <div class="testimonials__thumbs" data-tilt data-tilt-max="15" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
+                    <div class="testimonials__thumbs wow bounceIn" data-tilt data-tilt-max="15" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
                         <img src="assets/images/thumbs/testimonial-img2.png" alt="">
                     </div>
                 </div>
@@ -916,38 +910,38 @@
             <div class="col-lg-6">
                 <div class="testimonials__content">
                     <div class="section-heading style-left">
-                        <div class="flex-align gap-8 mb-16">
+                        <div class="flex-align gap-8 mb-16 wow bounceInDown">
                             <span class="w-8 h-8 bg-main-600 rounded-circle"></span>
                             <h5 class="text-main-600 mb-0">What Our Students Say</h5>
                         </div>
-                        <h2 class="mb-24">Testimonials from Happy Learners for EduAll</h2>
-                        <p class="text-neutral-500 text-line-2">16+ million Students are already learning on EduAll Platform</p>
+                        <h2 class="mb-24 wow bounceIn">Testimonials from Happy Learners for EduAll</h2>
+                        <p class="text-neutral-500 text-line-2 wow bounceInUp">16+ million Students are already learning on EduAll Platform</p>
                     </div>
 
                     <div class="testimonials__slider">
                         <div class="testimonials-item">
-                            <ul class="flex-align gap-8 mb-16">
+                            <ul class="flex-align gap-8 mb-16" data-aos="fade-left" data-aos-duration="800">
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star-half"></i></li>
                             </ul>
-                            <p class="text-neutral-700">"Enrolling in courses at EduAll was one of the best decisions I've made for my career. The flexibility of the online learning platform allowed me to study at my own pace while balancing my work”</p>
-                            <h4 class="mt-48 mb-8">Kathryn Murphy</h4>
-                            <span class="text-neutral-700">Software Developer</span>
+                            <p class="text-neutral-700" data-aos="fade-left" data-aos-duration="1200">"Enrolling in courses at EduAll was one of the best decisions I've made for my career. The flexibility of the online learning platform allowed me to study at my own pace while balancing my work”</p>
+                            <h4 class="mt-48 mb-8" data-aos="fade-left">Kathryn Murphy</h4>
+                            <span class="text-neutral-700" data-aos="fade-left">Software Developer</span>
                         </div>
                         <div class="testimonials-item">
-                            <ul class="flex-align gap-8 mb-16">
+                            <ul class="flex-align gap-8 mb-16" data-aos="fade-left" data-aos-duration="800">
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                 <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star-half"></i></li>
                             </ul>
-                            <p class="text-neutral-700">"Signing up for courses at EduAll was quite possibly of the best choice I've made for my vocation. The adaptability of the internet learning stage permitted me to learn at my own speed while adjusting my work"</p>
-                            <h4 class="mt-48 mb-8">John Doe</h4>
-                            <span class="text-neutral-700">UX/UI Designer</span>
+                            <p class="text-neutral-700" data-aos="fade-left" data-aos-duration="1200">"Signing up for courses at EduAll was quite possibly of the best choice I've made for my vocation. The adaptability of the internet learning stage permitted me to learn at my own speed while adjusting my work"</p>
+                            <h4 class="mt-48 mb-8" data-aos="fade-left">John Doe</h4>
+                            <span class="text-neutral-700" data-aos="fade-left">UX/UI Designer</span>
                         </div>
                     </div>
                     <div class="flex-align gap-16 mt-40">
@@ -966,7 +960,7 @@
 <!-- ================================= testimonials Section End ========================================= -->
     
     <!-- ========================== Brand Section Start =========================== -->
- <div class="brand">
+ <div class="brand wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".5s">
     <div class="container container--lg">
         <div class="brand-box py-80 px-16 ">
             <h5 class="mb-40 text-center text-neutral-500">TRUSTED BY OVER 17,300 GREAT TEAMS</h5>
@@ -1012,19 +1006,19 @@
                     <div class="row align-items-center">
                         <div class="col-xl-6">
                             <div class="certificate__content">
-                                <div class="flex-align gap-8 mb-16">
+                                <div class="flex-align gap-8 mb-16 wow bounceInDown">
                                     <span class="w-8 h-8 bg-white rounded-circle"></span>
                                     <h5 class="text-white mb-0">Get Certificate</h5>
                                 </div>
-                                <h2 class="text-white mb-40 fw-medium">Get Quality Skills Certificate From the EduAll</h2>
-                                <a href="" class="btn btn-white rounded-pill flex-align d-inline-flex gap-8 hover-bg-main-800">
+                                <h2 class="text-white mb-40 fw-medium wow bounceIn">Get Quality Skills Certificate From the EduAll</h2>
+                                <a href="" class="btn btn-white rounded-pill flex-align d-inline-flex gap-8 hover-bg-main-800 wow bounceInUp">
                                     Get Started Now
                                     <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="col-xl-6 d-xl-block d-none">
-                            <div class="certificate__thumb">    
+                            <div class="certificate__thumb" data-aos="fade-up-left">    
                                 <img src="assets/images/thumbs/certificate-img.png" alt="" data-tilt data-tilt-max="8" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
                             </div>
                         </div>
@@ -1045,7 +1039,7 @@
     <div class="py-120 ">
         <div class="container container-two">
             <div class="row row-cols-xxl-5 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-5">
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="300" >
                     <div class="footer-item">
                         <div class="footer-item__logo">
                             <a href="index.html"> <img src="assets/images/logo/logo.png" alt=""></a>
@@ -1067,7 +1061,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="400" >
                     <div class="footer-item">
                         <h4 class="footer-item__title mb-32">Navigation</h4>
                         <ul class="footer-menu">
@@ -1089,7 +1083,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="600" >
                     <div class="footer-item">
                         <h4 class="footer-item__title mb-32">Category</h4>
                         <ul class="footer-menu">
@@ -1111,7 +1105,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="800" >
                     <div class="footer-item">
                         <h4 class="footer-item__title mb-32">Contact Us</h4>
                         <div class="flex-align gap-20 mb-24">
@@ -1137,7 +1131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="1000" >
                     <div class="footer-item">
                         <h4 class="footer-item__title mb-32">Subscribe Here</h4>
                         <p class="text-neutral-500">Enter your email address to register to our newsletter subscription</p>
@@ -1157,8 +1151,8 @@
         <div class="bottom-footer bg-main-25 border-top border-dashed border-main-100 border-0 py-32">
             <div class="container container-two">
                 <div class="bottom-footer__inner flex-between gap-3 flex-wrap">
-                    <p class="bottom-footer__text"> Copyright &copy; 2024 <span class="fw-semibold">EduAll</span> All Rights Reserved.</p>
-                    <div class="footer-links">
+                    <p class="bottom-footer__text" data-aos="fade-right" data-aos-duration="1000" > Copyright &copy; 2024 <span class="fw-semibold">EduAll</span> All Rights Reserved.</p>
+                    <div class="footer-links" data-aos="fade-left" data-aos-duration="1000" >
                         <a href="#" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">Privacy Policy</a>
                         <a href="#" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">Terms & Conditions</a>
                     </div>
@@ -1192,6 +1186,8 @@
     <script src="assets/js/vanilla-tilt.min.js"></script>
     <!-- wow -->
     <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/aos.js"></script>
     
     <!-- main js -->
     <script src="assets/js/main.js"></script>

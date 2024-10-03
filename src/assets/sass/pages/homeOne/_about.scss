@@ -11,6 +11,7 @@
     position: absolute;
     inset-inline-start: -100px;
     inset-block-end: 200px;
+    z-index: 1;
     @include lg-screen {
         inset-inline-start: 24px;
     }
