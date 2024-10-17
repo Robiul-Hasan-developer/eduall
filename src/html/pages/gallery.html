@@ -1,0 +1,75 @@
+@@include('../partials/_template-top.html')
+
+    @@include('../partials/_header.html')
+
+    @@include('../partials/_breadcrumb.html', {
+        'breadcrumbTitle': 'Gallery',
+        'prevPageText': '',
+        'arrowTwoShowHide': 'd-none',
+        'prevPageLink': 'course.html',
+        'breadcrumbText': 'Gallery',
+    })
+
+    <!-- =============================== Gallery Section Start ================================== -->
+    <section class="gallery py-120">
+        <div class="container">
+            <div class="container">
+                <div class="section-heading text-center">
+                  <div class="flex-align d-inline-flex gap-8 mb-16">
+                      <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
+                      <h5 class="text-main-600 mb-0">Gallery</h5>
+                  </div>
+                  <h2 class="mb-24">Explore Our Gallery</h2>
+                  <p class="">Students can register for the workshops through the EduAll platform. Limited seats are available</p>
+                </div>
+
+                <div class="text-center">
+                  <div class="nav-tab-wrapper bg-white border border-neutral-40 p-16 mb-40 d-inline-block" data-aos="zoom-out">
+                      <ul class="nav nav-pills common-tab gap-16" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8 active" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="true">
+                                  <i class="text-xl d-flex text-main-600 ph-bold ph-squares-four"></i>
+                                  Online Education
+                              </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8" id="pills-University-tab" data-bs-toggle="pill" data-bs-target="#pills-University" type="button" role="tab" aria-controls="pills-University" aria-selected="false">
+                                  <i class="text-xl d-flex text-main-600 ph-bold ph-magic-wand"></i>
+                                  University
+                              </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link rounded-pill bg-main-25 text-md fw-medium text-neutral-500 flex-center w-100 gap-8" id="pills-Tutors-tab" data-bs-toggle="pill" data-bs-target="#pills-Tutors" type="button" role="tab" aria-controls="pills-Tutors" aria-selected="false">
+                                  <i class="text-xl d-flex text-main-600 ph-bold ph-code"></i>
+                                  Tutors
+                              </button>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" tabindex="0">
+                    @@include('../partials/_masonry.html')
+                </div>
+                <div class="tab-pane fade" id="pills-University" role="tabpanel" aria-labelledby="pills-University-tab" tabindex="0">
+                    @@include('../partials/_masonry.html')
+                </div>
+                <div class="tab-pane fade" id="pills-Tutors" role="tabpanel" aria-labelledby="pills-Tutors-tab" tabindex="0">
+                    @@include('../partials/_masonry.html')
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =============================== Gallery Section End ================================== -->
+
+    @@include('../partials/_certificate.html')
+    
+    @@include('../partials/_footer.html')
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>

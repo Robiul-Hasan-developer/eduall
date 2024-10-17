@@ -158,4 +158,12 @@
 .aspect-ratio-1 {
     aspect-ratio: 1;
 }
+
+.positioned-rotation {
+    position: absolute;
+    right: -33%;
+    transform: rotate(45deg);
+    width: 100%;
+    top: 8%;
+}
 /* ================================= Classes Css End =========================== */

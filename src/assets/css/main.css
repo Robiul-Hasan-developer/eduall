@@ -121,6 +121,7 @@
     --size-72: 4.5rem;
     --size-76: 4.75rem;
     --size-80: 5rem;
+    --size-85: 5.3125rem;
     --size-90: 5.625rem;
     --size-96: 6rem;
     --size-110: 6.875rem;
@@ -1574,6 +1575,10 @@ button:focus {
   margin: var(--size-80) !important;
 }
 
+.m-85 {
+  margin: var(--size-85) !important;
+}
+
 .m-90 {
   margin: var(--size-90) !important;
 }
@@ -1744,6 +1749,10 @@ button:focus {
 
 .mx-80 {
   margin-inline: var(--size-80) !important;
+}
+
+.mx-85 {
+  margin-inline: var(--size-85) !important;
 }
 
 .mx-90 {
@@ -1918,6 +1927,10 @@ button:focus {
   margin-block: var(--size-80) !important;
 }
 
+.my-85 {
+  margin-block: var(--size-85) !important;
+}
+
 .my-90 {
   margin-block: var(--size-90) !important;
 }
@@ -2088,6 +2101,10 @@ button:focus {
 
 .ms-80 {
   margin-inline-start: var(--size-80) !important;
+}
+
+.ms-85 {
+  margin-inline-start: var(--size-85) !important;
 }
 
 .ms-90 {
@@ -2262,6 +2279,10 @@ button:focus {
   margin-inline-end: var(--size-80) !important;
 }
 
+.me-85 {
+  margin-inline-end: var(--size-85) !important;
+}
+
 .me-90 {
   margin-inline-end: var(--size-90) !important;
 }
@@ -2434,6 +2455,10 @@ button:focus {
   margin-block-start: var(--size-80) !important;
 }
 
+.mt-85 {
+  margin-block-start: var(--size-85) !important;
+}
+
 .mt-90 {
   margin-block-start: var(--size-90) !important;
 }
@@ -2604,6 +2629,10 @@ button:focus {
 
 .mb-80 {
   margin-block-end: var(--size-80) !important;
+}
+
+.mb-85 {
+  margin-block-end: var(--size-85) !important;
 }
 
 .mb-90 {
@@ -2917,6 +2946,10 @@ button:focus {
   padding: var(--size-80) !important;
 }
 
+.p-85 {
+  padding: var(--size-85) !important;
+}
+
 .p-90 {
   padding: var(--size-90) !important;
 }
@@ -3087,6 +3120,10 @@ button:focus {
 
 .px-80 {
   padding-inline: var(--size-80) !important;
+}
+
+.px-85 {
+  padding-inline: var(--size-85) !important;
 }
 
 .px-90 {
@@ -3261,6 +3298,10 @@ button:focus {
   padding-block: var(--size-80) !important;
 }
 
+.py-85 {
+  padding-block: var(--size-85) !important;
+}
+
 .py-90 {
   padding-block: var(--size-90) !important;
 }
@@ -3431,6 +3472,10 @@ button:focus {
 
 .ps-80 {
   padding-inline-start: var(--size-80) !important;
+}
+
+.ps-85 {
+  padding-inline-start: var(--size-85) !important;
 }
 
 .ps-90 {
@@ -3605,6 +3650,10 @@ button:focus {
   padding-inline-end: var(--size-80) !important;
 }
 
+.pe-85 {
+  padding-inline-end: var(--size-85) !important;
+}
+
 .pe-90 {
   padding-inline-end: var(--size-90) !important;
 }
@@ -3777,6 +3826,10 @@ button:focus {
   padding-block-start: var(--size-80) !important;
 }
 
+.pt-85 {
+  padding-block-start: var(--size-85) !important;
+}
+
 .pt-90 {
   padding-block-start: var(--size-90) !important;
 }
@@ -3947,6 +4000,10 @@ button:focus {
 
 .pb-80 {
   padding-block-end: var(--size-80) !important;
+}
+
+.pb-85 {
+  padding-block-end: var(--size-85) !important;
 }
 
 .pb-90 {
@@ -4268,6 +4325,14 @@ button:focus {
   aspect-ratio: 1;
 }
 
+.positioned-rotation {
+  position: absolute;
+  right: -33%;
+  transform: rotate(45deg);
+  width: 100%;
+  top: 8%;
+}
+
 /* ================================= Classes Css End =========================== */
 /* ============================ Extend Css Start ======================== */
 /* Cover image Css */
@@ -4441,6 +4506,10 @@ button:focus {
   width: 5rem !important;
 }
 
+.w-85 {
+  width: 5.3125rem !important;
+}
+
 .w-90 {
   width: 5.625rem !important;
 }
@@ -4611,6 +4680,10 @@ button:focus {
 
 .h-80 {
   height: 5rem !important;
+}
+
+.h-85 {
+  height: 5.3125rem !important;
 }
 
 .h-90 {
@@ -8292,6 +8365,10 @@ button:focus {
   font-size: 5rem !important;
 }
 
+.text-85 {
+  font-size: 5.3125rem !important;
+}
+
 .text-90 {
   font-size: 5.625rem !important;
 }
@@ -8498,6 +8575,10 @@ button:focus {
 
 .rounded-80 {
   border-radius: 5rem !important;
+}
+
+.rounded-85 {
+  border-radius: 5.3125rem !important;
 }
 
 .rounded-90 {
@@ -8812,6 +8893,10 @@ button:focus {
 
 .gap-80 {
   gap: var(--size-80) !important;
+}
+
+.gap-85 {
+  gap: var(--size-85) !important;
 }
 
 .gap-90 {
@@ -10809,4 +10894,40 @@ body::after {
 }
 
 /* ========================= Contact Page Css End =========================== */
+/* Gallery Css Start */
+.masonry {
+  column-count: 2;
+  column-gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+@media screen and (max-width: 767px) {
+  .masonry {
+    column-gap: 16px;
+  }
+}
+.masonry__item {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .masonry__item {
+    margin-bottom: 16px;
+  }
+}
+.masonry__item:hover .masonry__image {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.masonry__image {
+  background-color: #0e162aad !important;
+  font-size: 28px;
+}
+
+/* Gallery Css End */
 /*# sourceMappingURL=main.css.map */

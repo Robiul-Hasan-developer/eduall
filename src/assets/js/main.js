@@ -669,6 +669,13 @@ if ($('ul').length) {
     easing: 'ease',
   });
   // ========================= AOS Animation Js End ===================
+
+  $('.masonry__image').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
   
 
   });
