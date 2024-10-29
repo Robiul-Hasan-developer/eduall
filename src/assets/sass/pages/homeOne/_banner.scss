@@ -161,8 +161,14 @@ body {
 }
 
 .enrolled-students {
-    img:not(:first-child) {
-        margin-inline-start: -24px;
+    img {
+        &:hover {
+            z-index: 1;
+            transform: scale(1.2);
+        }
+        &:not(:first-child) {
+            margin-inline-start: -24px;
+        }
     }
     &.style-two {
         img:not(:first-child) {

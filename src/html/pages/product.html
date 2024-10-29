@@ -1,0 +1,733 @@
+@@include('../partials/_template-top.html')
+
+    @@include('../partials/_header.html')
+
+    @@include('../partials/_breadcrumb.html', {
+        'breadcrumbTitle': 'Products',
+        'prevPageText': '',
+        'arrowTwoShowHide': 'd-none',
+        'prevPageLink': 'course.html',
+        'breadcrumbText': 'Products',
+    })
+
+    <!-- =============================== Products Section Start ================================== -->
+    <section class="course-list-view py-120 background-img bg-img" data-background-image="assets/images/bg/gradient-bg.png">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="sidebar rounded-12 bg-white p-32 box-shadow-md">
+                        <form action="#">
+                            <div class="flex-between">
+                                <div class="flex-grow-1">
+                                    <div class="flex-between">
+                                        <h4 class="mb-0">Filters</h4>
+                                        <button type="button" class="sidebar-close text-xl text-neutral-500 d-lg-none hover-text-main-600">
+                                            <i class="ph-bold ph-x"></i>
+                                        </button>
+                                    </div>
+                                    <span class="d-block border border-neutral-30 border-dashed my-24"></span>
+                                </div>
+                           
+                            </div>
+    
+                            <div class="position-relative">
+                                <input type="text" class="common-input pe-48 rounded-pill bg-main-25" placeholder="Enter Your Email...">
+                                <button type="submit" class="text-xl position-absolute top-50 translate-middle-y inset-inline-end-0 me-4  w-40 h-40 bg-main-600 d-flex align-items-center justify-content-center text-white rounded-circle hover-bg-main-700">
+                                    <i class="ph-bold ph-magnifying-glass"></i>
+                                </button>
+                            </div>
+                            <span class="d-block border border-neutral-30 border-dashed my-24"></span>
+    
+                            <div class="d-flex flex-column gap-32">
+                                <div class="col-sm-12">
+                                    <h6 class="text-lg mb-24 fw-semibold">Gender</h6>
+                                    <div class="d-flex flex-column gap-16">
+                                        <div class="form-check common-check common-radio mb-0">
+                                            <input class="form-check-input" type="radio" name="gender" id="Male">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Male">Male</label>
+                                        </div>
+                                        <div class="form-check common-check common-radio mb-0">
+                                            <input class="form-check-input" type="radio" name="gender" id="Female">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Female">Female</label>
+                                        </div>
+                                        <div class="form-check common-check common-radio mb-0">
+                                            <input class="form-check-input" type="radio" name="gender" id="kids">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="kids">kids</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="">
+                                    <h6 class="text-lg mb-24 fw-semibold">Category</h6>
+                                    <div class="d-flex flex-column gap-16">
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="All">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="All">All</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Shoes">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Shoes">Shoes</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Apparel">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Apparel">Apparel</label>
+                                        </div>
+                                        <div class="form-check common-check mb-0">
+                                            <input class="form-check-input bg-main-25" type="checkbox" name="tutorType" id="Accessories">
+                                            <label class="form-check-label fw-normal flex-grow-1" for="Accessories">Accessories</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Color</h6>
+                                    <div class="color-list d-flex flex-wrap align-items-center gap-12">
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-black rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-deep-green rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-violet rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-info rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-light-green rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-yellow rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-danger rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-blue rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-paste rounded-circle"></button>
+                                        <button type="button" class="color-list__button w-24 h-24 bg-color-warning rounded-circle"></button>
+                                    </div>
+                                </div>
+                                
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Pricing scale</h6>
+                                    <div class="custom--range style-two">
+                                        <div id="slider-range"></div>
+                                        <div class="custom--range__content">
+                                            <input type="text" class="custom--range__prices text-neutral-600 text-start text-md fw-medium w-100 text-center bg-transparent border-0 outline-0" id="amount" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h6 class="text-lg mb-20 fw-medium">Star Category</h6>
+                                    <div class="d-flex flex-column gap-16">
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star5">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star5">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    5 Star
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star4">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star4">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    4 Star
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star3">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star3">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    3 Star
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star2">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star2">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    2 Star
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="flex-between gap-16">
+                                            <div class="form-check common-check mb-0">
+                                                <input class="form-check-input" type="checkbox" name="categories" id="star1s">
+                                                <label class="form-check-label fw-normal flex-grow-1 flex-align gap-8" for="star1s">
+                                                    <span class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></span>
+                                                    1 Star
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="d-block border border-neutral-30 border-dashed my-32"></span>
+                            <button type="reset" class="btn btn-outline-main rounded-pill flex-center gap-16 fw-semibold w-100">
+                                <i class="ph-bold ph-arrow-clockwise d-flex text-lg"></i>
+                                Reset Filters
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="flex-between gap-16 flex-wrap mb-40">
+                        <span class="text-neutral-500">Showing 9 of 600 Results </span>
+                        <div class="flex-align gap-16">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-500 flex-shrink-0">Sort By :</span>
+                                <select class="form-select ps-20 pe-28 py-8 fw-medium rounded-pill bg-main-25 border border-neutral-30 text-neutral-700">
+                                    <option value="1">Newest</option>
+                                    <option value="1">Trending</option>
+                                    <option value="1">Popular</option>
+                                </select>
+                            </div>
+                            <button type="button" class="list-bar-btn text-xl w-40 h-40 bg-main-600 text-white rounded-8 flex-center d-lg-none">
+                                <i class="ph-bold ph-funnel"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="row gy-4">
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img1.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Nike Air Force</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img2.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <span class="py-8 px-16 bg-main-two-600 rounded-8 text-white">Sale</span>
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Athletic Sneaker</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img3.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Dressy Boots</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img4.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <span class="py-8 px-16 bg-success-600 rounded-8 text-white">New</span>
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Popular Loafers</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img5.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <span class="py-8 px-16 bg-success-600 rounded-8 text-white">New</span>
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Oxfords leather</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img6.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Dressy Boots</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img7.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <span class="py-8 px-16 bg-main-two-600 rounded-8 text-white">Sale</span>
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Heeled Flats</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img8.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Pumps classic</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img9.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Heels stilettos</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img10.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <span class="py-8 px-16 bg-success-600 rounded-8 text-white">New</span>
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Sandals various</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img11.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Heels Wedges</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="scale-hover-item bg-white rounded-16 p-12 h-100 box-shadow-md">
+                                <div class="course-item__thumb rounded-12 bg-main-25 overflow-hidden position-relative max-h-unset min-h-252">
+                                    <a href="product-details.html" class="w-100 h-100 d-flex justify-content-center align-items-center min-h-inherit">
+                                        <img src="assets/images/thumbs/product-img12.png" alt="Course Image" class="scale-hover-item__img rounded-12 transition-2">
+                                    </a>
+                                    <div class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 d-flex align-items-center justify-content-between p-16">
+                                        <span class="py-8 px-16 bg-main-two-600 rounded-8 text-white">Sale</span>
+                                        <button class="w-40 h-40 rounded-8 d-flex justify-content-center align-items-center bg-white box-shadow-md text-neutral-500 text-lg hover-bg-main-600 hover-text-white transition-2 ms-auto">
+                                            <i class="ph ph-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pt-32 pb-24 px-16 position-relative">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between mb-16">
+                                            <h5 class="mb-0">
+                                                <a href="product-details.html" class="link text-line-1">Mules flat sole</a>
+                                            </h5>
+                                            <div class="flex-shrink-0 d-flex gap-4">
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-blue rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-light-green rounded-circle"></button>
+                                                    <button type="button" class="w-16 h-16 border border-2 border-white ms--6 bg-color-danger rounded-circle"></button>
+                                                </div>
+                                                <span class="text-neutral-500">+3</span>
+                                            </div>        
+                                        </div>
+                                        <div class="flex-between gap-8 flex-wrap">
+                                            <div class="flex-align gap-4">
+                                                <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                                    <i class="ph-fill ph-star"></i>
+                                                </span>
+                                                <span class="text-lg text-neutral-700">
+                                                    4.7
+                                                </span>
+                                            </div>
+                                            <h5 class="text-main-600 mb-0">$95.25</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <ul class="pagination mt-40 flex-align gap-12 flex-wrap justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-left"></i></a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#">...</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-neutral-700 fw-semibold w-40 h-40 bg-main-25 rounded-circle hover-bg-main-600 border-neutral-30 hover-border-main-600 hover-text-white flex-center p-0" href="#"><i class="ph-bold ph-caret-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================== Products Section End ================================== -->
+
+    
+    @@include('../partials/_footer.html')
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>

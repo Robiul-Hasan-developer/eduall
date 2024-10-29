@@ -316,7 +316,7 @@
 }
 
 .btn-outline-main:hover {
-    background-color: hsl(var(--main)/0.25) !important;
+    background-color: hsl(var(--main)/0.1) !important;
     border-color: hsl(var(--main)) !important;
 }
 
@@ -1173,6 +1173,11 @@ input[type=number] {
 
 .custom--range #slider-range span:focus {
     background-color: var(--main-600);
+}
+
+.custom--range.style-two #slider-range .ui-slider-handle {
+    width: 15px !important;
+    height: 15px !important;
 }
 
 /* ================================= Range Slider Css End =========================== */
@@ -2665,6 +2670,10 @@ button:focus {
 
 .ms--40 {
   margin-inline-start: -40px;
+}
+
+.ms--6 {
+  margin-inline-start: -6px;
 }
 
 @media (min-width: 992px) {
@@ -4333,6 +4342,10 @@ button:focus {
   top: 8%;
 }
 
+.border-trans {
+  border-color: transparent;
+}
+
 /* ================================= Classes Css End =========================== */
 /* ============================ Extend Css Start ======================== */
 /* Cover image Css */
@@ -4714,6 +4727,14 @@ button:focus {
   height: 10rem !important;
 }
 
+.min-h-252 {
+  min-height: 252px;
+}
+
+.min-h-inherit {
+  min-height: inherit;
+}
+
 .max-h-unset {
   max-height: unset !important;
 }
@@ -4741,6 +4762,14 @@ button:focus {
 }
 .max-w-176 {
   max-width: 176px;
+}
+
+.max-w-116 {
+  max-width: 116px;
+}
+
+.max-w-454 {
+  max-width: 454px;
 }
 
 .max-w-708 {
@@ -8176,6 +8205,50 @@ button:focus {
   background-color: #fff !important;
 }
 
+.bg-color-black {
+  background-color: #0b1323;
+}
+
+.bg-color-deep-green {
+  background-color: #00a76f;
+}
+
+.bg-color-violet {
+  background-color: #8e33ff;
+}
+
+.bg-color-info {
+  background-color: #00b8d9;
+}
+
+.bg-color-light-green {
+  background-color: #22c55e;
+}
+
+.bg-color-yellow {
+  background-color: #ffab00;
+}
+
+.bg-color-danger {
+  background-color: #ff5630;
+}
+
+.bg-color-blue {
+  background-color: #0066ff;
+}
+
+.bg-color-paste {
+  background-color: #33ff00;
+}
+
+.bg-color-warning {
+  background-color: #ff7a00;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
 /* Font Size Class Start */
 .text-inherit {
   font-size: inherit;
@@ -10067,6 +10140,11 @@ body::after {
   animation: upDown 3.5s linear infinite;
 }
 
+.enrolled-students img:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
 .enrolled-students img:not(:first-child) {
   margin-inline-start: -24px;
 }
@@ -10930,4 +11008,31 @@ body::after {
 }
 
 /* Gallery Css End */
+/* ======================== Product Css Start ============================== */
+.color-list__button {
+  transition: 0.2s linear;
+}
+
+.color-list__button.active {
+  transform: scale(1.35);
+  position: relative;
+}
+
+.color-list__button.active::before {
+  position: absolute;
+  content: "\e182";
+  font-family: "phosphor";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Product Details Css */
+.product-small-thumbs .slick-current.slick-active > div > div {
+  border-color: var(--main-600) !important;
+}
+
+/* ======================== Product Css End  ============================== */
 /*# sourceMappingURL=main.css.map */

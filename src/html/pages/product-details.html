@@ -1,0 +1,456 @@
+@@include('../partials/_template-top.html')
+
+    @@include('../partials/_header.html')
+
+    @@include('../partials/_breadcrumb.html', {
+        'breadcrumbTitle': 'Products Details',
+        'prevPageText': '',
+        'arrowTwoShowHide': 'd-none',
+        'prevPageLink': 'course.html',
+        'breadcrumbText': 'Products Details',
+    })
+
+    <!-- =============================== Products Details Section Start ================================== -->
+    <section class="py-120">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xxl-6 col-lg-6">
+                    <div class="product-big-thumbs bg-main-25 rounded-12 border border-neutral-30 p-24">
+                        <div>   
+                            <img src="assets/images/thumbs/product-big-img1.png" alt="">
+                        </div>
+                        <div>   
+                            <img src="assets/images/thumbs/product-big-img2.png" alt="">
+                        </div>
+                        <div>   
+                            <img src="assets/images/thumbs/product-big-img3.png" alt="">
+                        </div>
+                        <div>   
+                            <img src="assets/images/thumbs/product-big-img4.png" alt="">
+                        </div>
+                        <div>   
+                            <img src="assets/images/thumbs/product-big-img3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="mt-24">
+                        <div class="product-small-thumbs">
+                            <div class="bg-main-25 rounded-8 border border-neutral-30 p-10 d-flex justify-content-center align-items-center">
+                                <img src="assets/images/thumbs/product-small-img1.png" alt="">
+                            </div>
+                            <div class="bg-main-25 rounded-8 border border-neutral-30 p-10 d-flex justify-content-center align-items-center">
+                                <img src="assets/images/thumbs/product-small-img2.png" alt="">
+                            </div>
+                            <div class="bg-main-25 rounded-8 border border-neutral-30 p-10 d-flex justify-content-center align-items-center">
+                                <img src="assets/images/thumbs/product-small-img3.png" alt="">
+                            </div>
+                            <div class="bg-main-25 rounded-8 border border-neutral-30 p-10 d-flex justify-content-center align-items-center">
+                                <img src="assets/images/thumbs/product-small-img4.png" alt="">
+                            </div>
+                            <div class="bg-main-25 rounded-8 border border-neutral-30 p-10 d-flex justify-content-center align-items-center">
+                                <img src="assets/images/thumbs/product-small-img3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-1 d-xxl-block d-none"></div>
+                <div class="col-xxl-5 col-lg-6">
+                    <div class="">
+                        <div class="d-flex flex-column gap-24 align-items-start">
+                            <span class="py-8 px-16 bg-main-two-600 rounded-8 text-white">Sale</span>
+                            <span class="text-uppercase text-md text-success-600 fw-semibold">IN STOCK</span>
+                            <h3 class="mb-0">Dressy Chair Trendy look.</h3>
+                            <div class="flex-align gap-8">
+                                <div class="flex-align gap-4">
+                                    <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                        <i class="ph-fill ph-star"></i>
+                                    </span>
+                                    <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                        <i class="ph-fill ph-star"></i>
+                                    </span>
+                                    <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                        <i class="ph-fill ph-star"></i>
+                                    </span>
+                                    <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                        <i class="ph-fill ph-star"></i>
+                                    </span>
+                                    <span class="text-2xl fw-medium text-warning-600 d-flex">
+                                        <i class="ph-bold ph-star"></i>
+                                    </span>
+                                </div>
+                                <span class="text-md text-neutral-500">
+                                    (3.36k reviews)
+                                </span>
+                            </div>
+                            <h3 class="mb-0 text-main-600">$95.25</h3>
+                            <p class="text-neutral-500">Covering the ankle or higher, boots can be dressy, rugged, or designed for specific activities like hiking or riding.</p>
+                        </div>  
+
+                        <span class="d-block border border-neutral-30 border-dashed my-32"></span>
+                        
+                        <div class="d-flex flex-column gap-32 align-items-start">
+                            <div class="d-flex align-items-center justify-content-between gap-8 w-100">
+                                <span class="text-lg text-neutral-700 fw-medium">Color</span>
+                                <div class="color-list d-flex flex-wrap align-items-center gap-12">
+                                    <button type="button" class="color-list__button w-24 h-24 bg-primary-600 rounded-circle"></button>
+                                    <button type="button" class="color-list__button w-24 h-24 bg-color-deep-green rounded-circle"></button>
+                                    <button type="button" class="color-list__button w-24 h-24 bg-color-violet rounded-circle"></button>
+                                    <button type="button" class="color-list__button w-24 h-24 bg-color-warning rounded-circle"></button>
+                                    <button type="button" class="color-list__button w-24 h-24 bg-color-black rounded-circle active"></button>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between gap-8 w-100">
+                                <span class="text-lg text-neutral-700 fw-medium">Size</span>
+                                <select class="common-input w-auto bg-main-25 border border-main-100 rounded-pill">
+                                    <option value="32">32</option>
+                                    <option value="24">24</option>
+                                    <option value="16">16</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between gap-8 w-100">
+                                <span class="text-lg text-neutral-700 fw-medium">Quantity</span>
+                                <div class="border border-neutral-30 bg-main-25 rounded-pill p-4 max-w-116 w-100 d-flex justify-content-between">
+                                    <button type="button" class="quantity__minus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral-30 hover-border-main-600 hover-text-white flex-center">
+                                        <i class="ph-bold ph-minus"></i>
+                                    </button>
+                                    <input type="text" class="quantity__input flex-grow-1 common-input border-0 bg-transparent text-center text-lg fw-semibold text-neutral-700 p-0" value="1">
+                                    <button type="button" class="quantity__plus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral-30 hover-border-main-600 hover-text-white flex-center">
+                                        <i class="ph-bold ph-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <span class="d-block border border-neutral-30 border-dashed my-32"></span>
+
+                        <div class="d-flex gap-24">
+                            <a href="cart.html" class="flex-grow-1 btn btn-main rounded-pill flex-align gap-8">
+                                <i class="ph ph-shopping-cart d-sm-flex d-none text-lg"></i>
+                                Add To Cart
+                            </a>
+                            <a href="checkout.html" class="flex-grow-1 btn btn-outline-main rounded-pill flex-align gap-8">
+                                <i class="ph ph-tag d-sm-flex d-none text-lg"></i>
+                                Buy Now
+                            </a>
+                        </div>
+                        <div class="mt-32 flex-align gap-24 justify-content-center flex-wrap"> 
+                            <a href="javascript:void(0)" class="flex-align gap-12 text-neutral-500 hover-text-main-600 text-lg">
+                                <i class="ph-bold ph-arrows-left-right d-flex"></i>
+                                Compare
+                            </a>
+                            <a href="javascript:void(0)" class="flex-align gap-12 text-neutral-500 hover-text-main-600 text-lg">
+                                <i class="ph-bold ph-heart d-flex"></i>
+                                Favorite
+                            </a>
+                            <a href="javascript:void(0)" class="flex-align gap-12 text-neutral-500 hover-text-main-600 text-lg">
+                                <i class="ph-bold ph-share-network d-flex"></i>
+                                Share
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-120">
+
+                <!-- Overview Start -->
+                <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+
+                    <div class="d-flex align-items-center flex-wrap gap-32">
+                        <div class="bg-white rounded-16 p-32 d-flex justify-content-center align-items-center">
+                            <img src="assets/images/thumbs/over-img.png" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="mb-24">Overview</h3>
+                            <p class="text-neutral-500 max-w-454">Google Play Store, shortened to Play Store on the Home screen and App screen, is Google's official pre-installed app store on Android-certified devices.</p>
+                        </div>
+                    </div>
+                    
+                    <span class="d-block border border-neutral-30 border-dashed my-32"></span>
+                    <div class="">
+                        <h4 class="mb-16">Comfort is Key:</h4>
+                        <p class="text-neutral-500">When choosing an office chair, prioritize comfort. Look for chairs with ergonomic designs, adjustable features, and ample padding to ensure a comfortable seating experience, especially for long hours of work. Invest in a chair made from durable materials. A high-quality chair not only provides comfort but is also built to withstand daily use, ensuring longevity and value for your investment.</p>
+                    </div>
+                    <span class="d-block border border-neutral-30 border-dashed my-32"></span>
+                    <div class="">
+                        <h5 class="mb-16">Style and Aesthetics:</h5>
+                        <p class="text-neutral-500">Consider the aesthetics of the chair to complement the overall design of your workspace. Whether you prefer a modern, sleek look or a more traditional style, there are office chairs available to suit various tastes.</p>
+                    </div>
+                    <span class="d-block border border-neutral-30 border-dashed my-32"></span>
+                    <div class="">
+                        <h6 class="mb-16">Support for Good Posture:</h6>
+                        <p class="text-neutral-500">Look for chairs that promote good posture. Proper lumbar support and a design that encourages a neutral spine position contribute to maintaining a healthy and comfortable seated posture. Chairs with swivel functionality and smooth mobility are practical for dynamic work environments. This allows users to easily reach different areas of their workspace without straining.</p>
+                    </div>
+                    
+                </div>
+                <!-- Overview End -->
+                
+                
+                <!-- Reviews Start -->
+                <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                    <h5 class="mb-0">Average Reviews</h5>
+                    <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+
+                    <div class="d-flex flex-sm-row flex-column gap-36">
+                        <div class="rounded-16 px-40 py-24 flex-center flex-column flex-shrink-0 text-center bg-main-600 text-white">
+                            <h2 class="mb-8 text-white">4.8</h2>
+                            <div class="flex-center gap-4">
+                                <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star"></i></span>
+                                <span class="text-15 fw-medium text-white d-flex"><i class="ph-fill ph-star-half"></i></span>
+                            </div>
+                            <span class="mt-8 text-gray-500">26 Rating</span>
+                        </div>
+
+                        <div class="flex-grow-1">
+                            <div class="flex-align gap-20 mb-8">
+                                <div class="flex-align gap-8">
+                                    <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-gray-900 flex-shrink-0">5</span>
+                                </div>
+                                <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-main-600 rounded-pill" style="width: 90%"></div>
+                                </div>
+                                <span class="text-gray-900 flex-shrink-0">90%</span>
+                            </div>
+                            <div class="flex-align gap-20 mb-8">
+                                <div class="flex-align gap-8">
+                                    <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-gray-900 flex-shrink-0">5</span>
+                                </div>
+                                <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-main-600 rounded-pill" style="width: 75%"></div>
+                                </div>
+                                <span class="text-gray-900 flex-shrink-0">75%</span>
+                            </div>
+                            <div class="flex-align gap-20 mb-8">
+                                <div class="flex-align gap-8">
+                                    <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-gray-900 flex-shrink-0">5</span>
+                                </div>
+                                <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-main-600 rounded-pill" style="width: 67%"></div>
+                                </div>
+                                <span class="text-gray-900 flex-shrink-0">67%</span>
+                            </div>
+                            <div class="flex-align gap-20 mb-8">
+                                <div class="flex-align gap-8">
+                                    <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-gray-900 flex-shrink-0">5</span>
+                                </div>
+                                <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-main-600 rounded-pill" style="width: 44%"></div>
+                                </div>
+                                <span class="text-gray-900 flex-shrink-0">44%</span>
+                            </div>
+                            <div class="flex-align gap-20">
+                                <div class="flex-align gap-8">
+                                    <span class="text-lg fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                                    <span class="text-gray-900 flex-shrink-0">5</span>
+                                </div>
+                                <div class="progress w-100 bg-white rounded-pill h-12" role="progressbar" aria-label="Basic example" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-main-600 rounded-pill" style="width: 21%"></div>
+                                </div>
+                                <span class="text-gray-900 flex-shrink-0">21%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+                    <div class="flex-between gap-16 flex-wrap mb-24">
+                        <h6 class="mb-0">All Reviews</h6>
+                        <div class="flex-align gap-16">
+                            <div class="flex-align gap-8">
+                                <span class="text-neutral-500 flex-shrink-0">Sort By :</span>
+                                <select class="form-select ps-20 pe-28 py-8 fw-medium rounded-pill bg-main-25 border border-neutral-30 text-neutral-700">
+                                    <option value="1">Newest</option>
+                                    <option value="1">Trending</option>
+                                    <option value="1">Popular</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Item -->
+                    <div class="border border-neutral-30 rounded-12 bg-white p-32">
+                        <div class="flex-align gap-8 mb-16">
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                        </div>
+                        <p class="text-neutral-700">"This course was fantastic! The instructor's explanations were clear and concise, making it easy to understand even the more complex topics."</p>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                        <div class="flex-align gap-24">
+                            <img src="assets/images/thumbs/reviewer-img1.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                            <div class="">
+                                <h6 class="text-xl mb-8 fw-medium">Mary Johnson</h6>
+                                <span class="text-neutral-700 text-sm">Project Manager</span>
+                            </div>
+                        </div>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                        <div class="flex-align flex-wrap gap-40">
+                            <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                <span class="like-button__text">178</span>
+                            </button>
+                            <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                Reply
+                            </a>
+                        </div>
+                        <div class="flex-align gap-20 mt-24">
+                            <img src="assets/images/thumbs/reviewer-img2.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                            <input type="text" class="common-input rounded-pill bg-main-25 border-neutral-30 py-16" placeholder="Join the discussion...">
+                        </div>
+                    </div>
+                    <!-- Review Item -->
+
+                    <!-- Review Item -->
+                    <div class="border border-neutral-30 rounded-12 bg-white p-32 mt-24">
+                        <div class="flex-align gap-8 mb-16">
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                        </div>
+                        <p class="text-neutral-700">"Great course for beginners and advanced learners alike. The projects were particularly helpful in applying what I learned. Highly recommend!"</p>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                        <div class="flex-align gap-24">
+                            <img src="assets/images/thumbs/reviewer-img2.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                            <div class="">
+                                <h6 class="text-xl mb-8 fw-medium">Alice Brown</h6>
+                                <span class="text-neutral-700 text-sm">Software Developer</span>
+                            </div>
+                        </div>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                        <div class="flex-align flex-wrap gap-40">
+                            <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                <span class="like-button__text">178</span>
+                            </button>
+                            <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                Reply
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Review Item -->
+
+                    <!-- Review Item -->
+                    <div class="border border-neutral-30 rounded-12 bg-white p-32 mt-24">
+                        <div class="flex-align gap-8 mb-16">
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star"></i></span>
+                            <span class="text-xl fw-medium text-warning-600 d-flex"><i class="ph-fill ph-star-half"></i></span>
+                        </div>
+                        <p class="text-neutral-700">"Dr. Smith is an amazing instructor. Her real-world experience and teaching style made this course one of the best I've ever taken."</p>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                        <div class="flex-align gap-24">
+                            <img src="assets/images/thumbs/reviewer-img3.png" alt="" class="w-60 h-60 rounded-circle cover-img">
+                            <div class="">
+                                <h6 class="text-xl mb-8 fw-medium">David Wilson</h6>
+                                <span class="text-neutral-700 text-sm">Ethical Hacker</span>
+                            </div>
+                        </div>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                        <div class="flex-align flex-wrap gap-40">
+                            <button type="button" class="like-button flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                <span class="like-button__icon text-xl d-flex"><i class="ph-bold ph-thumbs-up"></i></span>
+                                <span class="like-button__text">178</span>
+                            </button>
+                            <a href="#commentForm" class="flex-align gap-8 text-neutral-500 hover-text-main-600">
+                                <i class="text-xl d-flex ph-bold ph-chat-centered-text"></i>
+                                Reply
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Review Item -->
+
+                    <button type="button" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
+                        See All Reviews
+                        <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                    </button>
+                </div>
+                <!-- Reviews End -->
+
+                <!-- Review Form Start -->
+                <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 mt-24">
+                    <form action="#" id="commentForm">
+                        <h5 class="mb-0">Write a Review</h5>
+                        <span class="d-block border border-neutral-30 my-32 border-dashed"></span>
+                        <div class="mb-24">
+                            <label for="name" class="text-neutral-700 text-lg fw-medium mb-12">Name </label>
+                            <input type="text" class="common-input rounded-pill" id="name" placeholder="Enter Name...">
+                        </div>
+                        <div class="mb-24">
+                            <label for="email" class="text-neutral-700 text-lg fw-medium mb-12">Email </label>
+                            <input type="email" class="common-input rounded-pill" id="email" placeholder="Enter Email...">
+                        </div>
+                        <div class="mb-24">
+                            <label class="text-neutral-700 text-lg fw-medium mb-12">Star Reviews </label>
+                            
+                            <div id="half-star-rating">
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked="" name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked="">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star ph-fill ph-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star ph-fill ph-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mb-24">
+                            <label for="desc" class="text-neutral-700 text-lg fw-medium mb-12">Your Question </label>
+                            <textarea id="desc" class="common-input rounded-24" placeholder="Write you question..."></textarea>
+                        </div>
+                        <div class="mb-0">
+                            <button type="submit" class="btn btn-main rounded-pill flex-center gap-8 mt-40">
+                                Submit Review
+                                <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Review Form End -->
+                
+            </div>
+        </div>
+    </section>
+    <!-- =============================== Products Details Section End ================================== -->
+
+    
+    @@include('../partials/_footer.html')
+
+    @@include('../partials/_template-bottom.html')
+
+    </body>
+</html>

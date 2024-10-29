@@ -11,6 +11,15 @@
     }
 }
 
+.min-h {
+  &-252 {
+    min-height: 252px;
+  }
+  &-inherit {
+    min-height: inherit;
+  }
+}
+
 .max-h-unset {
     max-height: unset !important;
 }
@@ -33,8 +42,16 @@
     max-width: 274px;
   }
 }
-.max-w-176 {
-  max-width: 176px;
+.max-w {
+  &-176 {
+    max-width: 176px;
+  }
+  &-116 {
+    max-width: 116px;
+  }
+  &-454 {
+    max-width: 454px;
+  }
 }
 .max-w-708 {
   max-width: 708px;

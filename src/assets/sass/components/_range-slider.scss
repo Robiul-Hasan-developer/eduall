@@ -32,5 +32,14 @@
 			}
 		}
 	}
+
+	&.style-two {
+		#slider-range { 
+			.ui-slider-handle {
+				width: 15px !important;
+				height: 15px !important;
+			}
+		}
+	}
 }
 /* ================================= Range Slider Css End =========================== */

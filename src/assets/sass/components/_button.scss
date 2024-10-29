@@ -40,7 +40,7 @@
         border-color: hsl(var(--main)) !important;
         color: hsl(var(--main)) !important;
         &:hover {
-            background-color: hsl(var(--main)/.25) !important;
+            background-color: hsl(var(--main)/.1) !important;
             border-color: hsl(var(--main)) !important;
         }
     }

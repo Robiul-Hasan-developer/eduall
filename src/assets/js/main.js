@@ -676,6 +676,55 @@ if ($('ul').length) {
       enabled:true
     }
   });
+
+    // ========================= Color List Js Start ===================
+    $('.color-list__button').on('click', function () {
+      $('.color-list__button').removeClass('active'); 
+  
+      if(!$(this).hasClass('active')) {
+        $(this).addClass('active');
+        $(this).removeClass('border-neutral-50');
+      } else {
+        $(this).removeClass('active');
+        $(this).addClass('border-neutral-50');
+      };
+    }); 
+    // ========================= Color List Js End ===================
+    
+    // ========================= Product Details Slider Js Start ===================
+    
+    $('.product-big-thumbs').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      fade: true,
+      asNavFor: '.product-small-thumbs'
+    });
+    $('.product-small-thumbs').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.product-big-thumbs',
+      arrows: false,
+      dots: false,
+      autoplay: false,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 424,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+      ]
+    });
+    // ========================= Product Details Slider Js End ===================
   
 
   });
