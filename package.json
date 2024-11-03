@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://fahaddevs@bitbucket.org/fahaddevs/jobtotal.git"
+    "url": "#"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/fahaddevs/jobtotal#readme",
+  "homepage": "#",
   "devDependencies": {
     "browser-sync": "^2.27.4",
     "gulp": "^4.0.2",

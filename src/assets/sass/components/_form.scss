@@ -69,9 +69,16 @@
     }
 }
 
-.placeholder-white {
-    &::placeholder {
-        color: #fff;
+.placeholder {
+    &-white {
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    &-text-neutral-100 {
+        &::placeholder {
+            color: var(--neutral-100);
+        }
     }
 }
 
@@ -244,8 +251,8 @@ input[type=number]{
             inset-inline-start: 50%;
             -webkit-transform: translate(-50%, -50%) scale(.2);
             transform: translate(-50%, -50%) scale(.2);
-            width: 10px;
-            height: 10px;
+            width: 7px;
+            height: 7px;
             background-color: hsl(var(--main));
             border-radius: 50%;
             transition: .2s linear;

@@ -725,6 +725,12 @@ if ($('ul').length) {
       ]
     });
     // ========================= Product Details Slider Js End ===================
+
+    // ========================= Add To Cart Js Start ===================
+    $('.add-to-cart').on('click', function () {
+      $(this).toggleClass('active')
+    });
+    // ========================= Add To Cart Js End ===================
   
 
   });

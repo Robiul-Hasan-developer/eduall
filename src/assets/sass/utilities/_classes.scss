@@ -170,4 +170,23 @@
 .border-trans {
     border-color: transparent;
 }
+
+.bg {
+    &-table {
+        background-color: #9e7152;
+    }
+    &-watch {
+        background-color: #faddc4;
+    }
+    &-pen {
+        background-color: #e4eaed
+    }
+}
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.min-w-max {
+    min-width: max-content;
+}
 /* ================================= Classes Css End =========================== */

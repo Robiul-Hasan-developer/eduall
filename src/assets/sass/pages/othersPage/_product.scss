@@ -19,6 +19,19 @@
     }
 }
 
+.active-scale-08 {
+    &:active {
+        transform: scale(0.8);
+    }
+}
+
+.add-to-cart {
+    &.active {
+        background-color: var(--main-600) !important;
+        color: hsl(var(--white)) !important;
+    }
+}
+
 /* Product Details Css */
 .product-small-thumbs .slick-current.slick-active > div > div {
     border-color: var(--main-600) !important;

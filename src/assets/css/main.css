@@ -108,7 +108,7 @@
     --size-28: 1.75rem;
     --size-30: 1.875rem;
     --size-32: 2rem;
-    --size-36: 2rem;
+    --size-36: 2.25rem;
     --size-40: 2.5rem;
     --size-44: 2.75rem;
     --size-48: 3rem;
@@ -432,6 +432,10 @@
     color: #fff;
 }
 
+.placeholder-text-neutral-100::placeholder {
+    color: var(--neutral-100);
+}
+
 /* input End */
 /* Form Select */
 .select-has-icon {
@@ -628,8 +632,8 @@ input[type=number] {
     inset-inline-start: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.2);
     transform: translate(-50%, -50%) scale(0.2);
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: hsl(var(--main));
     border-radius: 50%;
     transition: 0.2s linear;
@@ -4346,6 +4350,26 @@ button:focus {
   border-color: transparent;
 }
 
+.bg-table {
+  background-color: #9e7152;
+}
+
+.bg-watch {
+  background-color: #faddc4;
+}
+
+.bg-pen {
+  background-color: #e4eaed;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.min-w-max {
+  min-width: max-content;
+}
+
 /* ================================= Classes Css End =========================== */
 /* ============================ Extend Css Start ======================== */
 /* Cover image Css */
@@ -4468,7 +4492,7 @@ button:focus {
 }
 
 .w-36 {
-  width: 2rem !important;
+  width: 2.25rem !important;
 }
 
 .w-40 {
@@ -4644,7 +4668,7 @@ button:focus {
 }
 
 .h-36 {
-  height: 2rem !important;
+  height: 2.25rem !important;
 }
 
 .h-40 {
@@ -8387,7 +8411,7 @@ button:focus {
 }
 
 .text-36 {
-  font-size: 2rem !important;
+  font-size: 2.25rem !important;
 }
 
 .text-40 {
@@ -8599,7 +8623,7 @@ button:focus {
 }
 
 .rounded-36 {
-  border-radius: 2rem !important;
+  border-radius: 2.25rem !important;
 }
 
 .rounded-40 {
@@ -11027,6 +11051,15 @@ body::after {
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 1rem;
+}
+
+.active-scale-08:active {
+  transform: scale(0.8);
+}
+
+.add-to-cart.active {
+  background-color: var(--main-600) !important;
+  color: hsl(var(--white)) !important;
 }
 
 /* Product Details Css */

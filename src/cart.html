@@ -443,7 +443,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="breadcrumb__wrapper">
-                    <h1 class="breadcrumb__title display-4 fw-semibold text-center"> Subscription Plan</h1>
+                    <h1 class="breadcrumb__title display-4 fw-semibold text-center"> Cart List</h1>
                     <ul class="breadcrumb__list d-flex align-items-center justify-content-center gap-4">
                         <li class="breadcrumb__item">
                             <a href="index.html" class="breadcrumb__link text-neutral-500 hover-text-main-600 fw-medium"> 
@@ -459,7 +459,7 @@
                             <i class="text-neutral-500 d-flex ph-bold ph-caret-right"></i>
                         </li>
                         <li class="breadcrumb__item"> 
-                            <span class="text-main-two-600"> Subscription Plan </span> 
+                            <span class="text-main-two-600"> Cart List </span> 
                         </li>
                     </ul>
                 </div>
@@ -469,197 +469,290 @@
 </section>
 <!-- ==================== Breadcrumb End Here ==================== -->
 
-    <!-- =============================== Favorite Course Section Start ================================== -->
-    <section class="favorite-course py-120">
+    <!-- =============================== Cart Section Start ================================== -->
+    <div class="py-120">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-32 bg-main-25">
+                        <h4 class="mb-0">Cart <span class="text-neutral-100 fw-normal">(4 item)</span> </h4>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
 
-            <div class="section-heading text-center">
-                <div class="flex-align d-inline-flex gap-8 mb-16">
-                    <span class="text-main-600 text-2xl d-flex"><i class="ph-bold ph-book-open"></i></span>
-                    <h5 class="text-main-600 mb-0">Subscription Plan</h5>
-                </div>
-                <h2 class="mb-24">Affordable Pricing Packages</h2>
-                <p class="">We embrace innovation and creativity as catalysts for positive change, driving forward-thinking research, teaching methodologies</p>
-            </div>
-
-            <div class="mb-40 d-flex align-items-center gap-24 justify-content-center">
-                <span class="text-neutral-700 fw-semibold">Monthly</span>
-                <div class="form-check form-switch">
-                    <input class="form-check-input shadow-none py-10 px-24" type="checkbox" role="switch">
-                </div>
-                <span class="text-neutral-700 fw-semibold">Yearly <span class="text-main-600">(Save 30%) </span> </span>
-            </div>
-            
-            <div class="row gy-4">
-                <div class="col-xl-4 col-md-6 aos-init" data-aos="fade-up" data-aos-duration="600">
-                    <div class="bg-white border border-neutral-30 animation-item rounded-16 p-12">
-                        <div class="bg-main-25 p-32 rounded-16 transition-2 border border-neutral-30 overflow-hidden position-relative">
-                            <span class="positioned-rotation text-main-600 fw-bold text-lg bg-white d-block text-center p-6">Basic Plan</span>
-                            <div class="w-84 h-84 bg-white p-16 box-shadow-md rounded-circle mx-auto d-inline-flex align-items-center justify-content-center position-relative text-main-600 text-44  border border-neutral-30">
-                                <i class="ph ph-house"></i>
-                            </div>
-                            <h1 class="display-4 fw-bold mb-0 mt-32 text-neutral-700 transition-2">$99<span class="text-sm fw-normal">/Per month</span> </h1>
-                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
-                            <ul class="d-flex flex-column gap-16">
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="200">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Up to 05 users monthly</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="400">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Free 5 host & domain</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="600">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Custom infrastructure</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Access to all our room</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <i class="text-danger-600 ph-bold ph-x"></i>
-                                    <span class="text-neutral-500 text-md fw-medium">24/7 dedicated Support</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <i class="text-danger-600 ph-bold ph-x"></i>
-                                    <span class="text-neutral-500 text-md fw-medium">Unlimited updates</span>
-                                </li>
-                            </ul>
-                            <div class="mt-40">
-                                <a href="sign-in.html" class="btn btn-main rounded-pill flex-align gap-8">
-                                    Get Started
-                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
-                                </a>    
-                            </div>
+                        <div class="table-responsive overflow-x-auto">
+                            <table class="table min-w-max vertical-middle mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="text-neutral-500 fw-semibold px-24 py-20 border-0">Product</th>
+                                        <th class="text-neutral-500 fw-semibold px-24 py-20 border-0">Price</th>
+                                        <th class="text-neutral-500 fw-semibold px-24 py-20 border-0">Quantity</th>
+                                        <th class="text-neutral-500 fw-semibold px-24 py-20 border-0">Total Price</th>
+                                        <th class="text-neutral-500 fw-semibold px-24 py-20 border-0"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="d-flex align-items-center gap-24">
+                                                <div class="w-60 h-60 border border-neutral-40 rounded-8 d-flex justify-content-center align-items-center bg-white">
+                                                    <img src="assets/images/thumbs/cart-img1.png" alt="">
+                                                </div>
+                                                <div class="">
+                                                    <h6 class="text-md mb-12 text-line-1">Chuck 70 Hi Sneaker</h6>
+                                                    <div class="d-flex align-items-center gap-16">
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Size:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">9</span>
+                                                        </div>
+                                                        <span class="h-20 border border-neutral-40 border-dashed"></span>
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Color:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">
+                                                                <span class="w-12 h-12 rounded-circle bg-pen"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $11.70
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="border border-neutral-40 bg-main-50 rounded-pill p-4 max-w-116 w-100 d-flex justify-content-between">
+                                                <button type="button" class="quantity__minus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral-40 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="quantity__input flex-grow-1 common-input border-0 bg-transparent text-center text-lg fw-semibold text-neutral-700 p-0" value="1">
+                                                <button type="button" class="quantity__plus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral430 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                            <span class="text-neutral-100 mt-8 text-xs">Available: 72</span>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $66.70
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <button class="delete-btn text-lg hover-text-main-600 transition-2">
+                                                <i class="ph ph-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="d-flex align-items-center gap-24">
+                                                <div class="w-60 h-60 border border-neutral-40 rounded-8 d-flex justify-content-center align-items-center bg-white">
+                                                    <img src="assets/images/thumbs/cart-img2.png" alt="">
+                                                </div>
+                                                <div class="">
+                                                    <h6 class="text-md mb-12 text-line-1">Cotu Classic Sneaker</h6>
+                                                    <div class="d-flex align-items-center gap-16">
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Size:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">9</span>
+                                                        </div>
+                                                        <span class="h-20 border border-neutral-40 border-dashed"></span>
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Color:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">
+                                                                <span class="w-12 h-12 rounded-circle bg-watch"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $5.22
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="border border-neutral-40 bg-main-50 rounded-pill p-4 max-w-116 w-100 d-flex justify-content-between">
+                                                <button type="button" class="quantity__minus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral-40 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="quantity__input flex-grow-1 common-input border-0 bg-transparent text-center text-lg fw-semibold text-neutral-700 p-0" value="1">
+                                                <button type="button" class="quantity__plus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral430 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                            <span class="text-neutral-100 mt-8 text-xs">Available: 72</span>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $32.22
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <button class="delete-btn text-lg hover-text-main-600 transition-2">
+                                                <i class="ph ph-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="d-flex align-items-center gap-24">
+                                                <div class="w-60 h-60 border border-neutral-40 rounded-8 d-flex justify-content-center align-items-center bg-white">
+                                                    <img src="assets/images/thumbs/cart-img3.png" alt="">
+                                                </div>
+                                                <div class="">
+                                                    <h6 class="text-md mb-12 text-line-1">Zoom Freak 2</h6>
+                                                    <div class="d-flex align-items-center gap-16">
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Size:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">9</span>
+                                                        </div>
+                                                        <span class="h-20 border border-neutral-40 border-dashed"></span>
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Color:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">
+                                                                <span class="w-12 h-12 rounded-circle bg-black"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $6.48
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="border border-neutral-40 bg-main-50 rounded-pill p-4 max-w-116 w-100 d-flex justify-content-between">
+                                                <button type="button" class="quantity__minus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral-40 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="quantity__input flex-grow-1 common-input border-0 bg-transparent text-center text-lg fw-semibold text-neutral-700 p-0" value="1">
+                                                <button type="button" class="quantity__plus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral430 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                            <span class="text-neutral-100 mt-8 text-xs">Available: 72</span>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $18.48
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <button class="delete-btn text-lg hover-text-main-600 transition-2">
+                                                <i class="ph ph-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="d-flex align-items-center gap-24">
+                                                <div class="w-60 h-60 border border-neutral-40 rounded-8 d-flex justify-content-center align-items-center bg-white">
+                                                    <img src="assets/images/thumbs/cart-img4.png" alt="">
+                                                </div>
+                                                <div class="">
+                                                    <h6 class="text-md mb-12 text-line-1">Classic Sneaker</h6>
+                                                    <div class="d-flex align-items-center gap-16">
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Size:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">9</span>
+                                                        </div>
+                                                        <span class="h-20 border border-neutral-40 border-dashed"></span>
+                                                        <div class="d-flex align-items-center gap-4">
+                                                            <span class="text-xs text-neutral-500">Color:</span>
+                                                            <span class="w-20 h-20 border border-neutral-40 bg-white rounded-4 d-flex justify-content-center align-items-center text-sm text-neutral-500">
+                                                                <span class="w-12 h-12 rounded-circle bg-table"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $17.84
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <div class="border border-neutral-40 bg-main-50 rounded-pill p-4 max-w-116 w-100 d-flex justify-content-between">
+                                                <button type="button" class="quantity__minus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral-40 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <input type="text" class="quantity__input flex-grow-1 common-input border-0 bg-transparent text-center text-lg fw-semibold text-neutral-700 p-0" value="1">
+                                                <button type="button" class="quantity__plus item-active-effect transition-1 flex-shrink-0 text-md hover-text-white w-36 h-36 rounded-circle bg-white text-neutral-500 hover-bg-main-600 border border-neutral430 hover-border-main-600 hover-text-white flex-center">
+                                                    <i class="ph-bold ph-plus"></i>
+                                                </button>
+                                            </div>
+                                            <span class="text-neutral-100 mt-8 text-xs">Available: 72</span>
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            $96.84
+                                        </td>
+                                        <td class="border-bottom border-dashed border-neutral-40 text-neutral-500 bg-transparent px-24 py-20">
+                                            <button class="delete-btn text-lg hover-text-main-600 transition-2">
+                                                <i class="ph ph-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                 
+                                </tbody>
+                            </table>
+                            <a href="apply-admission.html" class="flex-align gap-8 text-main-600 hover-text-decoration-underline transition-1 fw-semibold mt-24" tabindex="0">
+                                <i class="ph ph-arrow-left"></i>
+                                Continue Shopping
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 aos-init" data-aos="fade-up" data-aos-duration="800">
-                    <div class="bg-white border border-neutral-30 animation-item rounded-16 p-12">
-                        <div class="bg-main-25 p-32 rounded-16 transition-2 border border-neutral-30 overflow-hidden position-relative">
-                            <span class="positioned-rotation text-main-600 fw-bold text-lg bg-white d-block text-center p-6">Standard Plan</span>
-                            <div class="w-84 h-84 bg-white p-16 box-shadow-md rounded-circle mx-auto d-inline-flex align-items-center justify-content-center position-relative text-main-600 text-44  border border-neutral-30">
-                                <i class="ph-bold ph-tag"></i>
-                            </div>
-                            <h1 class="display-4 fw-bold mb-0 mt-32 text-neutral-700 transition-2">$129<span class="text-sm fw-normal">/Per month</span> </h1>
-                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
-                            <ul class="d-flex flex-column gap-16">
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="200">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Up to 05 users monthly</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="400">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Free 5 host & domain</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="600">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Custom infrastructure</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Access to all our room</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">24/7 dedicated Support</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <i class="text-danger-600 ph-bold ph-x"></i>
-                                    <span class="text-neutral-500 text-md fw-medium">Unlimited updates</span>
-                                </li>
-                            </ul>
-                            <div class="mt-40">
-                                <a href="sign-in.html" class="btn btn-main rounded-pill flex-align gap-8">
-                                    Get Started
-                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
-                                </a>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 aos-init" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="bg-white border border-neutral-30 animation-item rounded-16 p-12">
-                        <div class="bg-main-25 p-32 rounded-16 transition-2 border border-neutral-30 overflow-hidden position-relative">
-                            <span class="positioned-rotation text-main-600 fw-bold text-lg bg-white d-block text-center p-6">Premium Plan</span>
-                            <div class="w-84 h-84 bg-white p-16 box-shadow-md rounded-circle mx-auto d-inline-flex align-items-center justify-content-center position-relative text-main-600 text-44  border border-neutral-30">
-                                <i class="ph-bold ph-piggy-bank"></i>
-                            </div>
-                            <h1 class="display-4 fw-bold mb-0 mt-32 text-neutral-700 transition-2">$199<span class="text-sm fw-normal">/Per month</span> </h1>
-                            <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
-                            <ul class="d-flex flex-column gap-16">
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="200">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Up to 05 users monthly</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="400">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Free 5 host & domain</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="600">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Custom infrastructure</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Access to all our room</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">24/7 dedicated Support</span>
-                                </li>
-                                <li class="flex-align gap-12 aos-init aos-animate text-neutral-700" data-aos="fade-left" data-aos-duration="800">
-                                    <img src="assets/images/icons/check.png" alt="">
-                                    <span class="text-neutral-500 text-md fw-medium">Unlimited updates</span>
-                                </li>
-                            </ul>
-                            <div class="mt-40">
-                                <a href="sign-in.html" class="btn btn-main rounded-pill flex-align gap-8">
-                                    Get Started
-                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
-                                </a>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =============================== Favorite Course Section End ================================== -->
 
-    <!-- ================================= Certificate Section Start ================================= -->
-<div class="certificate">
-    <div class="container container--lg">
-        <div class="certificate-box px-16 bg-main-600 rounded-16">
-            <div class="container">
-                <div class="position-relative py-80">
-                    <div class="row align-items-center">
-                        <div class="col-xl-6">
-                            <div class="certificate__content">
-                                <div class="flex-align gap-8 mb-16 wow bounceInDown">
-                                    <span class="w-8 h-8 bg-white rounded-circle"></span>
-                                    <h5 class="text-white mb-0">Get Certificate</h5>
-                                </div>
-                                <h2 class="text-white mb-40 fw-medium wow bounceIn">Get Quality Skills Certificate From the EduAll</h2>
-                                <a href="" class="btn btn-white rounded-pill flex-align d-inline-flex gap-8 hover-bg-main-800 wow bounceInUp">
-                                    Get Started Now
-                                    <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
-                                </a>
+
+                <div class="col-lg-4">
+                    <div class="border border-neutral-30 rounded-12 bg-main-25 p-24 bg-main-25">
+                        <span class="text-neutral-700 text-lg mb-12">Price</span>
+                        <div class="flex-align align-items-start flex-wrap gap-8">
+                            <div class="flex-align gap-12 text-neutral-700">
+                                <span class="text-2xl d-flex"><i class="ph-bold ph-tag"></i></span>
+                                <span class="">From</span>
+                                <h2 class="mb-0">$99.99</h2>
+                            </div>
+                            <button type="button" class="text-neutral-500 text-sm" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Initial Price">
+                                <i class="ph-bold ph-info"></i>
+                            </button>
+                        </div>
+
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                        
+                        <div class="d-flex flex-column gap-24">
+                            <div class="d-flex align-items-center justify-content-between gap-4">
+                                <span class="text-neutral-500">Base Price</span>
+                                <span class="text-neutral-700 fw-medium">$39.99</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between gap-4">
+                                <span class="text-neutral-500">State Tax</span>
+                                <span class="text-neutral-700 fw-medium">$5</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between gap-4">
+                                <span class="text-neutral-500">Shipping</span>
+                                <span class="text-neutral-700 fw-medium">Free</span>
                             </div>
                         </div>
-                        <div class="col-xl-6 d-xl-block d-none">
-                            <div class="certificate__thumb" data-aos="fade-up-left">    
-                                <img src="assets/images/thumbs/certificate-img.png" alt="" data-tilt data-tilt-max="8" data-tilt-speed="500" data-tilt-perspective="5000" data-tilt-full-page-listening>
-                            </div>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+
+                        <form action="#" class="my-24 position-relative">
+                            <input type="email" class="form-control bg-white shadow-none border border-neutral-30 rounded-pill h-48 ps-24 pe-44 focus-border-main-600" placeholder="DISCOUNT9">
+                            <button type="submit" class="w-36 h-36 flex-center rounded-circle bg-main-600 text-white hover-bg-main-800 position-absolute top-50 translate-middle-y inset-inline-end-0 me-8">
+                                <i class="ph ph-arrow-right"></i>
+                            </button>
+                        </form>
+
+                        <div class="d-flex align-items-center justify-content-between gap-4">
+                            <span class="text-neutral-500">Discount</span>
+                            <span class="text-main-two-600 fw-medium">-$9</span>
                         </div>
+                        <span class="d-block border border-neutral-30 my-24 border-dashed"></span>
+                        <div class="d-flex align-items-center justify-content-between gap-4">
+                            <span class="text-neutral-500">Total</span>
+                            <span class="text-main-600 fw-medium">$35.99</span>
+                        </div>
+                        <span class="d-block border border-neutral-30 mt-24 border-dashed"></span>
+                        <a href="checkout.html" class="btn btn-main rounded-pill w-100 mt-40">
+                            Check Out
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
- </div>
-<!-- ================================= Certificate Section End ================================= -->
+    <!-- =============================== Cart Section End ================================== -->
+
     
     
 <!-- ==================== Footer Start Here ==================== -->
