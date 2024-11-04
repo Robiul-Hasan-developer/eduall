@@ -414,4 +414,48 @@
     }
   }
   
-  /*# sourceMappingURL=magnific-popup.css.map */
+  
+  /* ================================ Custom Transition Css Start ================================== */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  animation: .2s scaleAnimation linear;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+@keyframes scaleAnimation {
+  0% {
+      opacity: 0;
+      scale: .6;
+  }
+  100% {
+      opacity: 1;
+      scale: 1;
+  }
+}
+/* ================================ Custom Transition Css End ================================== */

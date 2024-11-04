@@ -2,7 +2,7 @@
 .faq-thumb {
     @media (min-width: 1199px) {
         position: absolute;
-        right: 54%;
+        inset-inline-end: 54%;
         top: 50%;
         transform: translateY(-50%);
         padding-inline-start: 24px;

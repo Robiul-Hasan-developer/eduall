@@ -2,10 +2,10 @@
 .banner-four {
     &-thumb {
         @media (min-width: 1200px) {
-            left: 5%
+            inset-inline-start: 5%
         }
         @media (min-width: 1600px) {
-            left: 20%
+            inset-inline-start: 20%
         }
     }
 }

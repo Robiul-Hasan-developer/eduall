@@ -6,7 +6,7 @@
             width: 585px;
             height: 585px;
             background-color: var(--main-three-200);
-            left: 10%;
+            inset-inline-start: 10%;
         }
     }
     &::before {
@@ -19,7 +19,7 @@
         filter: blur(400px);
         top: 50%;
         transform: translateY(-50%);
-        left: 0;
+        inset-inline-start: 0;
         z-index: -1;
     }
 }
@@ -30,7 +30,7 @@
             width: 585px;
             height: 585px;
             background-color: var(--main-two-200);
-            right: 10%;
+            inset-inline-end: 10%;
         }
     }
     &::after {
@@ -43,7 +43,7 @@
         filter: blur(400px);
         top: 50%;
         transform: translateY(-50%);
-        right: 0;
+        inset-inline-end: 0;
         z-index: -1;
     }
 }
@@ -51,12 +51,12 @@
 .mash-reverse {
     &.mash-bg-main {
         &::before {
-            left: auto;
-            right: 0;
+            inset-inline-start: auto;
+            inset-inline-end: 0;
         }
         &::after {
-            right: auto;
-            left: 0;
+            inset-inline-end: auto;
+            inset-inline-start: 0;
         }
     }
 }
@@ -74,7 +74,7 @@
         filter: blur(400px);
         top: 50%;
         transform: translateY(-50%);
-        left: 0;
+        inset-inline-start: 0;
         z-index: -1;
     }
 }

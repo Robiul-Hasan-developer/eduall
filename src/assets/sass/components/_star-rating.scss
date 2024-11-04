@@ -12,7 +12,7 @@
     /* hide radio inputs */
     .rating__input {
         position: absolute !important;
-        left: -9999px !important;
+        inset-inline-start: -9999px !important;
     }
     
     /* set icon padding and size */
@@ -25,8 +25,8 @@
     
     /* add padding and positioning to half star labels */
     .rating__label--half {
-        padding-right: 0;
-        margin-right: -36px;
+        padding-inline-end:0;
+        margin-inline-end:-36px;
         z-index: 2;
         clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
     }

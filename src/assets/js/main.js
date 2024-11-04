@@ -278,6 +278,7 @@ if ($('ul').length) {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
     asNavFor: '.testimonials__slider'
   });
 
@@ -287,6 +288,7 @@ if ($('ul').length) {
     asNavFor: '.testimonials__thumbs-slider',
     dots: false,
     arrows: true,
+    rtl: $('html').attr('dir') === 'rtl' ? true : false,
     focusOnSelect: true,
     nextArrow: '#testimonials-next',
     prevArrow: '#testimonials-prev',
@@ -296,7 +298,9 @@ if ($('ul').length) {
   
   // ========================= magnific Popup Js Start =====================
   $('.play-button').magnificPopup({
-    type:'iframe'
+    type:'iframe',
+    removalDelay: 300,
+    mainClass: 'mfp-fade',
   });
   // ========================= magnific Popup Js End =====================
   
@@ -672,6 +676,8 @@ if ($('ul').length) {
 
   $('.masonry__image').magnificPopup({
     type: 'image',
+    removalDelay: 300,
+    mainClass: 'mfp-fade',
     gallery:{
       enabled:true
     }
@@ -698,6 +704,7 @@ if ($('ul').length) {
       slidesToScroll: 1,
       arrows: false,
       dots: false,
+      rtl: $('html').attr('dir') === 'rtl' ? true : false,
       fade: true,
       asNavFor: '.product-small-thumbs'
     });
@@ -707,6 +714,7 @@ if ($('ul').length) {
       asNavFor: '.product-big-thumbs',
       arrows: false,
       dots: false,
+      rtl: $('html').attr('dir') === 'rtl' ? true : false,
       autoplay: false,
       centerMode: true,
       responsive: [

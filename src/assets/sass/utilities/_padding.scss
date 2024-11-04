@@ -42,8 +42,8 @@
 }
 
 .px-60 {
-  padding-left: clampCal(24, 60) !important;
-  padding-right: clampCal(24, 60) !important;
+  padding-inline-start:clampCal(24, 60) !important;
+  padding-inline-end:clampCal(24, 60) !important; 
 }
 
 .py-60 {
@@ -51,16 +51,16 @@
   padding-bottom: clampCal(24, 60) !important;
 }
 .px-32 {
-  padding-left: clampCal(16, 32) !important;
-  padding-right: clampCal(16, 32) !important;
+  padding-inline-start:clampCal(16, 32) !important;
+  padding-inline-end:clampCal(16, 32) !important;
 }
 .py-40 {
-  padding-left: clampCal(24, 40) !important;
-  padding-right: clampCal(24, 40) !important;
+  padding-inline-start:clampCal(24, 40) !important;
+  padding-inline-end:clampCal(24, 40) !important;
 }
 .px-40 {
-  padding-left: clampCal(24, 40) !important;
-  padding-right: clampCal(24, 40) !important;
+  padding-inline-start:clampCal(24, 40) !important;
+  padding-inline-end:clampCal(24, 40) !important;
 }
 .py-240 {
   padding-top: clampCal(120, 240) !important;

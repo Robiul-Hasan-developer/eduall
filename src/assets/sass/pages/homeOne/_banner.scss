@@ -12,13 +12,13 @@ body {
         border-radius: 50%;
         filter: blur(450px);
         top: 264px;
-        left: 0;
+        inset-inline-start: 0;
         z-index: -1;
     }
     &::after {
         background-color: var(--main-two-600);
-        left: auto;
-        right: 0;
+        inset-inline-start: auto;
+        inset-inline-end: 0;
         top: 0%;
         width: 216px;
         height: 216px;
@@ -35,7 +35,7 @@ body {
         border-radius: 50%;
         filter: blur(450px);
         top: 48px;
-        left: 50%;
+        inset-inline-start: 50%;
         z-index: -1;
     }
 }
@@ -43,15 +43,15 @@ body {
 .banner-thumb {
     @include lg-screen {
         max-width: 606px;
-        margin-right: 120px;
+        margin-inline-end:120px;
     }
     @include sm-screen {
         max-width: 606px;
-        margin-right: 0px;
+        margin-inline-end:0px;
     }
     &__img {
         @media (min-width: 1500px) {
-            margin-left: 126px;
+            margin-inline-start:126px;
         }
     }
 }
@@ -64,8 +64,8 @@ body {
     }
     .btn {
         @include msm-screen {
-            padding-left: 14px;
-            padding-right: 14px;
+            padding-inline-start:14px;
+            padding-inline-end:14px;
             i {
                 display: none !important;
             }
@@ -221,7 +221,7 @@ body {
         animation-delay: 1s;
     }
     &.ten {
-        left: 40%;
+        inset-inline-start: 40%;
         top: 10%;
     }
     &.style-left {

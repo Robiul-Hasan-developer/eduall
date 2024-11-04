@@ -48,7 +48,7 @@
       }
       &__content {
         max-width: 432px;
-        margin-left: 0;
+        margin-inline-start:0;
         @media (min-width: 1199px) {
           margin-inline-start: auto !important;
         }
