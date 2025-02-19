@@ -5,7 +5,242 @@
   //      Start Document Ready function
   // ==========================================
   $(document).ready(function () {
-    
+
+
+
+
+
+
+
+ // ========================= Text Rotation Js Start ==========================
+    const text = document.querySelector(".circle__text");
+
+    if(text) {
+      text.innerHTML = text.innerText
+      .split("")
+      .map(
+        (char, i) => `<span style="transform:rotate(${i * 11.5}deg)">${char}</span>`
+        )
+      .join("");
+    }
+
+    // Text Two
+    const textTwo = document.querySelector(".circle__desc");
+
+    if(textTwo) {
+      textTwo.innerHTML = textTwo.innerText
+      .split("")
+      .map(
+        (char, i) => `<span style="transform:rotate(${i * 11.5}deg)">${char}</span>`
+        )
+      .join("");
+    }
+  // ========================= Text Rotation Js End ==========================
+
+
+// ============about us five js start==============
+ // Floating progress bar
+ $(".progress-wrapper").each(function(){
+  var percentage = $(this).attr("data-perc");
+  var floatingLabel = $(this).find(".floating-label");
+
+  // Set CSS variable to be used in keyframes
+  floatingLabel.css("--left-percentage", percentage);
+  
+  // Trigger reflow to restart animation
+  floatingLabel[0].offsetWidth; // Force reflow
+  floatingLabel.css("animation-name", "none");
+  floatingLabel.css("inset-inline-start", percentage); // Ensure final position is correct
+  floatingLabel.css("left", ""); // If 'left' was explicitly used
+  floatingLabel.css("animation-name", "animateFloatingLabel");
+});
+
+
+
+// Semi Circle progress bar
+$(".progressBar").each(function(){
+  var $bar = $(this).find(".circleBar");
+  var $val = $(this).find(".barNumber");
+  var perc = parseInt( $val.text(), 10);
+
+  $({p:0}).animate({p:perc}, {
+      duration: 3000,
+      easing: "swing",
+      step: function(p) {
+      $bar.css({
+          transform: "rotate("+ (45+(p*1.8)) +"deg)", // 100%=180° so: ° = % * 1.8
+          // 45 is to add the needed rotation to have the green borders at the bottom
+      });
+      $val.text(p|0);
+      }
+  });
+});
+// ===========about us five js end===============
+
+
+
+
+    // ========================= Brand Slider Js Start ==============
+    $('.faq-brand-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      centerPadding: '100px',
+      autoplaySpeed: 2000,
+      speed: 1500,
+      dots: false,
+      pauseOnHover: true,
+      arrows: false,
+      draggable: true,
+      rtl: $('html').attr('dir') === 'rtl' ? true : false,
+      speed: 900,
+      infinite: true,
+      nextArrow: '#brand-next',
+      prevArrow: '#brand-prev',
+      responsive: [
+        {
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 424,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 359,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+          }
+        },
+      ]
+    });  
+    // ========================= Brand Slider Js End ===================
+      
+
+
+ // ========================= testimonial-five Slider Js Start ==============
+ $('.testimonial-five-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  speed: 1500,
+  dots: false,
+  pauseOnHover: true,
+  arrows: true,
+  draggable: true,
+  rtl: $('html').attr('dir') === 'rtl' ? true : false,
+  speed: 900,
+  infinite: true,
+  nextArrow: '#testimonial-five-next',
+  prevArrow: '#testimonial-five-prev',
+  responsive: [
+    {
+      breakpoint: 1299,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    },
+  ]
+});  
+// ========================= testimonial-five-slider Js End ===================
+
+
+ // ========================= our-popular-five Slider Js Start ==============
+ $('.our-popular-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  speed: 1500,
+  dots: false,
+  pauseOnHover: true,
+  arrows: true,
+  draggable: true,
+  rtl: $('html').attr('dir') === 'rtl' ? true : false,
+  speed: 900,
+  infinite: true,
+  nextArrow: '#our-popular-next',
+  prevArrow: '#our-popular-prev',
+  responsive: [
+    {
+      breakpoint: 1299,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    },
+  ]
+});  
+// ========================= our-popular-five-slider Js End ===================
+
+
+      /*===========================================
+	=         Marquee Active         =
+    =============================================*/
+    if ($(".marquee_mode").length) {
+      $('.marquee_mode').marquee({
+          speed: 100,
+          gap: 0,
+          delayBeforeStart: 0,
+          direction: $('html').attr('dir') === 'rtl' ? 'right' : 'left',
+          duplicated: true,
+          pauseOnHover: true,
+          startVisible:true,
+      });
+  }
+
+
   // ============== Mobile Menu Sidebar & Offcanvas Js Start ========
   $('.toggle-mobileMenu').on('click', function () {
     $('.mobile-menu').addClass('active');
@@ -230,11 +465,21 @@ if ($('ul').length) {
   });
   // ========================= Instructor Button Js End ===================
 
+
+  // ========================= Instructor Button Js Start ===================
+  $('.our-popular-five .our-popular-five__button').on('click', function () {
+    $('.social-list').not($(this).siblings('.social-list')).removeClass('d-flex'); 
+    $('.our-popular-five .our-popular-five__button').not($(this)).removeClass('active'); 
+    $(this).siblings('.social-list').toggleClass('d-flex'); 
+    $(this).toggleClass('active'); 
+  });
+  // ========================= Instructor Button Js End ===================
+
   // ========================= Brand Slider Js Start ==============
   $('.instructor-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     speed: 1500,
     dots: false,

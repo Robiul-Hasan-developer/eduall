@@ -53,3 +53,16 @@
         }
     }
 }
+
+
+.text-stroke {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--main-200);
+}
+
+.hover-text-fill:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--main-600);
+  -webkit-text-stroke: 1px var(--main-600);
+}

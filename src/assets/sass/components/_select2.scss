@@ -178,6 +178,12 @@
     }
 }
 
+.select-bg-white {
+    .select2-selection.select2-selection--single {
+        background-color: #fff !important;
+    }
+}
+
 
 /* Location Box Css  */
 .location-box {

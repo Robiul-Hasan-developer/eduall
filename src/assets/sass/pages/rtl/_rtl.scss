@@ -1,3 +1,11 @@
+
+
+.end-0 {
+    right: unset !important;
+    inset-inline-end: 0 !important;
+}
+
+
 /* ================================ RTL Css Start ============================== */
 [dir="rtl"] {
     .ph.ph-caret-left:before {
@@ -60,6 +68,26 @@
     }
     .color-list__button.active::before {
         transform: translate(50%, -50%);
+    }
+    .floating-label {
+        transform: translateX(25px);
+    }
+    .child-future-icon{
+        transform: rotate(-89deg);
+    }
+    .start-0 {
+        left: unset !important;
+        inset-inline-start: 0 !important;
+    }
+
+    .mobile-menu {
+        transform: translateX(100%);
+    }
+    .mobile-menu.active {
+        transform: translateX(0%);
+    }
+    .curve-arrow-banner {
+        display: none !important;
     }
 }
 /* ================================ RTL Css End ============================== */

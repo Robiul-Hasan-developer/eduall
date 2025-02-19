@@ -91,6 +91,14 @@
   margin-inline-end: 0!important;
 }
 
+.me-148-px {
+margin-inline-end: clamp(1.25rem, -26.75rem + 32vw, 9.25rem);;
+}
+.ms-148-px {
+margin-inline-start: clamp(1.25rem, -26.75rem + 32vw, 9.25rem);;
+}
+
+
 .my-120 {
   margin-block-start: 60px !important;
   margin-block-end: 60px !important;
@@ -150,4 +158,105 @@
     @media (min-width: 992px) {
     margin-block-end: 60px !important;
   }
-}/* ================================= Margin Css End =========================== */
+}
+
+.left-32-percent{
+  inset-inline-start: 32%;
+}
+.top-10-percent{
+  top: 10%;
+}
+
+.right-5-percent{
+  inset-inline-end: 5%;
+}
+.top-35-percent {
+  top: 35%;
+}
+
+.bottom-18-percent{
+  bottom: 18%;
+}
+.left-3-percent{
+  inset-inline-start: 3%;
+}
+
+.bottom-10-percent{
+  bottom: 10%;
+}
+.left-17-percent{
+  inset-inline-start: 17%;
+}
+
+.bottom-10-percent{
+  bottom: 10%;
+}
+.left-7-percent{
+  inset-inline-start: 7%;
+}
+
+.bottom-14-percent{
+  bottom: 14%;
+}
+.left-65-percent{
+  inset-inline-start: 65%;
+}
+
+.top-55-percent{
+  top: 55%;
+}
+.left-30-percent{
+  inset-inline-start: 30%;
+}
+
+.left-57-percent{
+  inset-inline-start: 57%;
+}
+
+.top-18-percent{
+  top: 18%;
+}
+.left-75-percent{
+  inset-inline-start: 75%;
+}
+
+.top-10-percent{
+  top: 10%;
+}
+.left-85-percent{
+  inset-inline-start: 85%;
+}
+
+.left-83-percent{
+  inset-inline-start: 83%;
+}
+
+.bottom-5-percent{
+  bottom: 5%;
+}
+.left-70-percent{
+  inset-inline-start: 70%;
+}
+
+
+.top-8-percent{
+  top: 20%;
+}
+.right-8-percent{
+  inset-inline-end: 8%;
+}
+.padding-top-100-px {
+  padding-top: 100px;
+}
+
+
+
+
+.lg-ms-134px {
+  @media (min-width: 991px) {
+    margin-inline-start: 134px !important;
+  }
+}
+
+
+/* ================================= Margin Css End =========================== */

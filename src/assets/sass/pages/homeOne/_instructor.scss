@@ -28,6 +28,31 @@
     }
 }
 
+
+
+.our-popular-five {
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-end: 24px;
+    background-color: var(--main-600);
+    padding: 8px;
+    border-radius: 50rem;
+    z-index: 1;
+    &__button {
+        &:hover {
+            transform: scale(1.1);
+        }
+        &.active {
+            i::before {
+                content: "\E32A";
+            }
+        }
+    }
+    .social-list{
+        display: none;
+    }
+}
+
 /* Instructor Two Item Css Start */
 .instructor-item-two {
     &:hover {

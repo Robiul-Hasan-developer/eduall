@@ -15,5 +15,8 @@
     .text-#{$property} {
       font-size: $value !important;
     }
-}  
+}
+.font-size-20-px{
+  font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);;
+}
 /* Font Size Class End */

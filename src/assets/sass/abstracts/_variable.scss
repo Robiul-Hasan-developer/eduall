@@ -1,8 +1,10 @@
 /* Font Family*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 $colors: (
   "main": (
+    "05": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.97)),
     "25": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.96)),
     "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
     "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
@@ -187,6 +189,7 @@ $spaces: (
   "48": #{rem(48px)},
   "50": #{rem(50px)},
   "52": #{rem(52px)},
+  "54": #{rem(54px)},
   "56": #{rem(56px)},
   "60": #{rem(60px)},
   "64": #{rem(64px)},
@@ -197,10 +200,12 @@ $spaces: (
   "85": #{rem(85px)},
   "90": #{rem(90px)},
   "96": #{rem(96px)},
+  "104": #{rem(104px)},
   "110": #{rem(110px)},
   "120": #{rem(120px)},
-  "144": #{rem(144px)},
   "136": #{rem(136px)},
+  "144": #{rem(144px)},
+  "154": #{rem(154px)},
   "160": #{rem(160px)},
 );
 
@@ -215,6 +220,8 @@ $font-sizes: (
   "4xl": #{rem(36px)},
   "5xl": #{rem(48px)},
   "6xl": #{rem(60px)},
+  "6xxl": #{rem(72px)},
+  "6xxxl": #{rem(80px)},
 );
 
 /* ========================= Variable Css Start ======================== */
